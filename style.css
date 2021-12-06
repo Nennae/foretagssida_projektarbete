@@ -145,4 +145,39 @@ body .footer .footertider i {
   margin-bottom: 20px;
   color: black;
 }
+
+
+@media screen and (min-width: 760px) {
+  body .header img {
+    margin-left: 50px;
+  }
+  body .header .top-nav i {
+    display: none;
+  }
+  body .header .top-nav .nav-bar {
+    visibility: visible;
+  }
+  body .header .top-nav .nav-bar a {
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 40px;
+    font-size: 1.12rem;
+  }
+  body .footer {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body .footer .bottom-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
