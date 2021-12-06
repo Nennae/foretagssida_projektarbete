@@ -14,10 +14,7 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    min-height: 100px;
-
-    @include desktop;
-    
+    min-height: 100px;    
 
     .top-nav{
       display: flex;
@@ -126,11 +123,5 @@ body{
 
 @media screen and (min-width: 500px){
   
-  .header{
-    background-color: red;
-  }
 
-  .footer{
-    background-color: red;
-  }
 }

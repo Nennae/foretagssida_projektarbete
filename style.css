@@ -19,12 +19,6 @@ body header {
   min-height: 100px;
 }
 
-@media screen and (min-width: 500px) {
-  body header {
-    background-color: green;
-  }
-}
-
 body header .top-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,14 +144,5 @@ body .footer .footertider i {
   margin: 10px;
   margin-bottom: 20px;
   color: black;
-}
-
-@media screen and (min-width: 500px) {
-  .header {
-    background-color: red;
-  }
-  .footer {
-    background-color: red;
-  }
 }
 /*# sourceMappingURL=style.css.map */
