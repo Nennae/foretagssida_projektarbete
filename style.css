@@ -146,7 +146,6 @@ body .footer .footertider i {
   color: black;
 }
 
-
 @media screen and (min-width: 760px) {
   body .header img {
     margin-left: 50px;
@@ -179,5 +178,4 @@ body .footer .footertider i {
             flex-direction: row;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
