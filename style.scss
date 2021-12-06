@@ -121,7 +121,43 @@ body{
 }
 
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 760px){
   
+  body{
+
+    .header{
+
+      img{
+        margin-left: 50px;
+      }
+
+      .top-nav{
+        i{
+          display: none;
+        }
+
+        .nav-bar{
+          visibility: visible;
+
+          a{
+            @include li-style;
+            margin-right: 40px;
+            font-size: 1.12rem;
+          }
+        }
+      }
+    }
+
+
+    .footer{
+      justify-content: space-around;
+
+      .bottom-bar{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+      }
+    }
+  }
 
 }
