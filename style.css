@@ -114,6 +114,111 @@ body .main {
   height: 600px;
 }
 
+body .main.referenser {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 20px;
+}
+
+body .main.referenser .reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .main.referenser .reviews h1 {
+  width: 100%;
+}
+
+body .main.referenser .reviews .review-nav {
+  padding: 15px;
+  width: 100%;
+  background-color: #8A9192;
+  margin: 10px 0px;
+}
+
+body .main.referenser .reviews .review-nav nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main.referenser .reviews .review-wrap {
+  background-color: #E9CCCC;
+}
+
+body .main.referenser .reviews .review-wrap h2 {
+  margin: 15px;
+}
+
+body .main.referenser .reviews .review-wrap .customer .private-rev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #C8EEEC;
+  margin: 0px 10px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+body .main.referenser .reviews .review-wrap .customer .private-rev h2, body .main.referenser .reviews .review-wrap .customer .private-rev h3, body .main.referenser .reviews .review-wrap .customer .private-rev p {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+body .main.referenser .reviews .review-wrap .customer .private-rev h3, body .main.referenser .reviews .review-wrap .customer .private-rev p {
+  text-align: start;
+}
+
+body .main.referenser .reviews .review-wrap .company .company-rev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #C8EEEC;
+  margin: 0px 10px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+body .main.referenser .reviews .review-wrap .company .company-rev h2, body .main.referenser .reviews .review-wrap .company .company-rev h3, body .main.referenser .reviews .review-wrap .company .company-rev p {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+body .main.referenser .reviews .review-wrap .company .company-rev h3, body .main.referenser .reviews .review-wrap .company .company-rev p {
+  text-align: start;
+}
+
+body .main.referenser .reviews .review-wrap .write-review {
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+}
+
 body .footer {
   border-top: solid grey 1px;
   display: -webkit-box;

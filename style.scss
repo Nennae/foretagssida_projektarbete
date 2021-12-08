@@ -86,6 +86,71 @@ body{
 
   .main{
     height: 600px;
+    &.referenser{
+      height:auto;
+      display: flex;
+      text-align: center;
+      padding: 20px;
+      
+      .reviews{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        h1{
+          width: 100%;
+        }
+        .review-nav{
+          padding: 15px;
+          nav{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+          }
+          
+          width: 100%;
+          background-color: #8A9192;
+          margin: 10px 0px;
+          // a{
+          //   display: inline-block;
+          // }
+        }
+  
+        .review-wrap{
+          background-color: #E9CCCC;
+          h2{
+            margin: 15px;
+          }
+          .customer{
+            .private-rev{
+              @include review-zone;
+              margin-bottom: 20px;
+              padding: 5px;
+            }
+
+          }
+
+          .company{
+            .company-rev{
+              @include review-zone;
+            margin-bottom: 20px;
+            padding: 5px;
+            }
+            
+          }
+
+          .write-review{
+            padding: 10px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+          }
+  
+  
+        }
+      }
+      
+      
+    }
   }
 
   .footer{
