@@ -1,3 +1,65 @@
+.omoss .mainOmoss {
+  height: 100%;
+}
+
+.omoss .mainOmoss section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.omoss .mainOmoss section .linje {
+  width: 70%;
+  height: 1px;
+  background: black;
+  margin-bottom: 10px;
+}
+
+.omoss .mainOmoss section p {
+  margin-top: 15px;
+}
+
+.omoss .mainOmoss section .image {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 15px;
+}
+
+.omoss .mainOmoss section .image .anst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.omoss .mainOmoss section .image .anst * {
+  margin-top: 4px;
+}
+
+.omoss .mainOmoss section .image img {
+  max-width: 60%;
+  margin-top: 10px;
+}
+
 * {
   margin: 0;
   -webkit-box-sizing: border-box;

@@ -1,0 +1,63 @@
+.omoss {
+
+    .mainOmoss {
+        height: 100%;
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            padding: 20px;
+
+            h2 {
+               
+            }
+
+            .linje {
+                width: 70%;
+                height: 1px;
+                background: black;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-top: 15px;
+            }
+
+            .image {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                margin-top: 15px;
+                .anst{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    * {
+                        margin-top: 4px;
+                    }
+                }
+                img {
+                    max-width: 60%;
+                    margin-top: 10px;
+                }            
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+
+    .main {
+
+        section {
+
+        }
+    }
+
+
+
+}
+
