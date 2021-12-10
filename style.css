@@ -571,7 +571,7 @@ body .footer .footertider i {
           align-items: flex-start;
 }
 
-.kontaktmain .maindiv2 .meddelande select, .kontaktmain .maindiv2 .meddelande input {
+.kontaktmain .maindiv2 .meddelande select, .kontaktmain .maindiv2 .meddelande input, .kontaktmain .maindiv2 .meddelande textarea {
   background-color: lightgray;
   width: 95%;
   border: solid black 1px;
