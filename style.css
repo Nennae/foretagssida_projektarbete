@@ -436,4 +436,254 @@ body .footer .footertider i {
             flex-direction: row;
   }
 }
+
+.line {
+  width: 140px;
+  height: 4px;
+  background: #03d7fcdc;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.kontaktmain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: auto;
+  display: flex;
+}
+
+.kontaktmain .maindiv1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 1100px;
+  background-color: #e4e4e4;
+}
+
+.kontaktmain .maindiv1 .medarbetar-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 45%;
+  height: auto;
+}
+
+.kontaktmain .maindiv1 .medarbetar-area .medarbetare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: white;
+  height: 300px;
+  border-radius: 5px;
+  -webkit-box-shadow: #424242 5px 5px 5px;
+          box-shadow: #424242 5px 5px 5px;
+}
+
+.kontaktmain .maindiv1 .medarbetar-area .medarbetare .bilddiv {
+  background-color: lightgray;
+  width: 125px;
+  height: 175px;
+  border: solid lightgray 5px;
+  border-radius: 5px;
+}
+
+.kontaktmain .maindiv1 .medarbetar-area .medarbetare .bilddiv img {
+  height: 100%;
+  width: 100%;
+}
+
+.kontaktmain .maindiv2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  margin-bottom: 20px;
+  border-top: solid black 1px;
+}
+
+.kontaktmain .maindiv2 h2 {
+  font-size: 23px;
+}
+
+.kontaktmain .maindiv2 .kontaktaoss {
+  height: 175px;
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.kontaktmain .maindiv2 .meddelande {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 350px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.kontaktmain .maindiv2 .meddelande select, .kontaktmain .maindiv2 .meddelande input {
+  background-color: lightgray;
+  width: 95%;
+  border: solid black 1px;
+  margin: 5px 0px 5px 0px;
+}
+
+.kontaktmain .maindiv2 .meddelande .button {
+  margin: 10px 11px 0px 0px;
+  background-color: lightgray;
+  border: solid black 1px;
+  height: 25px;
+  width: 50px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.kontaktmain .maindiv2 .meddelande #meddelande {
+  height: 100px;
+}
+
+.kontaktmain .bildhus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+  width: 175px;
+  margin: 30px 0px;
+}
+
+.kontaktmain .bildhus img {
+  margin: 20px 0px 0px 10px;
+  width: 100%;
+  height: 100%;
+  margin: 50px 0px;
+}
+
+@media screen and (min-width: 600px) {
+  .kontaktmain {
+    height: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .kontaktmain .maindiv1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 700px;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .kontaktmain .maindiv1 .medarbetar-area {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .kontaktmain .maindiv1 .medarbetar-area .medarbetare {
+    width: 30%;
+  }
+  .kontaktmain .maindiv2 {
+    height: 475px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .kontaktmain .maindiv2 .kontaktaoss {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 475px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .kontaktmain .maindiv2 .kontaktaoss .button {
+    margin: 10px 30px 0px 0px;
+  }
+  .kontaktmain .maindiv2 .kontaktaoss input, .kontaktmain .maindiv2 .kontaktaoss select {
+    height: 25px;
+  }
+  .kontaktmain .maindiv2 .kontaktaoss .bildhus {
+    width: 100%;
+    background-color: red;
+    height: 237px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px 0px 20px 0px;
+  }
+  .kontaktmain .maindiv2 .kontaktaoss img {
+    width: 100%;
+    height: 237px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
