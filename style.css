@@ -6,58 +6,67 @@
   padding: 0;
 }
 
-.news {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.main-startpage {
   font-family: "Montserrat", sans-serif;
 }
 
-.news .page-title {
-  text-align: center;
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-}
-
-.news .product-name {
-  font-size: 1.2rem;
-}
-
-.news ul {
+.main-startpage ul {
   text-align: center;
   padding: 10px;
   line-height: 1.6;
 }
 
-.news .link-container {
+.main-startpage .link-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.news .link-container button {
+.main-startpage .link-container button {
   background: #75ecc5;
   border-radius: 15px;
   border: none;
   padding: 5px 8px;
 }
 
-.news .link-container button:hover {
+.main-startpage .link-container button:hover {
   background: #0add97;
 }
 
-.news .link-container a {
+.main-startpage .link-container a {
   margin-left: 10px;
 }
 
-.macbook {
+.main-startpage .news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-startpage .news .page-title {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.main-startpage .news .product-name {
+  font-size: 1.2rem;
+}
+
+.main-startpage .more-news-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-startpage .macbook {
   margin: 0 auto;
   padding: 15px;
 }

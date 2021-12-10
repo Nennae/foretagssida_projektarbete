@@ -10,21 +10,8 @@ padding: 0;
 // Startsida - style / Sezen
 // Preliminär struktur. Ska organiseras bättre
 
-.news {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.main-startpage {
   font-family: $main-font;
-
-  .page-title {
-    text-align: center;
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-  }
-
-  .product-name {
-    font-size: 1.2rem;
-  }
 
   ul {
     text-align: center;
@@ -33,7 +20,7 @@ padding: 0;
   }
 
   .link-container {
-    display: flex;
+    display: flex; 
 
     button {
       @include buttonStyle;
@@ -42,18 +29,35 @@ padding: 0;
     a {
       margin-left: 10px;
     }
-
   }
+  .news {
+    @include flexCenter;
+    flex-direction: column;
+    
+    .page-title {
+      text-align: center;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
   
-} 
+    .product-name {
+      font-size: 1.2rem;
+    } 
+    
+  } 
+  
+  .more-news-container {
+    display: flex;
+  }
+  // Första bilden på startsidan
+  .macbook {
+    margin: 0 auto;
+    padding: 15px;
+  }
 
-// Första bilden på startsidan
-.macbook {
-  margin: 0 auto;
-  padding: 15px;
 }
+// .main-startpage slutar här
 
-///////////////////////////
 // Gemensam styling för alla sidor ( header + footer )
 body {
 
@@ -130,7 +134,7 @@ header,
       width: 80%;
       display: flex;
       justify-content: space-around;
-      font-family: $main-font-regular; 
+      font-family: $main-font; 
 
       a {
       flex-direction: column;
