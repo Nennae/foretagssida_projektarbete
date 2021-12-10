@@ -7,6 +7,15 @@ box-sizing: border-box;
 padding: 0;
 }
 
+//Linjer under h2 taggar
+.line {
+  width: 140px;
+  height: 4px;
+  background: #03d7fcdc;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
 // Startsida - style / Sezen
 // Preliminär struktur. Ska organiseras bättre
 
@@ -356,14 +365,6 @@ header,
 }
 
 //Kontakt styling
-.line {
-  width: 140px;
-  height: 4px;
-  background: #03d7fcdc;
-  margin: 10px auto;
-  border-radius: 5px;
-}
-
 .kontaktmain{
   display: flex;
   flex-direction: column;

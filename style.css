@@ -6,6 +6,14 @@
   padding: 0;
 }
 
+.line {
+  width: 140px;
+  height: 4px;
+  background: #03d7fcdc;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
 .main-startpage {
   font-family: "Montserrat", sans-serif;
 }
@@ -435,14 +443,6 @@ body .footer .footertider i {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-}
-
-.line {
-  width: 140px;
-  height: 4px;
-  background: #03d7fcdc;
-  margin: 10px auto;
-  border-radius: 5px;
 }
 
 .kontaktmain {
