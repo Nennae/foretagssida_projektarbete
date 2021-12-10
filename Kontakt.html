@@ -1,13 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakta oss</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+      <title>Comptronics - Startsida</title>
 </head>
 <body>
-  
-  
+  <header class="header">
+
+  <a href="/index.html"><img src="/Loggo.png" alt="Logga"></a>
+            
+    <nav class="top-nav">
+      <ul class="nav-bar">
+        <li class="nav-links"><a href="">OM OSS</a></li>
+        <li class="nav-links"><a href="">PRODUKTER</a></li>
+        <li class="nav-links"><a href="">SUPPORT</a></li>
+       <b> <li class="nav-links"><a href="">KONTAKT</a></li></b> 
+      </ul>
+      <i class="fa fa-bars"></i>
+    </nav>
+  </header>
+
+  <nav class="products-nav">
+    <ul class="products">
+      <li class="product-links"><a href="#"><i class="fas fa-desktop"></i> Datorer</a></li>
+      <li class="product-links"><a href="#"><i class="fas fa-laptop"></i> Lap Top</a></li>
+      <li class="product-links"><a href="#"><i class="fas fa-tablet-alt"></i> Mobil</a></li>
+      <li class="product-links"><a href="#"><i class="fas fa-mobile-alt"></i> Platta</a></li>
+    </ul>
+  </nav>
+
+  <main class="kontaktmain">
+    <section class="maindiv1">
+      <article class="medarbetar-area">
+        <div class="medarbetare">
+          <div class="bilddiv">
+            <img src="/Bilder/Emma.jpg" alt="Bild på medarbetare">
+          </div>
+          <p>Emma Kristiansson</p>
+          <div class="line"></div>
+          <p>VD</p>
+          <p>072 - 233 10 23</p>
+        </div>
+        <div class="medarbetare">
+          <div class="bilddiv">
+            <img src="/Bilder/skägget.jpg" alt="Bild på medarbetare">
+          </div>
+          <p>Peter Johaug</p>
+          <div class="line"></div>
+          <p>Anställd</p>
+          <p>072 - 233 64 45</p>
+        </div>
+        <div class="medarbetare">
+          <div class="bilddiv">
+            <img src="/Bilder/Kristina.jpg" alt="Bild på medarbetare">
+          </div>
+          <p>Kristina Sjöholm</p>
+          <div class="line"></div>
+          <p>Anställd</p>
+          <p>072 - 233 95 73</p>
+        </div>
+      </article>
+      <article class="medarbetar-area">
+        <div class="medarbetare">
+          <div class="bilddiv">
+            <img src="/Bilder/Sabina.jpg" alt="Bild på medarbetare">
+          </div>
+          <p>Sabina Williams</p>
+          <div class="line"></div>
+          <p> Vice VD</p>
+          <p>072 - 233 01 01</p>
+        </div>
+        <div class="medarbetare">
+          <div class="bilddiv">
+            <img src="/Bilder/Aziz.jpg" alt="Bild på medarbetare">
+          </div>
+          <p>Jonathan Aziz</p>
+          <div class="line"></div>
+          <p>Anställd</p>
+          <p>072 - 233 62 01</p>
+        </div>
+        <div class="medarbetare">
+          <div class="bilddiv">
+            <img src="/Bilder/Johannes.jpg" alt="Bild på medarbetare">
+          </div>
+          <p>Johannes Kristiansson</p>
+          <div class="line"></div>
+          <p>Anställd</p>
+          <p>072 - 233 74 66</p>
+        </div>
+      </article>
+    </section>
+     
+    <section class="maindiv2">
+      <articel class="kontaktaoss meddelande">
+        <div class="undertitel">
+          <h2>Skicka meddelande</h2>
+        </div>
+        <select name="frågaom" id="frågaom" class="select">Vad handlar din fråga om?
+          <option value="placeholder">Vad handlar din fråga om?</option>
+          <option value="produkter" class="option">Köp av produkter</option>
+          <option value="företaget" class="option">Företaget</option>
+          <option value="synpunkter" class="option">Synpunkter på företaget</option>
+        </select>
+        <label for="namn">Namn:</label>
+        <input type="text" id="namn" class="input">
+        <label for="epost">E-post:</label>
+        <input type="text" id="epost" class="input">
+        <label for="tel">Telefonnr:</label>
+        <input type="tel" id="tel" class="input">
+        <label for="meddelande">Ditt meddelande:</label>
+        <input type="text" id="meddelande" class="input">
+        <button class="button">Skicka</button>
+      </articel>
+
+      <articel class="kontaktaoss">
+        <div class="undertitel">
+          <h2>Hitta och kontakta</h2>
+        </div>
+        <section class="bildhus">
+          <img src="https://images.unsplash.com/photo-1550136513-548af4445338?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80" alt="Bild på Comtptronics byggnad">
+        </section>
+        <p>Comptronics</p>
+        <p>Tomtebodavägen 99a</p>
+        <p>info.comptronics@gmail.com</p>
+        <p>08-591 564 455</p>
+      </articel>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <nav class="bottom-nav">
+      <ul class="bottom-bar">
+          <li class="nav-links"><a href="#">OM OSS</a></li>
+          <li class="nav-links"><a href="#">PRODUKTER</a></li>
+          <li class="nav-links"><a href="#">SUPPORT</a></li>
+          <li class="nav-links"><a href="#">KONTAKT</a></li> 
+      </ul>
+    </nav>
+
+    <div class="footertider">
+      <a href="#"><i class="fab fa-instagram"></i></a> 
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <b><p>Våra Öppetider:</p></b>
+      <p>mån - fre: 9-10</p>
+      <p>lör - sön: Stängt</p>
+      <p></p>
+    </div>
+  </footer>
 </body>
 </html>
