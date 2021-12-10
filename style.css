@@ -6,30 +6,102 @@
   padding: 0;
 }
 
-body header {
+.news {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.news .page-title {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.news .product-name {
+  font-size: 1.2rem;
+}
+
+.news ul {
+  text-align: center;
+  padding: 10px;
+  line-height: 1.6;
+}
+
+.news .link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news .link-container button {
+  background: #75ecc5;
+  border-radius: 15px;
+  border: none;
+  padding: 5px 8px;
+}
+
+.news .link-container button:hover {
+  background: #0add97;
+}
+
+.news .link-container a {
+  margin-left: 10px;
+}
+
+.macbook {
+  margin: 0 auto;
+  padding: 15px;
+}
+
+body li, body a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body .top-nav a, body .bottom-nav a {
+  color: #22ade9;
+  font-weight: 700;
+}
+
+body .top-nav a:hover, body .bottom-nav a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #d869a0;
+          text-decoration-color: #d869a0;
+  text-decoration-thickness: 3px;
+}
+
+body header,
+body .top-nav,
+body .products a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   min-height: 100px;
 }
 
 body header .top-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 body header .top-nav .nav-bar {
@@ -38,7 +110,6 @@ body header .top-nav .nav-bar {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  list-style-type: none;
   visibility: hidden;
 }
 
@@ -69,7 +140,7 @@ body header .fa-bars {
 
 body .products-nav {
   width: 100%;
-  height: 50px;
+  min-height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,6 +148,7 @@ body .products-nav {
       -ms-flex-pack: center;
           justify-content: center;
   border-bottom: solid grey 1px;
+  margin-bottom: 20px;
 }
 
 body .products-nav .products {
@@ -86,20 +158,14 @@ body .products-nav .products {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 body .products-nav .products a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 body .products-nav .products a i {
@@ -108,7 +174,6 @@ body .products-nav .products a i {
 
 body .products-nav a {
   color: black;
-  text-decoration: none;
 }
 
 body .main {
@@ -319,19 +384,12 @@ body .footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
-  height: 150px;
+  min-height: 150px;
   padding-top: 15px;
 }
 
 body .footer .bottom-bar li {
-  list-style-type: none;
   margin: 15px;
-}
-
-body .footer .bottom-bar li a {
-  color: black;
-  text-decoration: none;
-  list-style-type: none;
 }
 
 body .footer .footertider i {
@@ -351,9 +409,6 @@ body .footer .footertider i {
     visibility: visible;
   }
   body .header .top-nav .nav-bar a {
-    color: black;
-    text-decoration: none;
-    list-style-type: none;
     margin-right: 40px;
     font-size: 1.12rem;
   }

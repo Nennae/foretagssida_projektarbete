@@ -1,6 +1,39 @@
+// Färger till texter, bakgrunder och styles, font-familjer
+
+$topBottom-nav-color: rgb(34, 173, 233);
+$underline-style: rgb(216, 105, 160); 
+$products-nav-color: rgb(69, 66, 66);
+$button-color: rgb(117, 236, 197);
+$main-font: 'Montserrat', sans-serif;
+
+// Mixins 
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin buttonStyle{
+  background: $button-color;
+  border-radius: 15px;
+  border: none;
+  padding: 5px 8px;
+  &:hover {
+    background: rgb(10, 221, 151);
+  }
+}
+
+@mixin topBottom-nav-style {
+  color: $topBottom-nav-color;
+  font-weight: 700;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: $underline-style;
+    text-decoration-thickness: 3px;
+  }
+}
 
 @mixin li-style {
-  color: black;
   text-decoration: none;
   list-style-type: none;
 }
