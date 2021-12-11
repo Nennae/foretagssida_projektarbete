@@ -52,12 +52,7 @@
 }
 
 .main-startpage .christmas-banner .banner p a:active {
-  color: #0a36b9;
-}
-
-.main-startpage .macbook {
-  margin: 0 auto;
-  padding: 15px;
+  color: #0a33b9;
 }
 
 .main-startpage h1, .main-startpage h2 {
@@ -115,6 +110,7 @@
 
 .main-startpage .news .product-name {
   font-size: 1.2rem;
+  margin: 10px;
 }
 
 .main-startpage .news .iMac {
@@ -133,6 +129,29 @@
 
 .main-startpage .more-news .more-news-container img {
   width: 170px;
+}
+
+.main-startpage .student-section {
+  position: relative;
+}
+
+.main-startpage .student-section .student-img {
+  width: 100%;
+}
+
+.main-startpage .student-section p {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: white;
+  font-size: 1.35rem;
+}
+
+.main-startpage .student-section .stuk-logo {
+  position: absolute;
+  width: 110px;
+  top: 5%;
+  left: 5%;
 }
 
 body li, body a {
