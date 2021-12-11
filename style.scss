@@ -1,5 +1,5 @@
 
-// MOBILE FIRST, RESPONSIVE LAYOUT
+// MOBILE FIRST LAYOUT
 
 @import "partials/variabler";
 
@@ -20,7 +20,6 @@ padding: 0;
 
 // Startsida - style / Sezen
 // Preliminär struktur. Ska organiseras bättre
-
 .main-startpage {
   font-family: $main-font;
 
@@ -40,29 +39,28 @@ padding: 0;
         width: 70px;
         height: 80px;
       }
+      
       p {
         font-size: 1.3rem;
 
         a {
           color: rgb(182, 6, 6);
           &:active {
-            color: rgb(10, 54, 185);
+            color: rgb(10, 51, 185);
           }
         }
       }
     }
   }
 
-   // Första bilden på startsidan
-    .macbook {
-    margin: 0 auto;
-    padding: 15px;
-  }
-
   h1, h2 {
     text-align: center;
     font-size: 1.4rem;
   }
+
+  // img {
+    
+  // }
 
   ul {
     text-align: center;
@@ -91,6 +89,7 @@ padding: 0;
   
     .product-name {
       font-size: 1.2rem;
+      margin: 10px;
     } 
 
     .iMac {
@@ -108,6 +107,28 @@ padding: 0;
       img {
         width: 170px;
       }
+    }
+  }
+
+  .student-section {
+    position: relative; 
+
+    .student-img {
+      width: 100%;
+    }
+    p {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      color: white;
+      font-size: 1.35rem;
+    }
+    .stuk-logo {
+      position: absolute;
+      width: 110px;
+      top: 
+      5%;
+      left: 5%;
     }
   }
 
