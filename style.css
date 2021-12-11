@@ -18,8 +18,56 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.main-startpage .christmas-banner {
+  width: 100%;
+  border: 2px solid red;
+  min-height: 100px;
+  margin-bottom: 30px;
+}
+
+.main-startpage .christmas-banner .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.main-startpage .christmas-banner .banner .appleLogo {
+  width: 70px;
+  height: 80px;
+}
+
+.main-startpage .christmas-banner .banner p {
+  font-size: 1.3rem;
+}
+
+.main-startpage .christmas-banner .banner p a {
+  color: #b60606;
+}
+
+.main-startpage .christmas-banner .banner p a:active {
+  color: #0a36b9;
+}
+
+.main-startpage .macbook {
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.main-startpage h1, .main-startpage h2 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
 .main-startpage ul {
   text-align: center;
+  max-width: 250px;
   padding: 10px;
   line-height: 1.6;
 }
@@ -28,6 +76,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
 }
 
 .main-startpage .link-container button {
@@ -58,25 +113,26 @@
           flex-direction: column;
 }
 
-.main-startpage .news .page-title {
-  text-align: center;
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-}
-
 .main-startpage .news .product-name {
   font-size: 1.2rem;
 }
 
-.main-startpage .more-news-container {
+.main-startpage .news .iMac {
+  width: 100%;
+}
+
+.main-startpage .more-news .more-news-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
 }
 
-.main-startpage .macbook {
-  margin: 0 auto;
-  padding: 15px;
+.main-startpage .more-news .more-news-container img {
+  width: 170px;
 }
 
 body li, body a {
@@ -157,15 +213,14 @@ body header .fa-bars {
 
 body .products-nav {
   width: 100%;
-  min-height: 50px;
+  min-height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: solid grey 1px;
-  margin-bottom: 20px;
+  background-color: #dde2e7;
 }
 
 body .products-nav .products {
@@ -186,7 +241,7 @@ body .products-nav .products a {
 }
 
 body .products-nav .products a i {
-  margin-bottom: 10px;
+  margin: 15px;
 }
 
 body .products-nav a {
@@ -402,7 +457,7 @@ body .footer {
       justify-content: space-around;
   width: 100%;
   min-height: 150px;
-  padding-top: 15px;
+  padding: 20px;
 }
 
 body .footer .bottom-bar li {

@@ -15,18 +15,15 @@
 </head>
 <body>
       <header class="header">
-<!-- Logga ska läggas in här -->
             <a href="/index.html"><img src="/Loggo.png" alt="Logga"></a>
-            
-<!-- <input class="search-bar" type="text"> -->
 <!-- Länkar till respektive undersida -->
             <nav class="top-nav">
             <ul class="nav-bar">
-
-                  <li class="nav-links"><a href="">OM OSS</a></li>
-                  <li class="nav-links"><a href="">PRODUKTER</a></li>
-                  <li class="nav-links"><a href="/Referenser.html">SUPPORT</a></li>
-                  <li class="nav-links"><a href="">KONTAKT</a></li> 
+                  <!-- PRELIMINÄR HEM IKON <li class="nav-links"><a href="index.html"><i class="fas fa-home"></i></a></li> -->
+                  <li class="nav-links"><a href="Omoss.html">OM OSS</a></li>
+                  <li class="nav-links"><a href="produkter.html">PRODUKTER</a></li>
+                  <li class="nav-links"><a href="/Referenser.html">REFERENSER</a></li>
+                  <li class="nav-links"><a href="Kontakt.html">KONTAKT</a></li> 
 
             </ul>
             <i class="fa fa-bars"></i>
@@ -35,18 +32,26 @@
 <!-- Länkar till respektive produktgrupp -->
       <nav class="products-nav">
             <ul class="products">
-                  <li class="product-links"><a href="#"><i class="fas fa-desktop"></i> Datorer</a></li>
-                  <li class="product-links"><a href="#"><i class="fas fa-laptop"></i> Lap Top</a></li>
-                  <li class="product-links"><a href="#"><i class="fas fa-tablet-alt"></i> Mobil</a></li>
-                  <li class="product-links"><a href="#"><i class="fas fa-mobile-alt"></i> Platta</a></li>
+                  <li class="product-links"><a href="#"><i class="fas fa-desktop"></i> Desktop</a></li>
+                  <li class="product-links"><a href="#"><i class="fas fa-laptop"></i> Laptop</a></li>
+                  <li class="product-links"><a href="#"><i class="fas fa-tablet-alt"></i> Platta</a></li>
+                  <li class="product-links"><a href="#"><i class="fas fa-mobile-alt"></i> Mobil</a></li>
             </ul>
       </nav>
 
 <!-- Huvudinnehållet startar här -->
       <main class="main-startpage">
 <!-- Nyhets sektionen startar här -->
+<section class="christmas-banner">
+      <div class="banner">
+      <img class="appleLogo" src="bilder-startsida/appleLogo.jpeg" alt="apples jullogga">
+      <p><a href="produkter.html"><strong>15 % JULRABATT</strong></br>     
+      På Apple produkter ></a></p>
+</div>
+</section>
       <section class="news">
-            <h1 class="page-title">NYHET!</h1>
+            <h1 class="page-title">NYHETER!</h1>
+            <div class="line"></div>
             <p class="product-name">MacBook Pro 2021</p>
             <img class="macbook" src="bilder-startsida/macbookPro.jpg" alt="macbook-pro dator">
       <ul>
@@ -61,18 +66,35 @@
                   <a href="https://www.apple.com/se/shop/buy-mac/macbook-pro/13-tum" target="_blank">Läs mer ></a>
             </p>
       </div>
+      <p class="product-name">iMac i helt ny, färgstark design! </p>
+      <img class="iMac" src="bilder-startsida/iMac.jpg" alt="iMac desktop dator">
+<ul>
+      <li class="size"><strong>M-1 chip, Retina 4.5K skärm och vävd kabel</strong></li>
+      <li class="price">Från 15 995 kr</li>
+</ul>
+<div class="link-container">
+      <form action="https://www.apple.com/se/shop/buy-mac/macbook-pro/13-tum" target="_blank">
+            <button class="buy-button">Köp</button>
+      </form>
+      <p>
+            <a href="https://www.apple.com/se/shop/buy-mac/macbook-pro/13-tum" target="_blank">Läs mer ></a>
+      </p>
+</div>
       </section>
-      <section class="christmas-banner">
-                  <div class="banner">
-                  <img class="appleLogo" src="bilder-startsida/appleLogo.jpeg" alt="apples jullogga">
-                  <p>Kolla in!</br>
-                  Julklappar hos Apple</p>
-            </div>
-      </section>
+
+<!-- Studenterbjudande sektion -->
+
+<section class="student-section">
+      <!-- <img src="bilder-startsida/studentBild.jpg" alt="Studenter runt ett bord"> -->
+      <div class="text-box">
+            <p class="rabatt-text"></p>
+      </div>
+</section>
 
 <!-- Fler nyheter sektionen startar här-->
             <section class="more-news">
                   <h2>Fler nyheter</h2>
+                  <div class="line"></div>
 <div class="more-news-container">
       <div>
                   <img class="moreNews-image" src="bilder-startsida/iphone.jpg" alt="iPhone">

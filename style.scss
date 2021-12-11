@@ -1,4 +1,6 @@
 
+// MOBILE FIRST, RESPONSIVE LAYOUT
+
 @import "partials/variabler";
 
 * {
@@ -11,7 +13,7 @@ padding: 0;
 .line {
   width: 140px;
   height: 4px;
-  background: #03d7fcdc;
+  background: #03d7fcdc; 
   margin: 10px auto;
   border-radius: 5px;
 }
@@ -22,14 +24,58 @@ padding: 0;
 .main-startpage {
   font-family: $main-font;
 
+  .christmas-banner {
+    width: 100%;
+    border: 2px solid red;
+    min-height: 100px;
+    margin-bottom: 30px;
+    
+    .banner {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 10px;
+
+      .appleLogo {
+        width: 70px;
+        height: 80px;
+      }
+      p {
+        font-size: 1.3rem;
+
+        a {
+          color: rgb(182, 6, 6);
+          &:active {
+            color: rgb(10, 54, 185);
+          }
+        }
+      }
+    }
+  }
+
+   // Första bilden på startsidan
+    .macbook {
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  h1, h2 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
   ul {
     text-align: center;
+    max-width: 250px;
     padding: 10px;
     line-height: 1.6;
   }
 
   .link-container {
     display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
 
     button {
       @include buttonStyle;
@@ -42,26 +88,27 @@ padding: 0;
   .news {
     @include flexCenter;
     flex-direction: column;
-    
-    .page-title {
-      text-align: center;
-      font-size: 1.4rem;
-      margin-bottom: 10px;
-    }
   
     .product-name {
       font-size: 1.2rem;
     } 
+
+    .iMac {
+      width: 100%;
+    }
     
   } 
-  
-  .more-news-container {
-    display: flex;
-  }
-  // Första bilden på startsidan
-  .macbook {
-    margin: 0 auto;
-    padding: 15px;
+
+  .more-news {
+    .more-news-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+
+      img {
+        width: 170px;
+      }
+    }
   }
 
 }
@@ -133,11 +180,10 @@ header,
 
   .products-nav{
   width: 100%;
-  min-height: 50px;
+  min-height: 80px;
   display: flex;
   justify-content: center;
-  border-bottom: solid grey 1px;
-  margin-bottom: 20px;
+  background-color: rgb(221, 226, 231);
   
     .products{
       width: 80%;
@@ -149,7 +195,7 @@ header,
       flex-direction: column;
 
       i {
-        margin-bottom: 10px;
+        margin: 15px;
       }
       }
     }
@@ -304,7 +350,7 @@ header,
     justify-content: space-around;
     width: 100%;
     min-height: 150px;
-    padding-top: 15px;
+    padding: 20px;
 
     .bottom-bar {
 
@@ -314,7 +360,7 @@ header,
   }
     
     .footertider {
-
+    
       i {
         margin:10px;
         margin-bottom: 20px;
