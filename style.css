@@ -203,20 +203,11 @@ body header .top-nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  overflow: hidden;
 }
 
 body header .top-nav .nav-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   display: none;
-}
-
-body header .top-nav .nav-bar li {
-  margin-right: 5px;
-  font-size: 15px;
 }
 
 body header a {
@@ -233,10 +224,10 @@ body header .fa-bars {
   position: absolute;
   top: 30px;
   right: 30px;
-  width: 40px;
   font-size: 30px;
   cursor: pointer;
   display: block;
+  color: black;
 }
 
 body .products-nav {
@@ -506,11 +497,16 @@ body .footer .footertider i {
     display: none;
   }
   body .header .top-nav .nav-bar {
-    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   body .header .top-nav .nav-bar a {
     margin-right: 40px;
     font-size: 1.12rem;
+    white-space: nowrap;
   }
   body .footer {
     -ms-flex-pack: distribute;
