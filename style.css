@@ -118,17 +118,18 @@
 }
 
 .main-startpage .more-news .more-news-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
   margin-top: 40px;
 }
 
 .main-startpage .more-news .more-news-container img {
   width: 170px;
+}
+
+.main-startpage .more-news .more-news-container .galaxy-pro {
+  -webkit-transform: rotate(280deg);
+          transform: rotate(280deg);
 }
 
 .main-startpage .student-section {
@@ -137,6 +138,7 @@
 
 .main-startpage .student-section .student-img {
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .main-startpage .student-section p {
