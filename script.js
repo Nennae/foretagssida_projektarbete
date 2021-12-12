@@ -1,5 +1,7 @@
+// Funktion för hamburger menyn
+
 function hamburgerFunction() {
-      var hamburger = document.getElementById("nav-bar");
+      var hamburger = document.getElementsByClassName("nav-bar");
       if (hamburger.style.display === "block") {
       hamburger.style.display = "none";
       } else {
