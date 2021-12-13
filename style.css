@@ -42,6 +42,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.main-startpage p, .main-startpage ul {
+  line-height: 1.6;
+}
+
 .main-startpage .christmas-banner {
   width: 100%;
   border: 2px solid red;
@@ -53,12 +57,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding: 10px;
 }
 
@@ -94,6 +98,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -101,16 +108,12 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .main-startpage ul {
   text-align: center;
   max-width: 250px;
   padding: 10px;
-  line-height: 1.6;
 }
 
 .main-startpage .link-container {
@@ -204,7 +207,6 @@
   font-size: 1.45rem;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px 3px;
-  line-height: 1.6;
   border-radius: 15px;
 }
 
@@ -224,35 +226,41 @@
 }
 
 @media screen and (min-width: 760px) {
-  .banner a {
+  .main-startpage .banner a {
     font-size: 2rem;
   }
-  .news .news-container .iMac {
+  .main-startpage .news .product-name {
+    font-size: 2rem;
+  }
+  .main-startpage .news .news-container .product-name {
+    margin-bottom: 50px;
+  }
+  .main-startpage .news .news-container .iMac {
     width: 90%;
   }
-  .news .news-container .macbook {
+  .main-startpage .news .news-container .macbook {
     width: 55%;
   }
-  .news h1 {
+  .main-startpage .news h1 {
     font-size: 5rem;
     margin-top: 40px;
   }
-  .news .line {
+  .main-startpage .news .line {
     width: 400px;
     margin-bottom: 80px;
     height: 6px;
   }
-  .student-section .student-img {
+  .main-startpage .student-section .student-img {
     -o-object-fit: cover;
        object-fit: cover;
     height: 500px;
     -o-object-position: 20% 40%;
        object-position: 20% 40%;
   }
-  .student-section .text-box .stuk-logo {
+  .main-startpage .student-section .text-box .stuk-logo {
     width: 200px;
   }
-  .student-section .text-box p {
+  .main-startpage .student-section .text-box p {
     font-size: 2.5rem;
     left: 25%;
     top: 30%;
@@ -881,8 +889,14 @@ body .footer .footertider i {
   margin-top: 20px;
 }
 
-.kontaktmain .maindiv2 .meddelande .kontaktbutton,
-.omossmain .maindiv2 .meddelande .kontaktbutton {
+
+.kontaktmain .maindiv2 .meddelande .button,
+.omossmain .maindiv2 .meddelande .button {
+  margin: 10px 11px 0px 0px;
+  background-color: lightgray;
+  border: solid black 1px;
+  height: 25px;
+  width: 50px;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -1234,8 +1248,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100px;
-  height: 100px;
+
+  width: 150px;
+  height: 150px;
   border: 6px solid lightgrey;
   border-radius: 50%;
   margin-top: 20px;
