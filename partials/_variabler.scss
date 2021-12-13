@@ -3,7 +3,8 @@
 $underline-style: rgb(216, 105, 160); 
 $products-nav-color: rgb(69, 66, 66);
 $buyButton-color: rgb(117, 236, 197);
-$main-font: 'Montserrat', sans-serif;
+// $main-font: 'Montserrat', sans-serif;
+$main-font: 'Dosis', 'sans-serif';
 
 
 // Mixins 
@@ -13,11 +14,12 @@ $main-font: 'Montserrat', sans-serif;
   align-items: center;
 }
 
-@mixin buttonStyle{
+@mixin buyButtonStyle{
   background: $buyButton-color;
   border-radius: 15px;
   border: none;
   padding: 5px 8px;
+  color: black;
   &:hover {
     background: rgb(10, 221, 151);
   }
