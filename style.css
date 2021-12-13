@@ -44,7 +44,7 @@
 }
 
 .main-startpage .christmas-banner .banner p {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   margin-left: 30px;
 }
 
@@ -54,6 +54,10 @@
 
 .main-startpage .christmas-banner .banner p a:active {
   color: #0a33b9;
+}
+
+.main-startpage .christmas-banner .banner p a span:hover {
+  margin-left: 5px;
 }
 
 .main-startpage h1, .main-startpage h2 {
@@ -131,11 +135,7 @@
 }
 
 .main-startpage .news .iMac {
-  width: 100%;
-}
-
-.main-startpage .news .macbook {
-  margin: 20px;
+  width: 90%;
 }
 
 .main-startpage .more-news .more-news-container {
@@ -167,14 +167,28 @@
 .main-startpage .student-section .student-img {
   width: 100%;
   margin-bottom: 50px;
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
 }
 
 .main-startpage .student-section p {
   position: absolute;
-  top: 10%;
-  left: 10%;
+  top: 35%;
+  left: 2%;
   color: white;
-  font-size: 1.35rem;
+  font-size: 1.45rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 3px;
+  line-height: 1.6;
+  border-radius: 15px;
+}
+
+.main-startpage .student-section p a {
+  color: #03d7fcdc;
+}
+
+.main-startpage .student-section p a:hover {
+  text-decoration: underline;
 }
 
 .main-startpage .student-section .stuk-logo {
@@ -203,6 +217,22 @@
     margin-bottom: 80px;
     height: 6px;
   }
+  .student-section .student-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 500px;
+    -o-object-position: 20% 40%;
+       object-position: 20% 40%;
+  }
+  .student-section .text-box .stuk-logo {
+    width: 200px;
+  }
+  .student-section .text-box p {
+    font-size: 2.5rem;
+    left: 25%;
+    top: 30%;
+    padding: 50px 20px;
+  }
 }
 
 body li, body a {
@@ -211,7 +241,7 @@ body li, body a {
 }
 
 body .top-nav a, body .bottom-nav a {
-  color: #22ade9;
+  color: #0591ce;
   font-weight: 700;
 }
 
@@ -335,10 +365,12 @@ body .main.referenser .reviews {
 
 body .main.referenser .reviews h1 {
   width: 100%;
+  font-family: "Montserrat", sans-serif;
 }
 
 body .main.referenser .reviews .review-nav {
   padding: 15px;
+  border-radius: 5px;
   width: 100%;
   background-color: #8A9192;
   margin: 10px 0px;
@@ -354,10 +386,32 @@ body .main.referenser .reviews .review-nav nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+body .main.referenser .reviews .review-nav nav a, body .main.referenser .reviews .review-nav nav p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+body .main.referenser .reviews .review-nav nav a:hover {
+  border-radius: 5px;
+  -webkit-box-shadow: #424242 5px 5px 5px;
+          box-shadow: #424242 5px 5px 5px;
 }
 
 body .main.referenser .reviews .review-wrap {
-  background-color: #E9CCCC;
+  background-color: white;
+  border-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+body .main.referenser .reviews .review-wrap > h2 {
+  font-style: oblique;
+  border-radius: 15px;
+  background-color: white;
+  -webkit-box-shadow: #424242 5px 5px 5px;
+          box-shadow: #424242 5px 5px 5px;
 }
 
 body .main.referenser .reviews .review-wrap h2 {
@@ -373,10 +427,14 @@ body .main.referenser .reviews .review-wrap .customer .private-rev {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #C8EEEC;
+  background-color: #e0f1fd;
   margin: 0px 10px;
+  border-radius: 15px;
+  -webkit-box-shadow: #9e9e9e 5px 5px 5px;
+          box-shadow: #9e9e9e 5px 5px 5px;
   margin-bottom: 20px;
   padding: 5px;
+  border-radius: 15px;
 }
 
 body .main.referenser .reviews .review-wrap .customer .private-rev h2, body .main.referenser .reviews .review-wrap .customer .private-rev h3, body .main.referenser .reviews .review-wrap .customer .private-rev p {
@@ -388,6 +446,20 @@ body .main.referenser .reviews .review-wrap .customer .private-rev h3, body .mai
   text-align: start;
 }
 
+body .main.referenser .reviews .review-wrap .customer .private-rev h3 {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+body .main.referenser .reviews .review-wrap .customer .private-rev p {
+  font-style: oblique;
+}
+
+body .main.referenser .reviews .review-wrap .customer .private-rev:focus {
+  -webkit-box-shadow: #424242 5px 5px 5px;
+          box-shadow: #424242 5px 5px 5px;
+}
+
 body .main.referenser .reviews .review-wrap .company .company-rev {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,10 +469,14 @@ body .main.referenser .reviews .review-wrap .company .company-rev {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #C8EEEC;
+  background-color: #e0f1fd;
   margin: 0px 10px;
+  border-radius: 15px;
+  -webkit-box-shadow: #9e9e9e 5px 5px 5px;
+          box-shadow: #9e9e9e 5px 5px 5px;
   margin-bottom: 20px;
   padding: 5px;
+  border-radius: 15px;
 }
 
 body .main.referenser .reviews .review-wrap .company .company-rev h2, body .main.referenser .reviews .review-wrap .company .company-rev h3, body .main.referenser .reviews .review-wrap .company .company-rev p {
@@ -412,8 +488,22 @@ body .main.referenser .reviews .review-wrap .company .company-rev h3, body .main
   text-align: start;
 }
 
+body .main.referenser .reviews .review-wrap .company .company-rev h3 {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+body .main.referenser .reviews .review-wrap .company .company-rev p {
+  font-style: oblique;
+}
+
+body .main.referenser .reviews .review-wrap .company .company-rev:focus {
+  -webkit-box-shadow: #424242 5px 5px 5px;
+          box-shadow: #424242 5px 5px 5px;
+}
+
 body .main.referenser .reviews .review-wrap .write-review {
-  padding-top: 10px;
+  padding: 15px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -427,6 +517,32 @@ body .main.referenser .reviews .review-wrap .write-review {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: white;
+}
+
+body .main.referenser .reviews .review-wrap .write-review > label {
+  display: block;
+  width: 100%;
+  text-align: start;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+body .main.referenser .reviews .review-wrap .write-review .selections {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+body .main.referenser .reviews .review-wrap .write-review .selections select {
+  margin-right: 10px;
+  height: 30px;
 }
 
 body .main.referenser .reviews .review-wrap .write-review textarea {
@@ -453,6 +569,19 @@ body .main.referenser .reviews .review-wrap .write-review .btn-wrap .submit-btn 
       align-self: flex-end;
   width: 100px;
   height: 40px;
+  background-color: #93ddfd;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 8px;
+  font-size: 1rem;
+  -webkit-box-shadow: #424242 5px 5px 5px;
+          box-shadow: #424242 5px 5px 5px;
+}
+
+body .main.referenser .reviews .review-wrap .write-review .btn-wrap .submit-btn:active {
+  -webkit-box-shadow: #12fa45 5px 5px 5px;
+          box-shadow: #12fa45 5px 5px 5px;
 }
 
 body .main.referenser .reviews .review-wrap .write-review .rate {
@@ -772,16 +901,49 @@ body .footer .footertider i {
   width: 100%;
 }
 
+.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare {
+  position: relative;
+}
+
+.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare .beskrivning {
+  display: none;
+}
+
 .mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover {
   background-color: black;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover .bilddiv {
   visibility: hidden;
 }
 
-.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover div {
+.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover .line {
   background: black;
+}
+
+.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover .beskrivning {
+  background-color: red;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover .beskrivning .text {
+  background-color: purple;
+  width: 100%;
+  color: white;
 }
 
 @media screen and (min-width: 600px) {
