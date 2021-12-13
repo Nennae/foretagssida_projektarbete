@@ -21,11 +21,10 @@
 
 
         <li class="nav-links"><a href="/index.html">HEM</a></li>
-
         <li class="nav-links"><a href="/Omoss.html">OM OSS</a></li>
         <li class="nav-links"><a href="/produkter.html">PRODUKTER</a></li>
         <li class="nav-links"><a href="/Referenser.html">REFERENSER</a></li>
-       <b><li class="nav-links"><a href="/Kontakt.html">KONTAKT</a></li></b> 
+        <li class="nav-links"><a href="/Kontakt.html"><b>KONTAKT</b></a></li>
       </ul>
       <i class="fa fa-bars"></i>
     </nav>
@@ -39,6 +38,26 @@
       <li class="product-links"><a href="#"><i class="fas fa-mobile-alt"></i> Platta</a></li>
     </ul>
   </nav>
+
+  <section class="ham-meny">
+    <nav>
+      <div class="meny-del">
+        <a href="/index.html">HEM</a>
+      </div>
+      <div class="meny-del">
+        <a href="/Omoss.html">OM OSS</a>
+      </div>
+      <div class="meny-del">
+        <a href="/produkter.html">PRODUKTER</a>
+      </div>
+      <div class="meny-del">
+        <a href="/Referenser.html">REFERENSER</a>
+      </div>
+      <div class="meny-del">
+        <a href="/Kontakt.html">KONTAKT</a>
+      </div>
+    </nav>
+  </section>
 
   <main class="kontaktmain">
     <section class="maindiv1">
@@ -103,12 +122,12 @@
     </section>
      
     <section class="maindiv2">
-      <articel class="kontaktaoss meddelande">
+      <div class="kontaktaoss meddelande">
         <div class="undertitel">
           <h2>Skicka meddelande</h2>
         </div>
-        <select name="frågaom" id="frågaom" class="select">Vad handlar din fråga om?
-          <option value="placeholder">Vad handlar din fråga om?</option>
+        <select name="frågaom" id="frågaom" class="select">
+          <option value="placeholder" selected>Vad handlar din fråga om?</option>
           <option value="produkter" class="option">Köp av produkter</option>
           <option value="företaget" class="option">Företaget</option>
           <option value="synpunkter" class="option">Synpunkter på företaget</option>
@@ -124,10 +143,10 @@
         <textarea name="meddelande" id="meddelande" cols="30" rows="10" placeholder="Ditt meddelande"></textarea>
         <!-- <input type="text" id="meddelande" class="input"> -->
 
-        <button class="button">Skicka</button>
-      </articel>
+        <button class="button kontaktbutton">Skicka</button>
+      </div>
 
-      <articel class="kontaktaoss">
+      <div class="kontaktaoss">
         <div class="undertitel">
           <h2>Hitta och kontakta</h2>
         </div>
@@ -138,7 +157,7 @@
         <p>Tomtebodavägen 99a</p>
         <p>info.comptronics@gmail.com</p>
         <p>08-591 564 455</p>
-      </articel>
+      </div>
     </section>
   </main>
 
@@ -157,11 +176,11 @@
       <a href="#"><i class="fab fa-instagram"></i></a> 
       <a href="#"><i class="fab fa-facebook"></i></a>
       <a href="#"><i class="fab fa-youtube"></i></a>
-      <b><p>Våra Öppetider:</p></b>
+      <p><b>Våra Öppetider:</b></p>
       <p>mån - fre: 9-10</p>
       <p>lör - sön: Stängt</p>
-      <p></p>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
