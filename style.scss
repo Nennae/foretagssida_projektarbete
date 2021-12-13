@@ -176,7 +176,7 @@ padding: 0;
 
 // Gemensam styling för alla sidor ( header + footer )
 body {
-
+  // font-family: $main-font; KOLLA VILKEN FONT SOM SKA ANVÄNDAS
   // Samlad styling där mixins används
   li, a {
     @include li-style;
