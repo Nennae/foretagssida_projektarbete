@@ -24,8 +24,8 @@ $main-font: 'Montserrat', sans-serif;
 }
 
 @mixin topBottom-nav-style {
-  color: $topBottom-nav-color;
   font-weight: 700;
+  color: black;
   &:hover {
     text-decoration: underline;
     text-decoration-color: $underline-style;

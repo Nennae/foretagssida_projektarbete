@@ -276,8 +276,8 @@ body a {
 
 body .top-nav a,
 body .bottom-nav a {
-  color: #0591ce;
   font-weight: 700;
+  color: black;
 }
 
 body .top-nav a:hover,
@@ -889,6 +889,7 @@ body .footer .footertider i {
   margin-top: 20px;
 }
 
+
 .kontaktmain .maindiv2 .meddelande .button,
 .omossmain .maindiv2 .meddelande .button {
   margin: 10px 11px 0px 0px;
@@ -1247,6 +1248,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
   width: 150px;
   height: 150px;
   border: 6px solid lightgrey;
