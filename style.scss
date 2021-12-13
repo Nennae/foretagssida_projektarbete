@@ -479,8 +479,7 @@ header,
     display: flex;
     justify-content: space-evenly;
     height: 1100px;
-    background-color: rgb(228, 228, 228);
-
+    background-color: white;
 
     .medarbetar-area{
       display: flex;
@@ -495,17 +494,17 @@ header,
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        width: 100%;
+        width: 100% ;
         background-color: white;
+        border: solid black 3px;
         height: 300px;
         border-radius: 5px;
-        box-shadow: rgb(66, 66, 66) 5px 5px 5px;
       
         .bilddiv{
-          background-color: lightgray;
+          background-color: black;
           width: 125px;
           height: 175px; 
-          border: solid lightgray 5px;
+          border: solid black 3px;
           border-radius: 5px;
 
           img{
@@ -550,8 +549,17 @@ header,
         width: 95%;
         border: solid black 1px;
         margin: 5px 0px 5px 0px;
+        padding: 0px 0px 0px 5px;
       }
-      
+
+      label{
+        margin-top: 5px;
+
+        &#labelmeddelande{
+          margin-top: 20px;
+        }
+      }
+
       .button {
         margin: 10px 11px 0px 0px;
         background-color: lightgray;
@@ -559,8 +567,8 @@ header,
         height: 25px;
         width: 50px;
         align-self: flex-end;
-        
       }
+
       #meddelande{
         height: 100px;
       }
@@ -594,17 +602,20 @@ header,
   
    .maindiv1{
     flex-direction: column;
-    height: 700px;
+    height: 800px;
     width: 100%;
     align-items: center;
     justify-content: space-around;
   
       .medarbetar-area{
       flex-direction: row;
-      width: 100%;
+      width: 50%;
+      justify-content: space-between;
 
       .medarbetare{
-        width: 30%;
+        width: 200px;
+        height: 325px;
+        padding-bottom: 10px;
       }
     }
    }
@@ -620,7 +631,7 @@ header,
       justify-content: center;
 
       .button{
-          margin: 10px 30px 0px 0px;
+          margin: 10px 37px 0px 0px;
         }
 
       input, select{
@@ -630,12 +641,11 @@ header,
       
 
       .bildhus{
-        width: 100%;
-        background-color: red;
+        width: 50%;
         height: 237px;
         display: flex;
         justify-content: center;
-        margin: 0px 0px 20px 0px;
+        margin: 10px 0px 20px 0px;
       }
        
       img{
