@@ -39,7 +39,7 @@
 }
 
 .main-startpage {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Dosis", "sans-serif";
 }
 
 .main-startpage p, .main-startpage ul {
@@ -129,19 +129,30 @@
   margin-bottom: 90px;
 }
 
-.main-startpage .link-container button {
+.main-startpage .link-container .buy-button {
   background: #75ecc5;
   border-radius: 15px;
   border: none;
   padding: 5px 8px;
+  color: black;
 }
 
-.main-startpage .link-container button:hover {
+.main-startpage .link-container .buy-button:hover {
   background: #0add97;
 }
 
-.main-startpage .link-container a {
+.main-startpage .link-container .read-button {
   margin-left: 10px;
+  background: #75ecc5;
+  border-radius: 15px;
+  border: none;
+  padding: 5px 8px;
+  color: black;
+  background: #03d7fcdc;
+}
+
+.main-startpage .link-container .read-button:hover {
+  background: #0add97;
 }
 
 .main-startpage .news {
@@ -364,7 +375,7 @@ body .products-nav .products {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Dosis", "sans-serif";
 }
 
 body .products-nav .products a {
@@ -408,7 +419,7 @@ body .main.referenser .reviews {
 
 body .main.referenser .reviews h1 {
   width: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Dosis", "sans-serif";
 }
 
 body .main.referenser .reviews .review-nav {
@@ -429,7 +440,7 @@ body .main.referenser .reviews .review-nav nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Dosis", "sans-serif";
 }
 
 body .main.referenser .reviews .review-nav nav a,
@@ -447,7 +458,7 @@ body .main.referenser .reviews .review-nav nav a:hover {
 body .main.referenser .reviews .review-wrap {
   background-color: white;
   border-radius: 15px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Dosis", "sans-serif";
 }
 
 body .main.referenser .reviews .review-wrap > h2 {
@@ -563,7 +574,7 @@ body .main.referenser .reviews .review-wrap .write-review > label {
   display: block;
   width: 100%;
   text-align: start;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Dosis", "sans-serif";
   font-style: italic;
   font-weight: bold;
   margin-bottom: 15px;
@@ -896,8 +907,18 @@ body .footer .footertider i {
   margin-top: 20px;
 }
 
+
+.kontaktmain .maindiv2 .meddelande .button,
+.omossmain .maindiv2 .meddelande .button {
+  margin: 10px 11px 0px 0px;
+  background-color: lightgray;
+  border: solid black 1px;
+  height: 25px;
+  width: 50px;
+
 .kontaktmain .maindiv2 .meddelande .kontaktbutton,
 .omossmain .maindiv2 .meddelande .kontaktbutton {
+
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -1095,7 +1116,7 @@ body .footer .footertider i {
   width: 50%;
 }
 
-.hanna {
+body {
   font-family: "Dosis", sans-serif;
   background-color: whitesmoke;
 }
