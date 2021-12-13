@@ -41,13 +41,18 @@ padding: 0;
       }
       
       p {
-        font-size: 1.3rem;
+        font-size: 1.35rem;
         margin-left: 30px;
 
         a {
           color: rgb(182, 6, 6);
           &:active {
             color: rgb(10, 51, 185);
+          }
+          span {
+            &:hover {
+              margin-left: 5px;
+            }
           }
         }
       }
@@ -96,10 +101,7 @@ padding: 0;
     } 
 
     .iMac {
-      width: 100%;
-    }
-    .macbook {
-      margin: 20px;
+      width: 90%;
     }
   } 
 
@@ -122,23 +124,32 @@ padding: 0;
 
   .student-section {
     position: relative; 
-
     .student-img {
       width: 100%;
       margin-bottom: 50px;
+      filter: grayscale(80%);
     }
     p {
       position: absolute;
-      top: 10%;
-      left: 10%;
+      top: 35%;
+      left: 2%;
       color: white;
-      font-size: 1.35rem;
+      font-size: 1.45rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px 3px;
+      line-height: 1.6;
+      border-radius: 15px;
+      a {
+        color: #03d7fcdc;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
     .stuk-logo {
       position: absolute;
       width: 110px;
-      top: 
-      5%;
+      top: 5%;
       left: 5%;
     }
   }
@@ -170,13 +181,31 @@ padding: 0;
         height: 6px;
       }
     }
+    .student-section { 
+      .student-img {
+        object-fit: cover;
+        height: 500px;
+        object-position: 20% 40%;
+      }
+      .text-box { 
+        .stuk-logo {
+          width: 200px;
+        }
+        p {
+          font-size: 2.5rem;
+          left: 25%;
+          top: 30%;
+          padding: 50px 20px;
+        }
+      }
+    }
 }
 // main-startpage slutar här
 
 
 // Gemensam styling för alla sidor ( header + footer )
 body {
-
+  // font-family: $main-font; KOLLA VILKEN FONT SOM SKA ANVÄNDAS
   // Samlad styling där mixins används
   li, a {
     @include li-style;
@@ -421,7 +450,6 @@ header,
               label{
                 align-self: flex-start;
               }
-
           }
             
             .rate:not(:checked) > input {
@@ -536,7 +564,7 @@ header,
 }
 
 //Kontakt styling
-.kontaktmain{
+.kontaktmain , .omossmain{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -660,10 +688,51 @@ header,
   }
 }
 
+// Om oss styling
+
+.mainomoss {
+
+  .omossSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+
+    .linje {
+      width: 70%;
+      height: 1px;
+      background: black;
+      margin-bottom: 10px;
+    }
+
+    .omosstext {
+      width: 100%;
+    }
+  }
+
+  .omossmain {
+    .maindiv1 {
+      .medarbetar-area {
+        .medarbetare:hover { 
+          background-color: black;
+
+          .bilddiv {
+            visibility: hidden;
+          }
+          div {
+            background: black;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 @media screen and (min-width:600px){
 
- .kontaktmain{
+ .kontaktmain , .omossmain {
    height: auto;
    justify-content: space-between;
    align-items: center;
@@ -723,4 +792,14 @@ header,
     }
   }
 }
+}
+
+// Om oss styling
+
+.mainomoss {
+  .omossSection {
+    .omosstext {
+      width: 50%;
+    }
+  }
 }
