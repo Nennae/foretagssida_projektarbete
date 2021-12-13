@@ -1,67 +1,4 @@
-.omoss .mainOmoss {
-  height: 100%;
-}
-
-.omoss .mainOmoss section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 20px;
-  padding: 20px;
-}
-
-.omoss .mainOmoss section .linje {
-  width: 70%;
-  height: 1px;
-  background: black;
-  margin-bottom: 10px;
-}
-
-.omoss .mainOmoss section .image {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 15px;
-}
-
-.omoss .mainOmoss section .image .anst {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.omoss .mainOmoss section .image .anst * {
-  margin-top: 4px;
-}
-
-.omoss .mainOmoss section .image img {
-  max-width: 60%;
-  margin-top: 10px;
-}
-
-@media screen and (min-width: 760px) {
-  .omoss .mainOmoss section .text {
-    max-width: 80%;
-  }
-}
-
+@charset "UTF-8";
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -69,7 +6,62 @@
   padding: 0;
 }
 
-.news {
+.line {
+  width: 140px;
+  height: 4px;
+  background: #03d7fcdc;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.main-startpage {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-startpage .christmas-banner {
+  width: 100%;
+  border: 2px solid red;
+  min-height: 100px;
+  margin-bottom: 30px;
+}
+
+.main-startpage .christmas-banner .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.main-startpage .christmas-banner .banner .appleLogo {
+  width: 70px;
+  height: 80px;
+}
+
+.main-startpage .christmas-banner .banner p {
+  font-size: 1.3rem;
+  margin-left: 30px;
+}
+
+.main-startpage .christmas-banner .banner p a {
+  color: #b60606;
+}
+
+.main-startpage .christmas-banner .banner p a:active {
+  color: #0a33b9;
+}
+
+.main-startpage h1, .main-startpage h2 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.main-startpage .news-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,52 +69,140 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Montserrat", sans-serif;
 }
 
-.news .page-title {
+.main-startpage ul {
   text-align: center;
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-}
-
-.news .product-name {
-  font-size: 1.2rem;
-}
-
-.news ul {
-  text-align: center;
+  max-width: 250px;
   padding: 10px;
   line-height: 1.6;
 }
 
-.news .link-container {
+.main-startpage .link-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 90px;
 }
 
-.news .link-container button {
+.main-startpage .link-container button {
   background: #75ecc5;
   border-radius: 15px;
   border: none;
   padding: 5px 8px;
 }
 
-.news .link-container button:hover {
+.main-startpage .link-container button:hover {
   background: #0add97;
 }
 
-.news .link-container a {
+.main-startpage .link-container a {
   margin-left: 10px;
 }
 
-.macbook {
-  margin: 0 auto;
-  padding: 15px;
+.main-startpage .news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-startpage .news .product-name {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+.main-startpage .news .iMac {
+  width: 100%;
+}
+
+.main-startpage .news .macbook {
+  margin: 20px;
+}
+
+.main-startpage .more-news .more-news-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 60px;
+}
+
+.main-startpage .more-news .more-news-container img {
+  width: 160px;
+}
+
+.main-startpage .more-news .more-news-container .galaxy-pro {
+  -webkit-transform: rotate(280deg);
+          transform: rotate(280deg);
+  margin-bottom: 13px;
+}
+
+.main-startpage .student-section {
+  position: relative;
+}
+
+.main-startpage .student-section .student-img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.main-startpage .student-section p {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: white;
+  font-size: 1.35rem;
+}
+
+.main-startpage .student-section .stuk-logo {
+  position: absolute;
+  width: 110px;
+  top: 5%;
+  left: 5%;
+}
+
+@media screen and (min-width: 760px) {
+  .banner a {
+    font-size: 2rem;
+  }
+  .news .news-container .iMac {
+    width: 90%;
+  }
+  .news .news-container .macbook {
+    width: 55%;
+  }
+  .news h1 {
+    font-size: 5rem;
+    margin-top: 40px;
+  }
+  .news .line {
+    width: 400px;
+    margin-bottom: 80px;
+    height: 6px;
+  }
 }
 
 body li, body a {
@@ -165,20 +245,11 @@ body header .top-nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  overflow: hidden;
 }
 
 body header .top-nav .nav-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  visibility: hidden;
-}
-
-body header .top-nav .nav-bar li {
-  margin-right: 5px;
-  font-size: 15px;
+  display: none;
 }
 
 body header a {
@@ -195,23 +266,22 @@ body header .fa-bars {
   position: absolute;
   top: 30px;
   right: 30px;
-  width: 40px;
   font-size: 30px;
   cursor: pointer;
   display: block;
+  color: black;
 }
 
 body .products-nav {
   width: 100%;
-  min-height: 50px;
+  min-height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: solid grey 1px;
-  margin-bottom: 20px;
+  background-color: #dde2e7;
 }
 
 body .products-nav .products {
@@ -232,7 +302,7 @@ body .products-nav .products a {
 }
 
 body .products-nav .products a i {
-  margin-bottom: 10px;
+  margin: 15px;
 }
 
 body .products-nav a {
@@ -241,6 +311,199 @@ body .products-nav a {
 
 body .main {
   height: 600px;
+}
+
+body .main.referenser {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 20px;
+}
+
+body .main.referenser .reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .main.referenser .reviews h1 {
+  width: 100%;
+}
+
+body .main.referenser .reviews .review-nav {
+  padding: 15px;
+  width: 100%;
+  background-color: #8A9192;
+  margin: 10px 0px;
+}
+
+body .main.referenser .reviews .review-nav nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main.referenser .reviews .review-wrap {
+  background-color: #E9CCCC;
+}
+
+body .main.referenser .reviews .review-wrap h2 {
+  margin: 15px;
+}
+
+body .main.referenser .reviews .review-wrap .customer .private-rev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #C8EEEC;
+  margin: 0px 10px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+body .main.referenser .reviews .review-wrap .customer .private-rev h2, body .main.referenser .reviews .review-wrap .customer .private-rev h3, body .main.referenser .reviews .review-wrap .customer .private-rev p {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+body .main.referenser .reviews .review-wrap .customer .private-rev h3, body .main.referenser .reviews .review-wrap .customer .private-rev p {
+  text-align: start;
+}
+
+body .main.referenser .reviews .review-wrap .company .company-rev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #C8EEEC;
+  margin: 0px 10px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+body .main.referenser .reviews .review-wrap .company .company-rev h2, body .main.referenser .reviews .review-wrap .company .company-rev h3, body .main.referenser .reviews .review-wrap .company .company-rev p {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+body .main.referenser .reviews .review-wrap .company .company-rev h3, body .main.referenser .reviews .review-wrap .company .company-rev p {
+  text-align: start;
+}
+
+body .main.referenser .reviews .review-wrap .write-review {
+  padding-top: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: white;
+}
+
+body .main.referenser .reviews .review-wrap .write-review textarea {
+  width: 50%;
+}
+
+body .main.referenser .reviews .review-wrap .write-review .btn-wrap {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main.referenser .reviews .review-wrap .write-review .btn-wrap .submit-btn {
+  display: block;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100px;
+  height: 40px;
+}
+
+body .main.referenser .reviews .review-wrap .write-review .rate {
+  display: inline-block;
+  height: 46px;
+  padding: 0 10px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  top: 0px;
+}
+
+body .main.referenser .reviews .review-wrap .write-review .rate label {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+body .main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+
+body .main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > label {
+  float: right;
+  width: 0.8em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+
+body .main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > label:before {
+  content: '★';
+}
+
+body .main.referenser .reviews .review-wrap .write-review .rate > input:checked ~ label {
+  color: #ffc700;
+}
+
+body .main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > label:hover,
+body .main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+
+body .main.referenser .reviews .review-wrap .write-review .rate > input:checked + label:hover,
+body .main.referenser .reviews .review-wrap .write-review .rate > input:checked + label:hover ~ label,
+body .main.referenser .reviews .review-wrap .write-review .rate > input:checked ~ label:hover,
+body .main.referenser .reviews .review-wrap .write-review .rate > input:checked ~ label:hover ~ label,
+body .main.referenser .reviews .review-wrap .write-review .rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
 }
 
 body .footer {
@@ -255,7 +518,7 @@ body .footer {
       justify-content: space-around;
   width: 100%;
   min-height: 150px;
-  padding-top: 15px;
+  padding: 20px;
 }
 
 body .footer .bottom-bar li {
@@ -269,6 +532,9 @@ body .footer .footertider i {
 }
 
 @media screen and (min-width: 760px) {
+  body .header {
+    height: 170px;
+  }
   body .header img {
     margin-left: 50px;
   }
@@ -276,11 +542,16 @@ body .footer .footertider i {
     display: none;
   }
   body .header .top-nav .nav-bar {
-    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   body .header .top-nav .nav-bar a {
     margin-right: 40px;
-    font-size: 1.12rem;
+    font-size: 1.4rem;
+    white-space: nowrap;
   }
   body .footer {
     -ms-flex-pack: distribute;
@@ -296,5 +567,301 @@ body .footer .footertider i {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+
+.kontaktmain, .omossmain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: auto;
+  display: flex;
+}
+
+.kontaktmain .maindiv1, .omossmain .maindiv1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 1100px;
+  background-color: white;
+}
+
+.kontaktmain .maindiv1 .medarbetar-area, .omossmain .maindiv1 .medarbetar-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 45%;
+  height: auto;
+}
+
+.kontaktmain .maindiv1 .medarbetar-area .medarbetare, .omossmain .maindiv1 .medarbetar-area .medarbetare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: white;
+  border: solid black 3px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.kontaktmain .maindiv1 .medarbetar-area .medarbetare .bilddiv, .omossmain .maindiv1 .medarbetar-area .medarbetare .bilddiv {
+  background-color: black;
+  width: 125px;
+  height: 175px;
+  border: solid black 3px;
+  border-radius: 5px;
+}
+
+.kontaktmain .maindiv1 .medarbetar-area .medarbetare .bilddiv img, .omossmain .maindiv1 .medarbetar-area .medarbetare .bilddiv img {
+  height: 100%;
+  width: 100%;
+}
+
+.kontaktmain .maindiv2, .omossmain .maindiv2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  margin-bottom: 20px;
+  border-top: solid black 1px;
+}
+
+.kontaktmain .maindiv2 h2, .omossmain .maindiv2 h2 {
+  font-size: 23px;
+}
+
+.kontaktmain .maindiv2 .kontaktaoss, .omossmain .maindiv2 .kontaktaoss {
+  height: 175px;
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.kontaktmain .maindiv2 .meddelande, .omossmain .maindiv2 .meddelande {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 350px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.kontaktmain .maindiv2 .meddelande select, .kontaktmain .maindiv2 .meddelande input, .kontaktmain .maindiv2 .meddelande textarea, .omossmain .maindiv2 .meddelande select, .omossmain .maindiv2 .meddelande input, .omossmain .maindiv2 .meddelande textarea {
+  background-color: lightgray;
+  width: 95%;
+  border: solid black 1px;
+  margin: 5px 0px 5px 0px;
+  padding: 0px 0px 0px 5px;
+}
+
+.kontaktmain .maindiv2 .meddelande label, .omossmain .maindiv2 .meddelande label {
+  margin-top: 5px;
+}
+
+.kontaktmain .maindiv2 .meddelande label#labelmeddelande, .omossmain .maindiv2 .meddelande label#labelmeddelande {
+  margin-top: 20px;
+}
+
+.kontaktmain .maindiv2 .meddelande .button, .omossmain .maindiv2 .meddelande .button {
+  margin: 10px 11px 0px 0px;
+  background-color: lightgray;
+  border: solid black 1px;
+  height: 25px;
+  width: 50px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.kontaktmain .maindiv2 .meddelande #meddelande, .omossmain .maindiv2 .meddelande #meddelande {
+  height: 100px;
+}
+
+.kontaktmain .bildhus, .omossmain .bildhus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+  width: 175px;
+  margin: 30px 0px;
+}
+
+.kontaktmain .bildhus img, .omossmain .bildhus img {
+  margin: 20px 0px 0px 10px;
+  width: 100%;
+  height: 100%;
+  margin: 50px 0px;
+}
+
+.mainomoss .omossSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.mainomoss .omossSection .linje {
+  width: 70%;
+  height: 1px;
+  background: black;
+  margin-bottom: 10px;
+}
+
+.mainomoss .omossSection .omosstext {
+  width: 100%;
+}
+
+.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover {
+  background-color: black;
+}
+
+.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover .bilddiv {
+  visibility: hidden;
+}
+
+.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover div {
+  background: black;
+}
+
+@media screen and (min-width: 600px) {
+  .kontaktmain, .omossmain {
+    height: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .kontaktmain .maindiv1, .omossmain .maindiv1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 800px;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .kontaktmain .maindiv1 .medarbetar-area, .omossmain .maindiv1 .medarbetar-area {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 50%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .kontaktmain .maindiv1 .medarbetar-area .medarbetare, .omossmain .maindiv1 .medarbetar-area .medarbetare {
+    width: 200px;
+    height: 325px;
+    padding-bottom: 10px;
+  }
+  .kontaktmain .maindiv2, .omossmain .maindiv2 {
+    height: 475px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .kontaktmain .maindiv2 .kontaktaoss, .omossmain .maindiv2 .kontaktaoss {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 475px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .kontaktmain .maindiv2 .kontaktaoss .button, .omossmain .maindiv2 .kontaktaoss .button {
+    margin: 10px 37px 0px 0px;
+  }
+  .kontaktmain .maindiv2 .kontaktaoss input, .kontaktmain .maindiv2 .kontaktaoss select, .omossmain .maindiv2 .kontaktaoss input, .omossmain .maindiv2 .kontaktaoss select {
+    height: 25px;
+  }
+  .kontaktmain .maindiv2 .kontaktaoss .bildhus, .omossmain .maindiv2 .kontaktaoss .bildhus {
+    width: 50%;
+    height: 237px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px 0px 20px 0px;
+  }
+  .kontaktmain .maindiv2 .kontaktaoss img, .omossmain .maindiv2 .kontaktaoss img {
+    width: 100%;
+    height: 237px;
+  }
+}
+
+.mainomoss .omossSection .omosstext {
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

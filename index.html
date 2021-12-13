@@ -15,40 +15,52 @@
 </head>
 <body>
       <header class="header">
-<!-- Logga ska läggas in här -->
             <a href="/index.html"><img src="/Loggo.png" alt="Logga"></a>
-            
-<!-- <input class="search-bar" type="text"> -->
 <!-- Länkar till respektive undersida -->
             <nav class="top-nav">
             <ul class="nav-bar">
-
-                  <li class="nav-links"><a href="">OM OSS</a></li>
-                  <li class="nav-links"><a href="">PRODUKTER</a></li>
-                  <li class="nav-links"><a href="">SUPPORT</a></li>
-                  <li class="nav-links"><a href="">KONTAKT</a></li> 
-
+                        <li class="nav-links"><a href="index.html">HEM</a></li>
+                  <li class="nav-links"><a href="Omoss.html">OM OSS</a></li>
+                  <li class="nav-links"><a href="produkter.html">PRODUKTER</a></li>
+                  <li class="nav-links"><a href="/Referenser.html">REFERENSER</a></li>
+                  <li class="nav-links"><a href="Kontakt.html">KONTAKT</a></li> 
             </ul>
-            <i class="fa fa-bars"></i>
+<!--  Ska fälla ut en meny med top-nav länkarna "onclick"  -->
+      <a href="javascript:void(0);" class="icon" onclick="hamburgerFunction()">
+      <i class="fa fa-bars"></i>
+      </a>
             </nav>
       </header>
+
 <!-- Länkar till respektive produktgrupp -->
       <nav class="products-nav">
             <ul class="products">
-                  <li class="product-links"><a href="#"><i class="fas fa-desktop"></i> Datorer</a></li>
-                  <li class="product-links"><a href="#"><i class="fas fa-laptop"></i> Lap Top</a></li>
-                  <li class="product-links"><a href="#"><i class="fas fa-tablet-alt"></i> Mobil</a></li>
-                  <li class="product-links"><a href="#"><i class="fas fa-mobile-alt"></i> Platta</a></li>
+                  <li class="product-links"><a href="#"><i class="fas fa-desktop"></i> Desktop</a></li>
+                  <li class="product-links"><a href="#"><i class="fas fa-laptop"></i> Laptop</a></li>
+                  <li class="product-links"><a href="#"><i class="fas fa-tablet-alt"></i> Platta</a></li>
+                  <li class="product-links"><a href="#"><i class="fas fa-mobile-alt"></i> Mobil</a></li>
             </ul>
       </nav>
 
 <!-- Huvudinnehållet startar här -->
-      <main class="main">
+      <main class="main-startpage">
+<!-- Julerbjudande Banner startar här -->
+<section class="christmas-banner">
+      <div class="banner">
+      <img class="appleLogo" src="bilder-startsida/appleLogo.jpeg" alt="apples jullogga">
+      <p><a href="produkter.html"><strong>15 % JULRABATT</strong> - På Apple produkter ></a></p>
+</div>
+</section>
+
 <!-- Nyhets sektionen startar här -->
       <section class="news">
-            <h1 class="page-title">NYHET!</h1>
+            <h1 class="page-title">NYHETER</h1>
+            <div class="line"></div>
+            <div class="news-container">
+            <div class="news-box">
             <p class="product-name">MacBook Pro 2021</p>
             <img class="macbook" src="bilder-startsida/macbookPro (kopia).jpg" alt="macbook-pro dator">
+<!-- Undertext, knapp samt länk under bilden -->
       <ul>
             <li class="size">13 tum <strong>Bärbar kraft</strong></li>
             <li class="price">Från 15 995 kr</li>
@@ -61,18 +73,108 @@
                   <a href="https://www.apple.com/se/shop/buy-mac/macbook-pro/13-tum" target="_blank">Läs mer ></a>
             </p>
       </div>
+</div>
+<!-- Andra produkten i nyhets sektionen -->
+<div class="news-box">
+      <p class="product-name">iMac i helt ny, färgstark design! </p>
+      <img class="iMac" src="bilder-startsida/iMac.jpg" alt="iMac desktop dator">
+<!-- Undertext, knapp samt länk under bilden -->
+<ul>
+      <li class="size">24 tum <strong>Med M-1 chip och Retina 4.5K skärm</strong></li>
+      <li class="price">Från 15 995 kr</li>
+</ul>
+<div class="link-container">
+      <form action="https://www.apple.com/se/shop/buy-mac/macbook-pro/13-tum" target="_blank">
+            <button class="buy-button">Köp</button>
+      </form>
+      <p>
+            <a href="https://www.apple.com/se/shop/buy-mac/macbook-pro/13-tum" target="_blank">Läs mer ></a>
+      </p>
+</div>
+</div>
+</div>
       </section>
 
-<!-- Erbjudande sektionen startar här-->
-            <section class="offers">
-                  <div class="offer-container">
-                        <img class="offer-image" src="" alt="">
-                        <p class="offer-text"></p>
+<!-- Studenterbjudande sektion -->
+<section class="student-section">
+      <img class="student-img" src="bilder-startsida/studentBild.jpg" alt="Studenter runt ett bord">
+      <div class="text-box">
+            <img class="stuk-logo" src="bilder-startsida/stuk-logo.jpg" alt="studentkortets logga">
+            <!-- <p class="rabatt-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p> -->
+      </div>
+</section>
+
+<!-- Fler nyheter sektionen startar här-->
+            <section class="more-news">
+                  <h2>Fler nyheter</h2>
+                  <div class="line"></div>
+<div class="more-news-container">
+      <div>
+                  <img class="moreNews-image" src="bilder-startsida/iphone.jpg" alt="iPhone">
+<!-- Undertext, knapp samt länk under bilden -->
+                  <ul>
+                        <li class="size"><strong>iPhone 13 </strong></br>Din nya Superkraft</li>
+            <li class="price">Från 8 595 kr</li>
+      </ul>
+      <div class="link-container">
+            <form action="https://www.apple.com/se/shop/buy-mac/macbook-pro/13-tum" target="_blank">
+                  <button class="buy-button">Köp</button>
+            </form>
+            <p>
+                  <a href="https://www.apple.com/se/shop/buy-mac/macbook-pro/13-tum" target="_blank">Läs mer ></a>
+            </p>
                   </div>
-                        <div class="offer-container">
-                        <img class="offer-image" src="" alt="">
-                  <p class="offer-text"></p>
             </div>
+            <div>
+                  <img class="moreNews-image" src="bilder-startsida/ipadErbjudande.jpg" alt="iPad">
+<!-- Undertext, knapp samt länk under bilden -->
+                        <ul>
+                        <li class="size"><strong>iPad Ai</strong></br>
+                                    Kraftfull och Praktfull</li>
+                        <li class="price">Från 7 075 kr</li>
+                  </ul>
+                  <div class="link-container">
+                        <form action="https://www.apple.com/se/shop/buy-mac/macbook-pro/13-tum" target="_blank">
+                              <button class="buy-button">Köp</button>
+                        </form>
+                        <p>
+                              <a href="https://www.apple.com/se/shop/buy-mac/macbook-pro/13-tum" target="_blank">Läs mer ></a>
+                        </p>
+                  </div>
+            </div>
+            <div>
+                        <img class="moreNews-image" src="bilder-startsida/samsung-s21.jpg" alt="Samsung Galaxy s21">
+      <!-- Undertext, knapp samt länk under bilden -->
+                        <ul>
+                              <li class="size"><strong>Samsung Galaxy s21</strong></br>Din nya Superkraft</li>
+                  <li class="price">Från 12 390 kr</li>
+            </ul>
+            <div class="link-container">
+                  <form action="https://www.apple.com/se/shop/buy-mac/macbook-pro/13-tum" target="_blank">
+                        <button class="buy-button">Köp</button>
+                  </form>
+                  <p>
+                        <a href="https://www.apple.com/se/shop/buy-mac/macbook-pro/13-tum" target="_blank">Läs mer ></a>
+                  </p>
+                        </div>
+                  </div>
+                  <div>
+                              <img class="galaxy-pro" src="bilder-startsida/samsung-pro.jpeg" alt="Samsung Pro Dator">
+            <!-- Undertext, knapp samt länk under bilden -->
+                              <ul>
+                                    <li class="size"><strong>Galaxy Book Pro</strong></br>Din nya Superkraft</li>
+                        <li class="price">Från 11 490 kr</li>
+                  </ul>
+                  <div class="link-container">
+                        <form action="https://www.apple.com/se/shop/buy-mac/macbook-pro/13-tum" target="_blank">
+                              <button class="buy-button">Köp</button>
+                        </form>
+                        <p>
+                              <a href="https://www.apple.com/se/shop/buy-mac/macbook-pro/13-tum" target="_blank">Läs mer ></a>
+                        </p>
+                              </div>
+                        </div>
+      </div>
             </section>
       </main>
 <!-- Sidfot startar här  -->
@@ -80,10 +182,10 @@
 <!-- socialmedia, öppettider, navigation till undersidor -->
                   <nav class="bottom-nav">
                         <ul class="bottom-bar">
-                              <li class="nav-links"><a href="#">OM OSS</a></li>
-                              <li class="nav-links"><a href="#">PRODUKTER</a></li>
-                              <li class="nav-links"><a href="#">SUPPORT</a></li>
-                              <li class="nav-links"><a href="#">KONTAKT</a></li> 
+                              <li class="nav-links"><a href="Omoss.html">OM OSS</a></li>
+                              <li class="nav-links"><a href="produkter.html">PRODUKTER</a></li>
+                              <li class="nav-links"><a href="Referenser.html">REFERENSER</a></li>
+                              <li class="nav-links"><a href="Kontakt.html">KONTAKT</a></li> 
                         </ul>
                         </nav>
 
@@ -91,11 +193,13 @@
                               <a href="#"><i class="fab fa-instagram"></i></a> 
                               <a href="#"><i class="fab fa-facebook"></i></a>
                               <a href="#"><i class="fab fa-youtube"></i></a>
-                              <b><p>Våra Öppetider:</p></b>
+                              <p><strong>Våra Öppetider:</strong></p>
                               <p>mån - fre: 9-10</p>
                               <p>lör - sön: Stängt</p>
                               <p></p>
                         </div>
       </footer>
+
+      <script src="script.js"></script>
 </body>
 </html>
