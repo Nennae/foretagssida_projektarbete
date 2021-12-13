@@ -1,9 +1,8 @@
 // Färger till texter, bakgrunder och styles, font-familjer
 
-$topBottom-nav-color: rgb(5, 145, 206);
 $underline-style: rgb(216, 105, 160); 
 $products-nav-color: rgb(69, 66, 66);
-$button-color: rgb(117, 236, 197);
+$buyButton-color: rgb(117, 236, 197);
 $main-font: 'Montserrat', sans-serif;
 
 
@@ -15,7 +14,7 @@ $main-font: 'Montserrat', sans-serif;
 }
 
 @mixin buttonStyle{
-  background: $button-color;
+  background: $buyButton-color;
   border-radius: 15px;
   border: none;
   padding: 5px 8px;
