@@ -561,7 +561,7 @@ header,
 }
 
 //Kontakt styling
-.kontaktmain{
+.kontaktmain , .omossmain{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -685,10 +685,51 @@ header,
   }
 }
 
+// Om oss styling
+
+.mainomoss {
+
+  .omossSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+
+    .linje {
+      width: 70%;
+      height: 1px;
+      background: black;
+      margin-bottom: 10px;
+    }
+
+    .omosstext {
+      width: 100%;
+    }
+  }
+
+  .omossmain {
+    .maindiv1 {
+      .medarbetar-area {
+        .medarbetare:hover { 
+          background-color: black;
+
+          .bilddiv {
+            visibility: hidden;
+          }
+          div {
+            background: black;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 @media screen and (min-width:600px){
 
- .kontaktmain{
+ .kontaktmain , .omossmain {
    height: auto;
    justify-content: space-between;
    align-items: center;
@@ -748,4 +789,14 @@ header,
     }
   }
 }
+}
+
+// Om oss styling
+
+.mainomoss {
+  .omossSection {
+    .omosstext {
+      width: 50%;
+    }
+  }
 }
