@@ -1,6 +1,5 @@
 // Färger till texter, bakgrunder och styles, font-familjer
 
-$topBottom-nav-color: rgb(5, 145, 206);
 $underline-style: rgb(216, 105, 160); 
 $products-nav-color: rgb(69, 66, 66);
 $button-color: rgb(117, 236, 197);
@@ -25,8 +24,8 @@ $main-font: 'Montserrat', sans-serif;
 }
 
 @mixin topBottom-nav-style {
-  color: $topBottom-nav-color;
   font-weight: 700;
+  color: black;
   &:hover {
     text-decoration: underline;
     text-decoration-color: $underline-style;
