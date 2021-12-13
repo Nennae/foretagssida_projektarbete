@@ -18,8 +18,68 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.main-startpage .christmas-banner {
+  width: 100%;
+  border: 2px solid red;
+  min-height: 100px;
+  margin-bottom: 30px;
+}
+
+.main-startpage .christmas-banner .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.main-startpage .christmas-banner .banner .appleLogo {
+  width: 70px;
+  height: 80px;
+}
+
+.main-startpage .christmas-banner .banner p {
+  font-size: 1.3rem;
+  margin-left: 30px;
+}
+
+.main-startpage .christmas-banner .banner p a {
+  color: #b60606;
+}
+
+.main-startpage .christmas-banner .banner p a:active {
+  color: #0a33b9;
+}
+
+.main-startpage h1, .main-startpage h2 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.main-startpage .news-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .main-startpage ul {
   text-align: center;
+  max-width: 250px;
   padding: 10px;
   line-height: 1.6;
 }
@@ -28,6 +88,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 90px;
 }
 
 .main-startpage .link-container button {
@@ -58,25 +125,84 @@
           flex-direction: column;
 }
 
-.main-startpage .news .page-title {
-  text-align: center;
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-}
-
 .main-startpage .news .product-name {
   font-size: 1.2rem;
+  margin: 10px;
 }
 
-.main-startpage .more-news-container {
+.main-startpage .news .iMac {
+  width: 100%;
+}
+
+.main-startpage .news .macbook {
+  margin: 20px;
+}
+
+.main-startpage .more-news .more-news-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 60px;
 }
 
-.main-startpage .macbook {
-  margin: 0 auto;
-  padding: 15px;
+.main-startpage .more-news .more-news-container img {
+  width: 160px;
+}
+
+.main-startpage .more-news .more-news-container .galaxy-pro {
+  -webkit-transform: rotate(280deg);
+          transform: rotate(280deg);
+  margin-bottom: 13px;
+}
+
+.main-startpage .student-section {
+  position: relative;
+}
+
+.main-startpage .student-section .student-img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.main-startpage .student-section p {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: white;
+  font-size: 1.35rem;
+}
+
+.main-startpage .student-section .stuk-logo {
+  position: absolute;
+  width: 110px;
+  top: 5%;
+  left: 5%;
+}
+
+@media screen and (min-width: 760px) {
+  .banner a {
+    font-size: 2rem;
+  }
+  .news .news-container .iMac {
+    width: 90%;
+  }
+  .news .news-container .macbook {
+    width: 55%;
+  }
+  .news h1 {
+    font-size: 5rem;
+    margin-top: 40px;
+  }
+  .news .line {
+    width: 400px;
+    margin-bottom: 80px;
+    height: 6px;
+  }
 }
 
 body li, body a {
@@ -119,20 +245,11 @@ body header .top-nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  overflow: hidden;
 }
 
 body header .top-nav .nav-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  visibility: hidden;
-}
-
-body header .top-nav .nav-bar li {
-  margin-right: 5px;
-  font-size: 15px;
+  display: none;
 }
 
 body header a {
@@ -149,23 +266,22 @@ body header .fa-bars {
   position: absolute;
   top: 30px;
   right: 30px;
-  width: 40px;
   font-size: 30px;
   cursor: pointer;
   display: block;
+  color: black;
 }
 
 body .products-nav {
   width: 100%;
-  min-height: 50px;
+  min-height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: solid grey 1px;
-  margin-bottom: 20px;
+  background-color: #dde2e7;
 }
 
 body .products-nav .products {
@@ -186,7 +302,7 @@ body .products-nav .products a {
 }
 
 body .products-nav .products a i {
-  margin-bottom: 10px;
+  margin: 15px;
 }
 
 body .products-nav a {
@@ -501,7 +617,7 @@ body .footer {
       justify-content: space-around;
   width: 100%;
   min-height: 150px;
-  padding-top: 15px;
+  padding: 20px;
 }
 
 body .footer .bottom-bar li {
@@ -515,6 +631,9 @@ body .footer .footertider i {
 }
 
 @media screen and (min-width: 760px) {
+  body .header {
+    height: 170px;
+  }
   body .header img {
     margin-left: 50px;
   }
@@ -522,11 +641,16 @@ body .footer .footertider i {
     display: none;
   }
   body .header .top-nav .nav-bar {
-    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   body .header .top-nav .nav-bar a {
     margin-right: 40px;
-    font-size: 1.12rem;
+    font-size: 1.4rem;
+    white-space: nowrap;
   }
   body .footer {
     -ms-flex-pack: distribute;
@@ -567,7 +691,7 @@ body .footer .footertider i {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 1100px;
-  background-color: #e4e4e4;
+  background-color: white;
 }
 
 .kontaktmain .maindiv1 .medarbetar-area {
@@ -603,17 +727,16 @@ body .footer .footertider i {
           align-items: center;
   width: 100%;
   background-color: white;
+  border: solid black 3px;
   height: 300px;
   border-radius: 5px;
-  -webkit-box-shadow: #424242 5px 5px 5px;
-          box-shadow: #424242 5px 5px 5px;
 }
 
 .kontaktmain .maindiv1 .medarbetar-area .medarbetare .bilddiv {
-  background-color: lightgray;
+  background-color: black;
   width: 125px;
   height: 175px;
-  border: solid lightgray 5px;
+  border: solid black 3px;
   border-radius: 5px;
 }
 
@@ -675,6 +798,15 @@ body .footer .footertider i {
   width: 95%;
   border: solid black 1px;
   margin: 5px 0px 5px 0px;
+  padding: 0px 0px 0px 5px;
+}
+
+.kontaktmain .maindiv2 .meddelande label {
+  margin-top: 5px;
+}
+
+.kontaktmain .maindiv2 .meddelande label#labelmeddelande {
+  margin-top: 20px;
 }
 
 .kontaktmain .maindiv2 .meddelande .button {
@@ -728,7 +860,7 @@ body .footer .footertider i {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 700px;
+    height: 800px;
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -741,10 +873,15 @@ body .footer .footertider i {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 100%;
+    width: 50%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .kontaktmain .maindiv1 .medarbetar-area .medarbetare {
-    width: 30%;
+    width: 200px;
+    height: 325px;
+    padding-bottom: 10px;
   }
   .kontaktmain .maindiv2 {
     height: 475px;
@@ -763,14 +900,13 @@ body .footer .footertider i {
             justify-content: center;
   }
   .kontaktmain .maindiv2 .kontaktaoss .button {
-    margin: 10px 30px 0px 0px;
+    margin: 10px 37px 0px 0px;
   }
   .kontaktmain .maindiv2 .kontaktaoss input, .kontaktmain .maindiv2 .kontaktaoss select {
     height: 25px;
   }
   .kontaktmain .maindiv2 .kontaktaoss .bildhus {
-    width: 100%;
-    background-color: red;
+    width: 50%;
     height: 237px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -778,7 +914,7 @@ body .footer .footertider i {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 0px 0px 20px 0px;
+    margin: 10px 0px 20px 0px;
   }
   .kontaktmain .maindiv2 .kontaktaoss img {
     width: 100%;
