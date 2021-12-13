@@ -1,10 +1,11 @@
 // Färger till texter, bakgrunder och styles, font-familjer
 
-$topBottom-nav-color: rgb(34, 173, 233);
+$topBottom-nav-color: rgb(5, 145, 206);
 $underline-style: rgb(216, 105, 160); 
 $products-nav-color: rgb(69, 66, 66);
 $button-color: rgb(117, 236, 197);
 $main-font: 'Montserrat', sans-serif;
+
 
 // Mixins 
 
@@ -37,13 +38,14 @@ $main-font: 'Montserrat', sans-serif;
   text-decoration: none;
   list-style-type: none;
 }
-
+//Kevs styling
 @mixin review-zone{
   display:flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   background-color: #e0f1fd; // #C8EEEC ursprungliga färgen
-  margin: 0px 10px;
+  margin: 0px 10px 20px 10px;
+  padding: 5px;
   border-radius: 15px;
   box-shadow: rgb(158, 158, 158) 5px 5px 5px;
   h2, h3, p{
@@ -62,4 +64,10 @@ $main-font: 'Montserrat', sans-serif;
   }
 }
 
- 
+// Kevs styling
+@mixin flex-stat-100{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
