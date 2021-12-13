@@ -44,7 +44,7 @@
 }
 
 .main-startpage .christmas-banner .banner p {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   margin-left: 30px;
 }
 
@@ -54,6 +54,10 @@
 
 .main-startpage .christmas-banner .banner p a:active {
   color: #0a33b9;
+}
+
+.main-startpage .christmas-banner .banner p a span:hover {
+  margin-left: 5px;
 }
 
 .main-startpage h1, .main-startpage h2 {
@@ -131,11 +135,7 @@
 }
 
 .main-startpage .news .iMac {
-  width: 100%;
-}
-
-.main-startpage .news .macbook {
-  margin: 20px;
+  width: 90%;
 }
 
 .main-startpage .more-news .more-news-container {
@@ -167,14 +167,28 @@
 .main-startpage .student-section .student-img {
   width: 100%;
   margin-bottom: 50px;
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
 }
 
 .main-startpage .student-section p {
   position: absolute;
-  top: 10%;
-  left: 10%;
+  top: 35%;
+  left: 2%;
   color: white;
-  font-size: 1.35rem;
+  font-size: 1.45rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 3px;
+  line-height: 1.6;
+  border-radius: 15px;
+}
+
+.main-startpage .student-section p a {
+  color: #03d7fcdc;
+}
+
+.main-startpage .student-section p a:hover {
+  text-decoration: underline;
 }
 
 .main-startpage .student-section .stuk-logo {
@@ -202,6 +216,22 @@
     width: 400px;
     margin-bottom: 80px;
     height: 6px;
+  }
+  .student-section .student-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 500px;
+    -o-object-position: 20% 40%;
+       object-position: 20% 40%;
+  }
+  .student-section .text-box .stuk-logo {
+    width: 200px;
+  }
+  .student-section .text-box p {
+    font-size: 2.5rem;
+    left: 25%;
+    top: 30%;
+    padding: 50px 20px;
   }
 }
 
@@ -592,7 +622,7 @@ body .footer .footertider i {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 1100px;
-  background-color: #e4e4e4;
+  background-color: white;
 }
 
 .kontaktmain .maindiv1 .medarbetar-area {
@@ -628,17 +658,16 @@ body .footer .footertider i {
           align-items: center;
   width: 100%;
   background-color: white;
+  border: solid black 3px;
   height: 300px;
   border-radius: 5px;
-  -webkit-box-shadow: #424242 5px 5px 5px;
-          box-shadow: #424242 5px 5px 5px;
 }
 
 .kontaktmain .maindiv1 .medarbetar-area .medarbetare .bilddiv {
-  background-color: lightgray;
+  background-color: black;
   width: 125px;
   height: 175px;
-  border: solid lightgray 5px;
+  border: solid black 3px;
   border-radius: 5px;
 }
 
@@ -700,6 +729,15 @@ body .footer .footertider i {
   width: 95%;
   border: solid black 1px;
   margin: 5px 0px 5px 0px;
+  padding: 0px 0px 0px 5px;
+}
+
+.kontaktmain .maindiv2 .meddelande label {
+  margin-top: 5px;
+}
+
+.kontaktmain .maindiv2 .meddelande label#labelmeddelande {
+  margin-top: 20px;
 }
 
 .kontaktmain .maindiv2 .meddelande .button {
@@ -753,7 +791,7 @@ body .footer .footertider i {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 700px;
+    height: 800px;
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -766,10 +804,15 @@ body .footer .footertider i {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 100%;
+    width: 50%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .kontaktmain .maindiv1 .medarbetar-area .medarbetare {
-    width: 30%;
+    width: 200px;
+    height: 325px;
+    padding-bottom: 10px;
   }
   .kontaktmain .maindiv2 {
     height: 475px;
@@ -788,14 +831,13 @@ body .footer .footertider i {
             justify-content: center;
   }
   .kontaktmain .maindiv2 .kontaktaoss .button {
-    margin: 10px 30px 0px 0px;
+    margin: 10px 37px 0px 0px;
   }
   .kontaktmain .maindiv2 .kontaktaoss input, .kontaktmain .maindiv2 .kontaktaoss select {
     height: 25px;
   }
   .kontaktmain .maindiv2 .kontaktaoss .bildhus {
-    width: 100%;
-    background-color: red;
+    width: 50%;
     height: 237px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -803,7 +845,7 @@ body .footer .footertider i {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 0px 0px 20px 0px;
+    margin: 10px 0px 20px 0px;
   }
   .kontaktmain .maindiv2 .kontaktaoss img {
     width: 100%;
