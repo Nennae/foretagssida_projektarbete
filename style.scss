@@ -291,7 +291,7 @@ header,
 // Tillfällig height
   .main {
     height: 600px;
-    //Referenser filens styling
+    //* Referenser filens styling (Kevs styling)
     &.referenser{
       height:auto;
       display: flex;
@@ -304,34 +304,63 @@ header,
         flex-wrap: wrap;
         h1{
           width: 100%;
+          font-family: $main-font;
+          // font-family: 'Monoton', cursive;
+          // font-style: oblique;
+          // font-weight: lighter;
+          // font-size: 3rem;
         }
         .review-nav{
           padding: 15px;
-          nav{
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-          }
-          
+          border-radius: 5px;
           width: 100%;
           background-color: #8A9192;
           margin: 10px 0px;
           // a{
           //   display: inline-block;
           // }
+          nav{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: $main-font;
+            a,p{
+              color: white;
+              font-size: 1.5rem;
+            }
+            a:hover{
+              // color: rgb(3, 223, 3);
+              // background-color: white;
+              border-radius: 5px;
+              box-shadow: rgb(66, 66, 66) 5px 5px 5px;
+            }
+            
+          } 
         }
   
         .review-wrap{
-          background-color: #E9CCCC;
+          background-color: hsl(0, 0%, 100%); //#E9CCCC
+          border-radius: 15px;
+          font-family: $main-font;
+          & >h2{
+            font-style: oblique;
+            border-radius: 15px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgb(66, 66, 66) 5px 5px 5px;
+          }
           h2{
             margin: 15px;
           }
           .customer{
             .private-rev{
               @include review-zone;
+              &:focus{
+                box-shadow: rgb(66, 66, 66) 5px 5px 5px;
+              }
               margin-bottom: 20px;
               padding: 5px;
+              border-radius: 15px;
             }
 
           }
@@ -339,20 +368,47 @@ header,
           .company{
             .company-rev{
               @include review-zone;
-            margin-bottom: 20px;
-            padding: 5px;
+              &:focus{
+                box-shadow: rgb(66, 66, 66) 5px 5px 5px;
+              }
+              margin-bottom: 20px;
+              padding: 5px;
+              border-radius: 15px;
             }
             
           }
 
           .write-review{
-            padding-top: 10px;
+            padding: 15px;
             width: 100%;
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
             flex-wrap: wrap;
             background-color: rgb(255, 255, 255);
+            
+            &>label{
+              display: block;
+              width: 100%;
+              text-align: start;
+              font-family: $main-font;
+              font-style: italic;
+              font-weight: bold;
+              margin-bottom: 15px;
+            }
+
+            .selections{
+              width: 100%;
+              display: flex;
+              justify-content: flex-start;
+              margin-bottom: 15px;
+
+              select{
+                margin-right: 10px;
+                height: 30px;
+                 
+              }
+            }
             
             textarea{
               width: 50%;
@@ -369,7 +425,15 @@ header,
                 align-self: flex-end;
                 width: 100px;
                 height: 40px;
-  
+                background-color: #93ddfd;
+                color: black;
+                border: none;
+                border-radius: 20px;padding: 5px 8px;
+                font-size: 1rem;
+                box-shadow: rgb(66, 66, 66) 5px 5px 5px;
+                &:active{
+                  box-shadow: rgb(18, 250, 69) 5px 5px 5px;
+                }
               }
             }
             
@@ -424,7 +488,8 @@ header,
       }
       
       
-    }
+    } 
+    //* slut på Kevs styling
   }
 // Footer style
   .footer {
