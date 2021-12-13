@@ -907,6 +907,7 @@ body .footer .footertider i {
   margin-top: 20px;
 }
 
+
 .kontaktmain .maindiv2 .meddelande .button,
 .omossmain .maindiv2 .meddelande .button {
   margin: 10px 11px 0px 0px;
@@ -914,6 +915,10 @@ body .footer .footertider i {
   border: solid black 1px;
   height: 25px;
   width: 50px;
+
+.kontaktmain .maindiv2 .meddelande .kontaktbutton,
+.omossmain .maindiv2 .meddelande .kontaktbutton {
+
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -973,16 +978,49 @@ body .footer .footertider i {
   width: 100%;
 }
 
+.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare {
+  position: relative;
+}
+
+.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare .beskrivning {
+  display: none;
+}
+
 .mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover {
   background-color: black;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover .bilddiv {
   visibility: hidden;
 }
 
-.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover div {
+.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover .line {
   background: black;
+}
+
+.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover .beskrivning {
+  background-color: red;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover .beskrivning .text {
+  background-color: purple;
+  width: 100%;
+  color: white;
 }
 
 @media screen and (min-width: 600px) {
