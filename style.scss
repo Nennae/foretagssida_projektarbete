@@ -1,21 +1,41 @@
-
 // MOBILE FIRST LAYOUT
 
 @import "partials/variabler";
 
 * {
-margin: 0;
-box-sizing: border-box;
-padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 //Linjer under h2 taggar
 .line {
   width: 140px;
   height: 4px;
-  background: #03d7fcdc; 
+  background: #03d7fcdc;
   margin: 10px auto;
   border-radius: 5px;
+}
+
+.ham-meny {
+  width: 100%;
+  height: 200px;
+  display: none;
+
+  nav {
+    .meny-del {
+      width: 100%;
+      height: 40px;
+      border-bottom: solid black 1px;
+      display: flex;
+      align-items: center;
+
+      a {
+        color: black;
+        padding: 5px;
+      }
+    }
+  }
 }
 
 // Startsida - style / Sezen
@@ -30,7 +50,7 @@ padding: 0;
     border: 2px solid red;
     min-height: 100px;
     margin-bottom: 30px;
-    
+
     .banner {
       @include flexCenter;
       justify-content: space-evenly;
@@ -40,7 +60,7 @@ padding: 0;
         width: 70px;
         height: 80px;
       }
-      
+
       p {
         font-size: 1.35rem;
         margin-left: 30px;
@@ -60,7 +80,8 @@ padding: 0;
     }
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     text-align: center;
     font-size: 1.4rem;
   }
@@ -77,7 +98,9 @@ padding: 0;
   }
 
   .link-container {
+
     @include flexCenter;
+
     justify-content: center;
     margin-bottom: 90px;
 
@@ -92,16 +115,16 @@ padding: 0;
   .news {
     @include flexCenter;
     flex-direction: column;
-  
+
     .product-name {
       font-size: 1.2rem;
       margin: 10px;
-    } 
+    }
 
     .iMac {
       width: 90%;
     }
-  } 
+  }
 
   .more-news {
     .more-news-container {
@@ -121,7 +144,7 @@ padding: 0;
   }
 
   .student-section {
-    position: relative; 
+    position: relative;
     .student-img {
       width: 100%;
       margin-bottom: 50px;
@@ -154,6 +177,7 @@ padding: 0;
 
 // Media queries - Startsida ( Desk / Lap top Layout )
 @media screen and (min-width: 760px) {
+
   .main-startpage {
     .banner {
       a {
@@ -178,69 +202,77 @@ padding: 0;
       h1 {
         font-size: 5rem;
         margin-top: 40px;
+
       }
-      .line {
-        width: 400px;
-        margin-bottom: 80px;
-        height: 6px;
+      .macbook {
+        width: 55%;
       }
     }
-    .student-section { 
-      .student-img {
-        object-fit: cover;
-        height: 500px;
-        object-position: 20% 40%;
+    h1 {
+      font-size: 5rem;
+      margin-top: 40px;
+    }
+    .line {
+      width: 400px;
+      margin-bottom: 80px;
+      height: 6px;
+    }
+  }
+  .student-section {
+    .student-img {
+      object-fit: cover;
+      height: 500px;
+      object-position: 20% 40%;
+    }
+    .text-box {
+      .stuk-logo {
+        width: 200px;
       }
-      .text-box { 
-        .stuk-logo {
-          width: 200px;
-        }
-        p {
-          font-size: 2.5rem;
-          left: 25%;
-          top: 30%;
-          padding: 50px 20px;
-        }
+      p {
+        font-size: 2.5rem;
+        left: 25%;
+        top: 30%;
+        padding: 50px 20px;
       }
     }
   }
 }
 // main-startpage slutar här
 
-
 // Gemensam styling för alla sidor ( header + footer )
 body {
   // font-family: $main-font; KOLLA VILKEN FONT SOM SKA ANVÄNDAS
   // Samlad styling där mixins används
-  li, a {
+  li,
+  a {
     @include li-style;
   }
-  
-  .top-nav, .bottom-nav {
+
+  .top-nav,
+  .bottom-nav {
     a {
       @include topBottom-nav-style;
     }
   }
 
-header,
-.top-nav,
-.products a {
-  @include flexCenter;
-}
+  header,
+  .top-nav,
+  .products a {
+    @include flexCenter;
+  }
 
-// Header style
+  // Header style
   header {
     justify-content: space-between;
     width: 100%;
-    min-height: 100px;  
+    min-height: 100px;
 
     .top-nav {
       justify-content: flex-end;
       overflow: hidden;
-    
+
       .nav-bar {
         display: none;
-
       }
     }
 
@@ -249,13 +281,12 @@ header,
 
       img {
         margin-left: 10px;
-        width:90%;
+        width: 90%;
         height: 70%;
       }
-
     }
 
-// Ska fälla ut en meny med top-nav länkarna "onclick"
+    // Ska fälla ut en meny med top-nav länkarna "onclick"
     .fa-bars {
       position: absolute;
       top: 30px;
@@ -267,25 +298,25 @@ header,
     }
   }
 
-  .products-nav{
-  width: 100%;
-  min-height: 80px;
-  display: flex;
-  justify-content: center;
-  background-color: rgb(221, 226, 231);
-  
-    .products{
+  .products-nav {
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(221, 226, 231);
+
+    .products {
       width: 80%;
       display: flex;
       justify-content: space-around;
-      font-family: $main-font; 
+      font-family: $main-font;
 
       a {
-      flex-direction: column;
+        flex-direction: column;
 
-      i {
-        margin: 15px;
-      }
+        i {
+          margin: 15px;
+        }
       }
     }
 
@@ -293,21 +324,21 @@ header,
       color: black;
     }
   }
-// Tillfällig height
+  // Tillfällig height
   .main {
     height: 600px;
     //* Referenser filens styling (Kevs styling)
-    &.referenser{
-      height:auto;
+    &.referenser {
+      height: auto;
       display: flex;
       text-align: center;
       padding: 20px;
-      
-      .reviews{
+
+      .reviews {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        h1{
+        h1 {
           width: 100%;
           font-family: $main-font;
           // font-family: 'Monoton', cursive;
@@ -315,84 +346,83 @@ header,
           // font-weight: lighter;
           // font-size: 3rem;
         }
-        .review-nav{
+        .review-nav {
           padding: 15px;
           border-radius: 5px;
           width: 100%;
-          background-color: #8A9192;
+          background-color: #8a9192;
           margin: 10px 0px;
           // a{
           //   display: inline-block;
           // }
-          nav{
+          nav {
             width: 100%;
             display: flex;
             justify-content: space-around;
             align-items: center;
             font-family: $main-font;
-            a,p{
+            a,
+            p {
               color: white;
               font-size: 1.5rem;
             }
-            a:hover{
+            a:hover {
               // color: rgb(3, 223, 3);
               // background-color: white;
               border-radius: 5px;
               box-shadow: rgb(66, 66, 66) 5px 5px 5px;
             }
-            
-          } 
+          }
         }
-  
-        .review-wrap{
+
+        .review-wrap {
           background-color: hsl(0, 0%, 100%); //#E9CCCC
           border-radius: 15px;
           font-family: $main-font;
-          & >h2{
+          & > h2 {
             font-style: oblique;
             border-radius: 15px;
             background-color: rgb(255, 255, 255);
             box-shadow: rgb(66, 66, 66) 5px 5px 5px;
           }
-          h2{
+          h2 {
             margin: 15px;
           }
-          .customer{
-            .private-rev{
+          .customer {
+            .private-rev {
               @include review-zone;
-              &:focus{
+              &:focus {
                 box-shadow: rgb(66, 66, 66) 5px 5px 5px;
               }
-              margin-bottom: 20px;
-              padding: 5px;
-              border-radius: 15px;
+              // margin-bottom: 20px;  Kan tas bort, finns i review-zone
+              // padding: 5px;
+              // border-radius: 15px;
             }
-
           }
 
-          .company{
-            .company-rev{
+          .company {
+            .company-rev {
               @include review-zone;
-              &:focus{
+              &:focus {
                 box-shadow: rgb(66, 66, 66) 5px 5px 5px;
               }
-              margin-bottom: 20px;
-              padding: 5px;
-              border-radius: 15px;
+              // margin-bottom: 20px; Kan tas bort, finns i review-zone
+              // padding: 5px;
+              // border-radius: 15px;
             }
-            
           }
 
-          .write-review{
+          .write-review {
             padding: 15px;
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
+            @include flex-stat-100;
+            // width: 100%;
+            // display: flex;
+            // justify-content: flex-start;
             align-items: flex-start;
             flex-wrap: wrap;
             background-color: rgb(255, 255, 255);
-            
-            &>label{
+
+            & > label {
               display: block;
               width: 100%;
               text-align: start;
@@ -402,30 +432,31 @@ header,
               margin-bottom: 15px;
             }
 
-            .selections{
-              width: 100%;
-              display: flex;
-              justify-content: flex-start;
+            .selections {
+              // width: 100%;
+              // display: flex;
+              // justify-content: flex-start;
+              @include flex-stat-100;
               margin-bottom: 15px;
 
-              select{
+              select {
                 margin-right: 10px;
                 height: 30px;
-                 
               }
             }
-            
-            textarea{
+
+            textarea {
               width: 50%;
             }
 
-            .btn-wrap{
-              width: 100%;
+            .btn-wrap {
               height: 60px;
-              display: flex;
-              justify-content: flex-start;
+              @include flex-stat-100;
+              // width: 100%;
+              // display: flex;
+              // justify-content: flex-start;
               align-items: center;
-              .submit-btn{
+              .submit-btn {
                 display: block;
                 align-self: flex-end;
                 width: 100px;
@@ -433,69 +464,65 @@ header,
                 background-color: #93ddfd;
                 color: black;
                 border: none;
-                border-radius: 20px;padding: 5px 8px;
+                border-radius: 20px;
+                padding: 5px 8px;
                 font-size: 1rem;
                 box-shadow: rgb(66, 66, 66) 5px 5px 5px;
-                &:active{
+                &:active {
                   box-shadow: rgb(18, 250, 69) 5px 5px 5px;
                 }
               }
             }
-            
+
             .rate {
               // float: bottom;
-              display:inline-block;
+              display: inline-block;
               height: 46px;
               padding: 0 10px;
               align-self: start;
               top: 0px;
-              label{
+              label {
                 align-self: flex-start;
               }
-          }
-            
+            }
+
             .rate:not(:checked) > input {
-                position:absolute;
-                top:-9999px;
+              position: absolute;
+              top: -9999px;
             }
             .rate:not(:checked) > label {
-                float:right;
-                width:0.8em;
-                overflow:hidden;
-                white-space:nowrap;
-                cursor:pointer;
-                font-size:30px;
-                color:#ccc;
+              float: right;
+              width: 0.8em;
+              overflow: hidden;
+              white-space: nowrap;
+              cursor: pointer;
+              font-size: 30px;
+              color: #ccc;
             }
             .rate:not(:checked) > label:before {
-                content: '★';
+              content: "★";
             }
             .rate > input:checked ~ label {
-                color: #ffc700;    
+              color: #ffc700;
             }
             .rate:not(:checked) > label:hover,
             .rate:not(:checked) > label:hover ~ label {
-                color: #deb217;  
+              color: #deb217;
             }
             .rate > input:checked + label:hover,
             .rate > input:checked + label:hover ~ label,
             .rate > input:checked ~ label:hover,
             .rate > input:checked ~ label:hover ~ label,
             .rate > label:hover ~ input:checked ~ label {
-                color: #c59b08;
+              color: #c59b08;
             }
-
           }
-  
-  
         }
       }
-      
-      
-    } 
+    }
     //* slut på Kevs styling
   }
-// Footer style
+  // Footer style
   .footer {
     border-top: solid grey 1px;
     display: flex;
@@ -506,16 +533,14 @@ header,
     padding: 20px;
 
     .bottom-bar {
-
-    li {
-      margin: 15px;
+      li {
+        margin: 15px;
+      }
     }
-  }
-    
+
     .footertider {
-    
       i {
-        margin:10px;
+        margin: 10px;
         margin-bottom: 20px;
         color: black;
       }
@@ -524,10 +549,8 @@ header,
 }
 
 // Media queries
-@media screen and (min-width: 760px){
-  
+@media screen and (min-width: 760px) {
   body {
-
     .header {
       height: 170px;
       img {
@@ -535,7 +558,6 @@ header,
       }
 
       .top-nav {
-
         i {
           display: none;
         }
@@ -566,20 +588,21 @@ header,
 }
 
 //Kontakt styling
-.kontaktmain{
+.kontaktmain,
+.omossmain {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: auto;
   display: flex;
 
-  .maindiv1{
+  .maindiv1 {
     display: flex;
     justify-content: space-evenly;
     height: 1100px;
     background-color: white;
 
-    .medarbetar-area{
+    .medarbetar-area {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -587,25 +610,25 @@ header,
       width: 45%;
       height: auto;
 
-      .medarbetare{
+      .medarbetare {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        width: 100% ;
+        width: 100%;
         background-color: white;
         border: solid black 3px;
         height: 300px;
         border-radius: 5px;
-      
-        .bilddiv{
+
+        .bilddiv {
           background-color: black;
           width: 125px;
-          height: 175px; 
+          height: 175px;
           border: solid black 3px;
           border-radius: 5px;
 
-          img{
+          img {
             height: 100%;
             width: 100%;
           }
@@ -613,10 +636,8 @@ header,
       }
     }
   }
-  
-  
 
-  .maindiv2{
+  .maindiv2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -624,11 +645,11 @@ header,
     margin-bottom: 20px;
     border-top: solid black 1px;
 
-    h2{
+    h2 {
       font-size: 23px;
     }
 
-    .kontaktaoss{
+    .kontaktaoss {
       height: 175px;
       width: 48%;
       display: flex;
@@ -636,13 +657,15 @@ header,
       flex-direction: column;
     }
 
-    .meddelande{
+    .meddelande {
       display: flex;
       align-items: center;
       height: 350px;
       align-items: flex-start;
 
-      select, input, textarea{
+      select,
+      input,
+      textarea {
         background-color: lightgray;
         width: 95%;
         border: solid black 1px;
@@ -650,10 +673,10 @@ header,
         padding: 0px 0px 0px 5px;
       }
 
-      label{
+      label {
         margin-top: 5px;
 
-        &#labelmeddelande{
+        &#labelmeddelande {
           margin-top: 20px;
         }
       }
@@ -667,90 +690,311 @@ header,
         align-self: flex-end;
       }
 
-      #meddelande{
+      #meddelande {
         height: 100px;
       }
     }
   }
 
-  .bildhus{
+  .bildhus {
     display: flex;
     justify-content: center;
     align-items: center;
-    height:150px;
+    height: 150px;
     width: 175px;
     margin: 30px 0px;
 
-    img{
+    img {
       margin: 20px 0px 0px 10px;
       width: 100%;
       height: 100%;
-      margin:50px 0px
+      margin: 50px 0px;
     }
   }
 }
 
+// Om oss styling
 
-@media screen and (min-width:600px){
-
- .kontaktmain{
-   height: auto;
-   justify-content: space-between;
-   align-items: center;
-  
-   .maindiv1{
+.mainomoss {
+  .omossSection {
+    display: flex;
     flex-direction: column;
-    height: 800px;
-    width: 100%;
     align-items: center;
-    justify-content: space-around;
-  
-      .medarbetar-area{
-      flex-direction: row;
-      width: 50%;
-      justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
 
-      .medarbetare{
-        width: 200px;
-        height: 325px;
-        padding-bottom: 10px;
+    .linje {
+      width: 70%;
+      height: 1px;
+      background: black;
+      margin-bottom: 10px;
+    }
+
+    .omosstext {
+      width: 100%;
+    }
+  }
+
+  .omossmain {
+    .maindiv1 {
+      .medarbetar-area {
+        .medarbetare:hover {
+          background-color: black;
+
+          .bilddiv {
+            visibility: hidden;
+          }
+          div {
+            background: black;
+          }
+        }
       }
     }
-   }
+  }
+}
 
-   .maindiv2{
-     height: 475px;
-     width: 100%;
-     display: flex;
+@media screen and (min-width: 600px) {
+  .kontaktmain,
+  .omossmain {
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
 
-     .kontaktaoss{
-      display: flex;
+    .maindiv1 {
+      flex-direction: column;
+      height: 800px;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+
+      .medarbetar-area {
+        flex-direction: row;
+        width: 50%;
+        justify-content: space-between;
+
+        .medarbetare {
+          width: 200px;
+          height: 325px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .maindiv2 {
       height: 475px;
-      justify-content: center;
+      width: 100%;
+      display: flex;
 
-      .button{
+      .kontaktaoss {
+        display: flex;
+        height: 475px;
+        justify-content: center;
+
+        .button {
           margin: 10px 37px 0px 0px;
         }
 
-      input, select{
-        height: 25px;
-      }
+        input,
+        select {
+          height: 25px;
+        }
 
-      
+        .bildhus {
+          width: 50%;
+          height: 237px;
+          display: flex;
+          justify-content: center;
+          margin: 10px 0px 20px 0px;
+        }
 
-      .bildhus{
-        width: 50%;
-        height: 237px;
-        display: flex;
-        justify-content: center;
-        margin: 10px 0px 20px 0px;
-      }
-       
-      img{
-        width: 100%;
-        height: 237px;
+        img {
+          width: 100%;
+          height: 237px;
+        }
       }
     }
   }
 }
+
+// Om oss styling
+
+.mainomoss {
+  .omossSection {
+    .omosstext {
+      width: 50%;
+    }
+  }
+}
+
+/// Produkt sida
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Indie+Flower&family=Mulish:wght@200&family=Raleway:wght@200&family=Rampart+One&display=swap");
+
+body {
+  font-family: "Dosis", sans-serif;
+  background-color: rgb(245, 245, 245);
+}
+.produktsida {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.fa_custom {
+  color: black;
+  margin: 30px;
+}
+.line {
+  width: 140px;
+  height: 4px;
+  background: #03d7fcdc;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+button {
+  padding: 8px 15px;
+  margin-top: 10px;
+  background: #03d7fcdc;
+  border-radius: 50px;
+  color: white;
+  border: #03d7fcdc solid;
+}
+.produktsida-header {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+}
+.bigBox {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  margin: 150px;
+}
+.bigBox-text {
+  h2 {
+    font-size: 60px;
+    background: linear-gradient(to right, #03d7fcdc, #e84393);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  p {
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772;
+  }
+}
+.läs-mer {
+  border: 2px solid #03d7fcdc;
+  background: transparent;
+  color: #03d7fcdc;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.köp {
+  background: #03d7fcdc;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  color: white;
+  margin: 30px 0px 0px 30px;
+}
+.cover {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  img {
+    height: 100%;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+  }
+}
+.box-area {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: auto;
+  border-radius: 4px;
+  background-color: #fff;
+  text-align: center;
+  transition: 0.3s;
+  margin: 10px;
+  &:nth-child(1) {
+    .img {
+      background-image: url(Bilder/iphone.jpg);
+    }
+  }
+  &:nth-child(2) {
+    .img {
+      background-image: url(Bilder/data.jpg);
+    }
+  }
+  &:nth-child(3) {
+    .img {
+      background-image: url(Bilder/ipad.jpg);
+    }
+  }
+  &:nth-child(4) {
+    .img {
+      background-image: url(Bilder/laptop.jpg);
+    }
+  }
+  &:hover {
+    background: #e84393;
+    transition: all 0.5s;
+    color: #fff;
+  }
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 6px solid lightgrey;
+  border-radius: 50%;
+  margin-top: 20px;
+  padding: 40px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.header-text {
+  font-size: 25px;
+  line-height: 10px;
+  text-transform: uppercase;
+}
+.img-text {
+  margin: 20px;
+  line-height: 10px;
+  p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .box-area {
+    flex-direction: column;
+  }
+  .box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .bigBox {
+    margin: 30px;
+  }
 }
