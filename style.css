@@ -909,16 +909,12 @@ body .footer .footertider i {
 }
 
 .kontaktmain .maindiv2 .meddelande .button,
-.omossmain .maindiv2 .meddelande .button {
+.omossmedarbetare .maindiv2 .meddelande .button {
   margin: 10px 11px 0px 0px;
   background-color: lightgray;
   border: solid black 1px;
   height: 25px;
   width: 50px;
-
-.kontaktmain .maindiv2 .meddelande .kontaktbutton,
-.omossmedarbetare .maindiv2 .meddelande .kontaktbutton {
-
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -952,6 +948,9 @@ body .footer .footertider i {
   margin: 50px 0px;
 }
 
+.mainomoss {
+}
+
 .mainomoss .omosshistoria {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -980,48 +979,45 @@ body .footer .footertider i {
   margin-top: 20px;
 }
 
-
-.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover {
-  background-color: black;
-
 .mainomoss .omossmedarbetare h2 {
   text-align: center;
 }
 
-.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare {
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover {
+  background-color: black;
+}
+
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .medarbetare {
   position: relative;
 }
 
-.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare .beskrivning {
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .medarbetare .beskrivning {
   display: none;
 }
 
-.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover {
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .medarbetare:hover {
   background-color: #2c2b2b;
   -webkit-transition: .5s ease;
   transition: .5s ease;
-
 }
 
-.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .bilddiv {
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .medarbetare:hover .bilddiv {
   visibility: hidden;
 }
 
-
-.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover div {
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .medarbetare:hover div {
   background: black;
 }
 
-
-.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .line {
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .medarbetare:hover .line {
   visibility: hidden;
 }
 
-.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover p {
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .medarbetare:hover p {
   visibility: hidden;
 }
 
-.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .beskrivning {
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .medarbetare:hover .beskrivning {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1033,15 +1029,14 @@ body .footer .footertider i {
           align-items: center;
 }
 
-.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .beskrivning .text {
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .medarbetare:hover .beskrivning .text {
   color: white;
   text-align: center;
 }
 
-
 @media screen and (min-width: 600px) {
-  .kontaktmain,
-  .omossmedarbetare {
+  .mainomoss .kontaktmain,
+  .mainomoss .omossmedarbetare {
     height: auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1050,8 +1045,8 @@ body .footer .footertider i {
         -ms-flex-align: center;
             align-items: center;
   }
-  .kontaktmain .maindiv1,
-  .omossmedarbetare .maindiv1 {
+  .mainomoss .kontaktmain .maindiv1,
+  .mainomoss .omossmedarbetare .maindiv1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1064,8 +1059,8 @@ body .footer .footertider i {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .kontaktmain .maindiv1 .medarbetar-area,
-  .omossmedarbetare .maindiv1 .medarbetar-area {
+  .mainomoss .kontaktmain .maindiv1 .medarbetar-area,
+  .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1075,24 +1070,24 @@ body .footer .footertider i {
             justify-content: center;
     width: 100%;
   }
-  .kontaktmain .maindiv1 .medarbetar-area .medarbetare,
-  .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare {
+  .mainomoss .kontaktmain .maindiv1 .medarbetar-area .medarbetare,
+  .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare {
     width: 200px;
     height: 325px;
     padding-bottom: 10px;
     margin-left: 4%;
     margin-right: 4%;
   }
-  .kontaktmain .maindiv2,
-  .omossmedarbetare .maindiv2 {
+  .mainomoss .kontaktmain .maindiv2,
+  .mainomoss .omossmedarbetare .maindiv2 {
     height: 475px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .kontaktmain .maindiv2 .kontaktaoss,
-  .omossmedarbetare .maindiv2 .kontaktaoss {
+  .mainomoss .kontaktmain .maindiv2 .kontaktaoss,
+  .mainomoss .omossmedarbetare .maindiv2 .kontaktaoss {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1101,18 +1096,18 @@ body .footer .footertider i {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .kontaktmain .maindiv2 .kontaktaoss .button,
-  .omossmedarbetare .maindiv2 .kontaktaoss .button {
+  .mainomoss .kontaktmain .maindiv2 .kontaktaoss .button,
+  .mainomoss .omossmedarbetare .maindiv2 .kontaktaoss .button {
     margin: 10px 37px 0px 0px;
   }
-  .kontaktmain .maindiv2 .kontaktaoss input,
-  .kontaktmain .maindiv2 .kontaktaoss select,
-  .omossmedarbetare .maindiv2 .kontaktaoss input,
-  .omossmedarbetare .maindiv2 .kontaktaoss select {
+  .mainomoss .kontaktmain .maindiv2 .kontaktaoss input,
+  .mainomoss .kontaktmain .maindiv2 .kontaktaoss select,
+  .mainomoss .omossmedarbetare .maindiv2 .kontaktaoss input,
+  .mainomoss .omossmedarbetare .maindiv2 .kontaktaoss select {
     height: 25px;
   }
-  .kontaktmain .maindiv2 .kontaktaoss .bildhus,
-  .omossmedarbetare .maindiv2 .kontaktaoss .bildhus {
+  .mainomoss .kontaktmain .maindiv2 .kontaktaoss .bildhus,
+  .mainomoss .omossmedarbetare .maindiv2 .kontaktaoss .bildhus {
     width: 50%;
     height: 237px;
     display: -webkit-box;
@@ -1123,22 +1118,22 @@ body .footer .footertider i {
             justify-content: center;
     margin: 10px 0px 20px 0px;
   }
-  .kontaktmain .maindiv2 .kontaktaoss img,
-  .omossmedarbetare .maindiv2 .kontaktaoss img {
+  .mainomoss .kontaktmain .maindiv2 .kontaktaoss img,
+  .mainomoss .omossmedarbetare .maindiv2 .kontaktaoss img {
     width: 100%;
     height: 237px;
   }
-  .mainomoss .omosshistoria .historiatext {
+  .mainomoss .mainomoss .omosshistoria .historiatext {
     width: 60%;
   }
 }
 
-body {
+.mainomoss body {
   font-family: "Dosis", sans-serif;
   background-color: whitesmoke;
 }
 
-.produktsida {
+.mainomoss .produktsida {
   width: 100%;
   height: 30px;
   display: -webkit-box;
@@ -1149,12 +1144,12 @@ body {
           justify-content: flex-end;
 }
 
-.fa_custom {
+.mainomoss .fa_custom {
   color: black;
   margin: 30px;
 }
 
-.line {
+.mainomoss .line {
   width: 140px;
   height: 4px;
   background: #03d7fcdc;
@@ -1162,7 +1157,7 @@ body {
   border-radius: 5px;
 }
 
-button {
+.mainomoss button {
   padding: 8px 15px;
   margin-top: 10px;
   background: #03d7fcdc;
@@ -1171,7 +1166,7 @@ button {
   border: #03d7fcdc solid;
 }
 
-.produktsida-header {
+.mainomoss .produktsida-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1181,7 +1176,7 @@ button {
           align-items: center;
 }
 
-.bigBox {
+.mainomoss .bigBox {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1190,7 +1185,7 @@ button {
   margin: 150px;
 }
 
-.bigBox-text h2 {
+.mainomoss .bigBox-text h2 {
   font-size: 60px;
   background: -webkit-gradient(linear, left top, right top, from(#03d7fcdc), to(#e84393));
   background: linear-gradient(to right, #03d7fcdc, #e84393);
@@ -1198,13 +1193,13 @@ button {
   -webkit-text-fill-color: transparent;
 }
 
-.bigBox-text p {
+.mainomoss .bigBox-text p {
   margin-top: 5px;
   font-size: 22px;
   color: #585772;
 }
 
-.läs-mer {
+.mainomoss .läs-mer {
   border: 2px solid #03d7fcdc;
   background: transparent;
   color: #03d7fcdc;
@@ -1214,7 +1209,7 @@ button {
   font-size: 16px;
 }
 
-.köp {
+.mainomoss .köp {
   background: #03d7fcdc;
   width: 150px;
   height: 50px;
@@ -1225,7 +1220,7 @@ button {
   margin: 30px 0px 0px 30px;
 }
 
-.cover {
+.mainomoss .cover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1238,7 +1233,7 @@ button {
   height: 60vh;
 }
 
-.cover img {
+.mainomoss .cover img {
   height: 100%;
   -webkit-filter: drop-shadow(0px 5px 3px black);
           filter: drop-shadow(0px 5px 3px black);
@@ -1246,7 +1241,7 @@ button {
           animation: drop 1.5s ease;
 }
 
-.box-area {
+.mainomoss .box-area {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1265,7 +1260,7 @@ button {
           align-items: center;
 }
 
-.box {
+.mainomoss .box {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1287,30 +1282,30 @@ button {
   margin: 10px;
 }
 
-.box:nth-child(1) .img {
+.mainomoss .box:nth-child(1) .img {
   background-image: url(Bilder/iphone.jpg);
 }
 
-.box:nth-child(2) .img {
+.mainomoss .box:nth-child(2) .img {
   background-image: url(Bilder/data.jpg);
 }
 
-.box:nth-child(3) .img {
+.mainomoss .box:nth-child(3) .img {
   background-image: url(Bilder/ipad.jpg);
 }
 
-.box:nth-child(4) .img {
+.mainomoss .box:nth-child(4) .img {
   background-image: url(Bilder/laptop.jpg);
 }
 
-.box:hover {
+.mainomoss .box:hover {
   background: #e84393;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: #fff;
 }
 
-.img {
+.mainomoss .img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1330,35 +1325,35 @@ button {
   background-position: center center;
 }
 
-.header-text {
+.mainomoss .header-text {
   font-size: 25px;
   line-height: 10px;
   text-transform: uppercase;
 }
 
-.img-text {
+.mainomoss .img-text {
   margin: 20px;
   line-height: 10px;
 }
 
-.img-text p {
+.mainomoss .img-text p {
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
 }
 
 @media only screen and (max-width: 768px) {
-  .box-area {
+  .mainomoss .box-area {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .box {
+  .mainomoss .box {
     width: 100%;
     margin-bottom: 10px;
   }
-  .bigBox {
+  .mainomoss .bigBox {
     margin: 30px;
   }
 }
