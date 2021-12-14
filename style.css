@@ -1016,11 +1016,14 @@ body .footer .footertider i {
   visibility: hidden;
 }
 
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .line {
+
 .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .medarbetare:hover div {
   background: black;
 }
 
 .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .medarbetare:hover .line {
+
   visibility: hidden;
 }
 

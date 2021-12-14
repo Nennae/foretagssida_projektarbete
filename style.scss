@@ -745,10 +745,6 @@ body {
     }
     .maindiv1 {
       .medarbetar-area {
-
-        .medarbetare:hover {
-          background-color: black;
-
         .medarbetare {
           position: relative;
 
@@ -761,15 +757,9 @@ body {
           background-color: rgb(44, 43, 43);
           transition: .5s ease;
 
-
           .bilddiv {
             visibility: hidden;
           }
-
-          div {
-            background: black;
-          }
-
           .line {
             visibility: hidden;
           }
@@ -782,18 +772,18 @@ body {
             height: 100%;
             display: flex;
             align-items: center;
-            
+
             .text {
               color: white;
               text-align: center;
             }
           }
-
         }
       }
     }
   }
 }
+
 
 @media screen and (min-width: 600px) {
   .kontaktmain,
@@ -1032,4 +1022,4 @@ button {
     margin: 30px;
   }
 }
-}
+
