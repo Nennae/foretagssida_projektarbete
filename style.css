@@ -920,16 +920,12 @@ body .footer .footertider i {
 }
 
 .kontaktmain .maindiv2 .meddelande .button,
-.omossmain .maindiv2 .meddelande .button {
+.omossmedarbetare .maindiv2 .meddelande .button {
   margin: 10px 11px 0px 0px;
   background-color: lightgray;
   border: solid black 1px;
   height: 25px;
   width: 50px;
-
-.kontaktmain .maindiv2 .meddelande .kontaktbutton,
-.omossmedarbetare .maindiv2 .meddelande .kontaktbutton {
-
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -991,10 +987,6 @@ body .footer .footertider i {
   margin-top: 20px;
 }
 
-
-.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover {
-  background-color: black;
-
 .mainomoss .omossmedarbetare h2 {
   text-align: center;
 }
@@ -1011,18 +1003,11 @@ body .footer .footertider i {
   background-color: #2c2b2b;
   -webkit-transition: .5s ease;
   transition: .5s ease;
-
 }
 
 .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .bilddiv {
   visibility: hidden;
 }
-
-
-.mainomoss .omossmain .maindiv1 .medarbetar-area .medarbetare:hover div {
-  background: black;
-}
-
 
 .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .line {
   visibility: hidden;
@@ -1048,7 +1033,6 @@ body .footer .footertider i {
   color: white;
   text-align: center;
 }
-
 
 @media screen and (min-width: 600px) {
   .kontaktmain,
