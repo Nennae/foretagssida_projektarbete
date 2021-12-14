@@ -591,7 +591,7 @@ body {
 
 //Kontakt styling
 .kontaktmain,
-.omossmain {
+.omossmedarbetare {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -618,17 +618,17 @@ body {
         justify-content: space-evenly;
         align-items: center;
         width: 100%;
-        background-color: white;
-        border: solid black 3px;
         height: 300px;
-        border-radius: 5px;
+        border-radius: 2px;
+        background-color: rgb(221, 226, 231);
+        box-shadow: 2px 2px rgb(172, 175, 179);
 
         .bilddiv {
           background-color: black;
           width: 125px;
           height: 175px;
-          border: solid black 3px;
-          border-radius: 5px;
+          border: solid rgb(172, 175, 179) 1px;
+          border-radius: 2px;
 
           img {
             height: 100%;
@@ -718,11 +718,12 @@ body {
 // Om oss styling
 
 .mainomoss {
-  .omossSection {
+  .omosshistoria {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 50px;
     padding: 20px;
 
     .linje {
@@ -732,23 +733,62 @@ body {
       margin-bottom: 10px;
     }
 
-    .omosstext {
+    .historiatext {
       width: 100%;
+      margin-top: 20px;
     }
   }
 
-  .omossmain {
+  .omossmedarbetare {
+    h2 {
+      text-align: center;
+    }
     .maindiv1 {
       .medarbetar-area {
+
         .medarbetare:hover {
           background-color: black;
+
+        .medarbetare {
+          position: relative;
+
+          .beskrivning {
+            display: none;
+          }
+        }
+
+        .medarbetare:hover { 
+          background-color: rgb(44, 43, 43);
+          transition: .5s ease;
+
 
           .bilddiv {
             visibility: hidden;
           }
+
           div {
             background: black;
           }
+
+          .line {
+            visibility: hidden;
+          }
+          p {
+            visibility: hidden;
+          }
+          .beskrivning {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            
+            .text {
+              color: white;
+              text-align: center;
+            }
+          }
+
         }
       }
     }
@@ -757,7 +797,7 @@ body {
 
 @media screen and (min-width: 600px) {
   .kontaktmain,
-  .omossmain {
+  .omossmedarbetare {
     height: auto;
     justify-content: space-between;
     align-items: center;
@@ -771,13 +811,16 @@ body {
 
       .medarbetar-area {
         flex-direction: row;
-        width: 50%;
-        justify-content: space-between;
+        justify-content: center;
+        width: 100%;
 
         .medarbetare {
           width: 200px;
           height: 325px;
           padding-bottom: 10px;
+          margin-left: 4%;
+          margin-right: 4%;
+          
         }
       }
     }
@@ -816,14 +859,13 @@ body {
       }
     }
   }
-}
 
-// Om oss styling
-
-.mainomoss {
-  .omossSection {
-    .omosstext {
-      width: 50%;
+  // Om oss styling
+  .mainomoss {
+    .omosshistoria {
+      .historiatext {
+        width: 60%;
+      }
     }
   }
 }
