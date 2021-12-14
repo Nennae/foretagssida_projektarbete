@@ -296,8 +296,8 @@ body .red-text {
   color: #b60606;
 }
 
-body .red-text:active {
-  color: #0a33b9;
+body .red-text:hover {
+  color: black;
 }
 
 body .red-text span:hover {
