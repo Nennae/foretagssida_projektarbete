@@ -112,6 +112,9 @@
 
   .more-news {
     text-align: center;
+    .line {
+      width: 160px;
+    }
     .more-news-container {
       display: flex;
       flex-wrap: wrap;
