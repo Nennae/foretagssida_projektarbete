@@ -83,7 +83,7 @@
   h1,
   h2 {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
   .news-box {
     @include flexCenter;
@@ -202,7 +202,7 @@
         }
       }
       h1 {
-        font-size: 5rem;
+        font-size: 3rem;
         margin-top: 40px;
 
       }
@@ -215,7 +215,7 @@
       margin-top: 40px;
     }
     .line {
-      width: 400px;
+      width: 250px;
       margin-bottom: 80px;
       height: 6px;
     }
@@ -232,9 +232,9 @@
       }
       p {
         font-size: 2.5rem;
-        left: 25%;
-        top: 30%;
-        padding: 50px 20px;
+        left: 27%;
+        top: 20%;
+        padding: 100px;
       }
     }
   }
@@ -745,6 +745,10 @@ body {
     }
     .maindiv1 {
       .medarbetar-area {
+
+        .medarbetare:hover {
+          background-color: black;
+
         .medarbetare {
           position: relative;
 
@@ -757,9 +761,15 @@ body {
           background-color: rgb(44, 43, 43);
           transition: .5s ease;
 
+
           .bilddiv {
             visibility: hidden;
           }
+
+          div {
+            background: black;
+          }
+
           .line {
             visibility: hidden;
           }
@@ -778,6 +788,7 @@ body {
               text-align: center;
             }
           }
+
         }
       }
     }
