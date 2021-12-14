@@ -776,6 +776,9 @@ body .footer .footertider i {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  body .header .top-nav .nav-bar .active, body .header .top-nav .nav-bar .nav-links:hover {
+    color: #09abe6;
+  }
   body .header .top-nav .nav-bar a {
     margin-right: 40px;
     font-size: 1.4rem;

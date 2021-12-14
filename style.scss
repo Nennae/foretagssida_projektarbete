@@ -563,7 +563,7 @@ body {
   }
 }
 
-// Media queries
+// Gemensamma Media queries
 @media screen and (min-width: 760px) {
   body {
     .header {
@@ -587,6 +587,12 @@ body {
           display: flex;
           justify-content: space-around;
 
+          .active, .nav-links:hover {
+            // text-decoration-color: $underline-style;
+            // text-decoration: underline;
+            // text-decoration-thickness: 3px;
+            color: rgb(9, 171, 230);
+          }
           a {
             margin-right: 40px;
             font-size: 1.4rem;
