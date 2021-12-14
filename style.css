@@ -163,6 +163,10 @@
   text-align: center;
 }
 
+.main-startpage .more-news .line {
+  width: 160px;
+}
+
 .main-startpage .more-news .more-news-container {
   display: -webkit-box;
   display: -ms-flexbox;
