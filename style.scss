@@ -56,18 +56,6 @@
       padding: 10px;
       p {
         font-size: 1.35rem;
-
-        a {
-          color: rgb(182, 6, 6);
-          &:active {
-            color: rgb(10, 51, 185);
-          }
-          span {
-            &:hover {
-              margin-left: 5px;
-            }
-          }
-        }
       }
     }
   }
@@ -232,7 +220,18 @@
 // Gemensam styling för alla sidor ( header + footer )
 body {
   font-family: $main-font; 
-  
+  .red-text {
+      color: rgb(182, 6, 6);
+      &:active {
+        color: rgb(10, 51, 185);
+      }
+      span {
+        &:hover {
+          margin-left: 5px;
+        }
+      
+    }
+  }
   li,
   a {
     @include li-style;
@@ -256,6 +255,7 @@ body {
     justify-content: space-between;
     width: 100%;
     min-height: 100px;
+    
 
     .fa-shopping-cart {
       color: black;
@@ -620,7 +620,7 @@ body {
         width: 100%;
         height: 300px;
         border-radius: 2px;
-        background-color: rgb(221, 226, 231);
+        background-color: rgb(240, 238, 238);
         box-shadow: 2px 2px rgb(172, 175, 179);
 
         .bilddiv {
@@ -718,6 +718,9 @@ body {
 // Om oss styling
 
 .mainomoss {
+  h1 {
+    @include headingStyle;
+  }
   .omosshistoria {
     display: flex;
     flex-direction: column;
@@ -726,16 +729,12 @@ body {
     margin-bottom: 50px;
     padding: 20px;
 
-    .linje {
-      width: 70%;
-      height: 1px;
-      background: black;
-      margin-bottom: 10px;
-    }
-
     .historiatext {
       width: 100%;
       margin-top: 20px;
+      p {
+        font-size: 1.3rem;
+      }
     }
   }
 
@@ -864,7 +863,6 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Indie+Flower&family=Mulish:wght@200&family=Raleway:wght@200&family=Rampart+One&display=swap");
 
 .hanna {
-  font-family: "Dosis", sans-serif;
   background-color: rgb(245, 245, 245);
 }
 .produktsida {
@@ -894,7 +892,7 @@ button {
   margin: 150px;
 }
 .bigBox-text {
-  h2 {
+  h1 {
     font-size: 60px;
     background: linear-gradient(to right, #03d7fcdc, #e84393);
     -webkit-background-clip: text;
