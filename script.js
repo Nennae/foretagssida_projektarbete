@@ -12,5 +12,4 @@ if (siffra %2 == 1){
 } else {
       meny.style.display = ("none")
 }
-
 })

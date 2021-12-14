@@ -46,24 +46,16 @@
     line-height: 1.6;
   }
   .christmas-banner {
+    @include flexCenter;
+    justify-content: center;
     width: 100%;
-    border: 2px solid red;
     min-height: 100px;
     margin-bottom: 30px;
 
     .banner {
-      @include flexCenter;
-      justify-content: space-evenly;
       padding: 10px;
-
-      .appleLogo {
-        width: 70px;
-        height: 80px;
-      }
-
       p {
         font-size: 1.35rem;
-        margin-left: 30px;
 
         a {
           color: rgb(182, 6, 6);
@@ -80,11 +72,6 @@
     }
   }
 
-  h1,
-  h2 {
-    text-align: center;
-    font-size: 2rem;
-  }
   .news-box {
     @include flexCenter;
     flex-direction: column;
@@ -129,6 +116,7 @@
   }
 
   .more-news {
+    text-align: center;
     .more-news-container {
       display: flex;
       flex-wrap: wrap;
@@ -243,8 +231,8 @@
 
 // Gemensam styling för alla sidor ( header + footer )
 body {
-  // font-family: $main-font; KOLLA VILKEN FONT SOM SKA ANVÄNDAS
-  // Samlad styling där mixins används
+  font-family: $main-font; 
+  
   li,
   a {
     @include li-style;
@@ -269,6 +257,13 @@ body {
     width: 100%;
     min-height: 100px;
 
+    .fa-shopping-cart {
+      color: black;
+      margin-left: 100px;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+  
     .top-nav {
       justify-content: flex-end;
       overflow: hidden;
@@ -305,7 +300,7 @@ body {
     min-height: 80px;
     display: flex;
     justify-content: center;
-    background-color: rgb(221, 226, 231);
+    background-color: rgb(240, 238, 238);
 
     .products {
       width: 80%;
@@ -315,6 +310,10 @@ body {
 
       a {
         flex-direction: column;
+        &:hover {
+          color: $underline-style;
+          font-size: 20px;
+        }
 
         i {
           margin: 15px;
@@ -541,6 +540,7 @@ body {
     }
 
     .footertider {
+      text-align: center;
       i {
         margin: 10px;
         margin-bottom: 20px;
@@ -745,10 +745,6 @@ body {
     }
     .maindiv1 {
       .medarbetar-area {
-
-        .medarbetare:hover {
-          background-color: black;
-
         .medarbetare {
           position: relative;
 
@@ -761,15 +757,9 @@ body {
           background-color: rgb(44, 43, 43);
           transition: .5s ease;
 
-
           .bilddiv {
             visibility: hidden;
           }
-
-          div {
-            background: black;
-          }
-
           .line {
             visibility: hidden;
           }
@@ -782,18 +772,18 @@ body {
             height: 100%;
             display: flex;
             align-items: center;
-            
+
             .text {
               color: white;
               text-align: center;
             }
           }
-
         }
       }
     }
   }
 }
+
 
 @media screen and (min-width: 600px) {
   .kontaktmain,
@@ -873,7 +863,7 @@ body {
 /// Produkt sida
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Indie+Flower&family=Mulish:wght@200&family=Raleway:wght@200&family=Rampart+One&display=swap");
 
-body {
+.hanna {
   font-family: "Dosis", sans-serif;
   background-color: rgb(245, 245, 245);
 }
@@ -883,17 +873,7 @@ body {
   display: flex;
   justify-content: flex-end;
 }
-.fa_custom {
-  color: black;
-  margin: 30px;
-}
-.line {
-  width: 140px;
-  height: 4px;
-  background: #03d7fcdc;
-  margin: 10px auto;
-  border-radius: 5px;
-}
+
 button {
   padding: 8px 15px;
   margin-top: 10px;
@@ -1042,4 +1022,8 @@ button {
     margin: 30px;
   }
 }
+<<<<<<< HEAD
 }
+=======
+
+>>>>>>> 1623ea1958e2253b44bb7ec5a55a9b99d1538029
