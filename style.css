@@ -47,33 +47,26 @@
 }
 
 .main-startpage .christmas-banner {
-  width: 100%;
-  border: 2px solid red;
-  min-height: 100px;
-  margin-bottom: 30px;
-}
-
-.main-startpage .christmas-banner .banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 30px;
 }
 
-.main-startpage .christmas-banner .banner .appleLogo {
-  width: 70px;
-  height: 80px;
+.main-startpage .christmas-banner .banner {
+  padding: 10px;
 }
 
 .main-startpage .christmas-banner .banner p {
   font-size: 1.35rem;
-  margin-left: 30px;
 }
 
 .main-startpage .christmas-banner .banner p a {
@@ -86,12 +79,6 @@
 
 .main-startpage .christmas-banner .banner p a span:hover {
   margin-left: 5px;
-}
-
-.main-startpage h1,
-.main-startpage h2 {
-  text-align: center;
-  font-size: 2rem;
 }
 
 .main-startpage .news-box {
@@ -175,6 +162,10 @@
 
 .main-startpage .news .iMac {
   width: 90%;
+}
+
+.main-startpage .more-news {
+  text-align: center;
 }
 
 .main-startpage .more-news .more-news-container {
@@ -286,6 +277,10 @@
   }
 }
 
+body {
+  font-family: "Dosis", "sans-serif";
+}
+
 body li,
 body a {
   text-decoration: none;
@@ -323,6 +318,13 @@ body header {
           justify-content: space-between;
   width: 100%;
   min-height: 100px;
+}
+
+body header .fa-shopping-cart {
+  color: black;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 body header .top-nav {
@@ -365,7 +367,7 @@ body .products-nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #dde2e7;
+  background-color: #f0eeee;
 }
 
 body .products-nav .products {
@@ -383,6 +385,11 @@ body .products-nav .products a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+body .products-nav .products a:hover {
+  color: #d869a0;
+  font-size: 20px;
 }
 
 body .products-nav .products a i {
@@ -703,6 +710,10 @@ body .footer {
 
 body .footer .bottom-bar li {
   margin: 15px;
+}
+
+body .footer .footertider {
+  text-align: center;
 }
 
 body .footer .footertider i {
@@ -1128,11 +1139,6 @@ body .footer .footertider i {
   }
 }
 
-.mainomoss body {
-  font-family: "Dosis", sans-serif;
-  background-color: whitesmoke;
-}
-
 .mainomoss .produktsida {
   width: 100%;
   height: 30px;
@@ -1143,6 +1149,7 @@ body .footer .footertider i {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+
 
 .mainomoss .fa_custom {
   color: black;
@@ -1158,6 +1165,7 @@ body .footer .footertider i {
 }
 
 .mainomoss button {
+
   padding: 8px 15px;
   margin-top: 10px;
   background: #03d7fcdc;
