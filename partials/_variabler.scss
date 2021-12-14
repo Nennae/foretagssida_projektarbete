@@ -9,6 +9,17 @@ $main-font: 'Dosis', 'sans-serif';
 
 // Mixins 
 
+@mixin headingStyle {
+  font-size: 2rem;
+  .line {
+    width: 140px;
+    height: 4px;
+    background: #03d7fcdc;
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+}
+
 @mixin flexCenter {
   display: flex;
   align-items: center;
