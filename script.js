@@ -1,7 +1,7 @@
 var hamburgaren = document.querySelector(".fa-bars")
 console.log(hamburgaren)
 var meny = document.querySelector(".ham-meny")
-console.log(meny)
+console.log(meny);
 var check = true;
 
 var siffra = 0;
