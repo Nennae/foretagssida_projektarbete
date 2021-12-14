@@ -114,20 +114,21 @@
 
 .main-startpage .link-container .buy-button:hover {
   background: #0add97;
+  color: white;
 }
 
 .main-startpage .link-container .read-button {
   margin-left: 10px;
-  background: #75ecc5;
-  border-radius: 15px;
-  border: none;
   padding: 5px 8px;
-  color: black;
+  border-radius: 15px;
+  background: #03d7fcdc;
+  border: none;
   background: #03d7fcdc;
 }
 
 .main-startpage .link-container .read-button:hover {
-  background: #0add97;
+  color: white;
+  background: #07b0eedc;
 }
 
 .main-startpage .news {
@@ -232,7 +233,6 @@
     width: 55%;
   }
   .main-startpage .news h1 {
-    font-size: 3rem;
     margin-top: 40px;
   }
   .main-startpage .news .macbook {
@@ -269,6 +269,19 @@ body {
   font-family: "Dosis", "sans-serif";
 }
 
+body h1 {
+  font-size: 2rem;
+  background: redx;
+}
+
+body h1 .line {
+  width: 140px;
+  height: 4px;
+  background: #03d7fcdc;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
 body .red-text {
   color: #b60606;
 }
@@ -285,6 +298,7 @@ body li,
 body a {
   text-decoration: none;
   list-style-type: none;
+  color: black;
 }
 
 body .top-nav a,
@@ -400,14 +414,14 @@ body .products-nav a {
   color: black;
 }
 
-body .main {
-  height: 600px;
-}
-
 body .main.referenser {
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
   display: flex;
   text-align: center;
   padding: 20px;
@@ -417,6 +431,10 @@ body .main.referenser .reviews {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -424,16 +442,14 @@ body .main.referenser .reviews {
       flex-wrap: wrap;
 }
 
-body .main.referenser .reviews h1 {
-  width: 100%;
-  font-family: "Dosis", "sans-serif";
+body .main.referenser .reviews .line {
+  width: 220px;
 }
 
 body .main.referenser .reviews .review-nav {
   padding: 15px;
   border-radius: 5px;
   width: 100%;
-  background-color: #8a9192;
   margin: 10px 0px;
 }
 
@@ -452,14 +468,14 @@ body .main.referenser .reviews .review-nav nav {
 
 body .main.referenser .reviews .review-nav nav a,
 body .main.referenser .reviews .review-nav nav p {
-  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
   font-size: 1.5rem;
 }
 
 body .main.referenser .reviews .review-nav nav a:hover {
-  border-radius: 5px;
-  -webkit-box-shadow: #424242 5px 5px 5px;
-          box-shadow: #424242 5px 5px 5px;
+  color: #d869a0;
 }
 
 body .main.referenser .reviews .review-wrap {
@@ -489,9 +505,10 @@ body .main.referenser .reviews .review-wrap .customer .private-rev {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #e0f1fd;
+  background-color: #f0eeee;
   margin: 0px 10px 20px 10px;
-  padding: 5px;
+  padding: 20px;
+  max-width: 1000px;
   border-radius: 15px;
   -webkit-box-shadow: #9e9e9e 5px 5px 5px;
           box-shadow: #9e9e9e 5px 5px 5px;
@@ -529,9 +546,10 @@ body .main.referenser .reviews .review-wrap .company .company-rev {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #e0f1fd;
+  background-color: #f0eeee;
   margin: 0px 10px 20px 10px;
-  padding: 5px;
+  padding: 20px;
+  max-width: 1000px;
   border-radius: 15px;
   -webkit-box-shadow: #9e9e9e 5px 5px 5px;
           box-shadow: #9e9e9e 5px 5px 5px;
@@ -959,18 +977,6 @@ body .footer .footertider i {
   margin: 50px 0px;
 }
 
-.mainomoss h1 {
-  font-size: 2rem;
-}
-
-.mainomoss h1 .line {
-  width: 140px;
-  height: 4px;
-  background: #03d7fcdc;
-  margin: 10px auto;
-  border-radius: 5px;
-}
-
 .mainomoss .omosshistoria {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1141,6 +1147,25 @@ body .footer .footertider i {
   background-color: whitesmoke;
 }
 
+.hanna button {
+  background: #03d7fcdc;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+  background: #03d7fcdc;
+  border-radius: 50px;
+}
+
+.hanna button:hover {
+  color: white;
+  background: #07b0eedc;
+}
+
+.hanna button:hover {
+  color: white;
+  background: #07b0eedc;
+}
+
 .produktsida {
   width: 100%;
   height: 30px;
@@ -1150,15 +1175,6 @@ body .footer .footertider i {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-}
-
-button {
-  padding: 8px 15px;
-  margin-top: 10px;
-  background: #03d7fcdc;
-  border-radius: 50px;
-  color: white;
-  border: #03d7fcdc solid;
 }
 
 .produktsida-header {
@@ -1181,7 +1197,7 @@ button {
 }
 
 .bigBox-text h1 {
-  font-size: 60px;
+  font-size: 4rem;
   background: -webkit-gradient(linear, left top, right top, from(#03d7fcdc), to(#e84393));
   background: linear-gradient(to right, #03d7fcdc, #e84393);
   -webkit-background-clip: text;
