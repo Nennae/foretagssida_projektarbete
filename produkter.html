@@ -5,19 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css">
   <title>Document</title>
 </head>
 <body>
-  <main class="hanna"> 
   
-    <header class="produktsida">
-      <i class="fa fa-shopping-cart fa_custom fa-2x"></i>
-    </header>
+  
+    <header class="header">
+      <a href="/index.html"><img src="/Loggo.png" alt="Logga"></a>
+<!-- Länkar till respektive undersida -->
+<i class="fas fa-shopping-cart"></i>
+      <nav class="top-nav">
+      <ul class="nav-bar">
 
+                  <li class="nav-links"><a href="index.html">HEM</a></li>
+            <li class="nav-links"><a href="Omoss.html">OM OSS</a></li>
+            <li class="nav-links"><a href="produkter.html">PRODUKTER</a></li>
+            <li class="nav-links"><a href="/Referenser.html">REFERENSER</a></li>
+            <li class="nav-links"><a href="Kontakt.html">KONTAKT</a></li> 
+
+      </ul>
+<!--  Ska fälla ut en meny med top-nav länkarna "onclick"  -->
+<a href="javascript:void(0);" class="icon" onclick="hamburgerFunction()">
+<i class="fa fa-bars"></i>
+</a>
+      </nav>
+</header>
+<!-- Länkar till respektive produktgrupp -->
+<nav class="products-nav">
+  <ul class="products">
+        <li class="product-links"><a href="#"><i class="fas fa-desktop"></i> Desktop</a></li>
+        <li class="product-links"><a href="#"><i class="fas fa-laptop"></i> Laptop</a></li>
+        <li class="product-links"><a href="#"><i class="fas fa-tablet-alt"></i> Platta</a></li>
+        <li class="product-links"><a href="#"><i class="fas fa-mobile-alt"></i> Mobil</a></li>
+  </ul>
+</nav>
+
+<section class="ham-meny">
+  <nav>
+        <div class="meny-del">
+  <a href="/index.html">HEM</a>
+        </div>
+        <div class="meny-del">
+  <a href="/Omoss.html">OM OSS</a>
+        </div>
+        <div class="meny-del">
+  <a href="/produkter.html">PRODUKTER</a>
+        </div>
+        <div class="meny-del">
+  <a href="/Referenser.html">REFERENSER</a>
+        </div>
+        <div class="meny-del">
+  <a href="/Kontakt.html">KONTAKT</a>
+        </div>
+  </nav>
+</section>
+<main class="hanna"> 
     <section class="produktsida-header">
         <article class="bigBox">
           <div class="bigBox-text">
-            <h2>Handla de senaste produkter</h2>
+              <p><a class="red-text" href="produkter.html"><strong>15 % JULRABATT</strong></span> - På Apple produkter <span>></a></p>
+            <h1>Handla de senaste produkter</h1>
             <p>Sista minuten julklappar - för alla till alla</p>
             <div class="bigBox-img"></div>
             <button>Till julklappar</button>
@@ -68,5 +116,29 @@
 
     </section>
   </main>
+  <!-- Sidfot startar här  -->
+  <footer class="footer">
+    <!-- socialmedia, öppettider, navigation till undersidor -->
+                      <nav class="bottom-nav">
+                            <ul class="bottom-bar">
+                                  <li class="nav-links"><a href="Omoss.html">OM OSS</a></li>
+                                  <li class="nav-links"><a href="produkter.html">PRODUKTER</a></li>
+                                  <li class="nav-links"><a href="Referenser.html">REFERENSER</a></li>
+                                  <li class="nav-links"><a href="Kontakt.html">KONTAKT</a></li> 
+                            </ul>
+                            </nav>
+    
+                            <div class="footertider">
+                                  <a href="#"><i class="fab fa-instagram"></i></a> 
+                                  <a href="#"><i class="fab fa-facebook"></i></a>
+                                  <a href="#"><i class="fab fa-youtube"></i></a>
+                                  <p><strong>Våra Öppetider:</strong></p>
+                                  <p>mån - fre: 9-10</p>
+                                  <p>lör - sön: Stängt</p>
+                                  <p></p>
+                            </div>
+          </footer>
+    
+          <script src="script.js"></script>
 </body>
 </html>
