@@ -8,7 +8,6 @@
   padding: 0;
 }
 
-//Linjer under h2 och h1 taggar
 .line {
   width: 140px;
   height: 4px;
@@ -240,14 +239,13 @@ body {
     -webkit-text-fill-color: transparent;
     font-size: 3rem;
   }
- 
   .para {
     font-size: 1.3rem;
   }
   .red-text {
       color: rgb(182, 6, 6);
-      &:active {
-        color: rgb(10, 51, 185);
+      &:hover {
+        color:black;
       }
       span {
         &:hover {
