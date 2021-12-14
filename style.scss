@@ -83,7 +83,7 @@
   h1,
   h2 {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
   .news-box {
     @include flexCenter;
@@ -202,7 +202,7 @@
         }
       }
       h1 {
-        font-size: 5rem;
+        font-size: 3rem;
         margin-top: 40px;
 
       }
@@ -215,7 +215,7 @@
       margin-top: 40px;
     }
     .line {
-      width: 400px;
+      width: 250px;
       margin-bottom: 80px;
       height: 6px;
     }
@@ -232,9 +232,9 @@
       }
       p {
         font-size: 2.5rem;
-        left: 25%;
-        top: 30%;
-        padding: 50px 20px;
+        left: 27%;
+        top: 20%;
+        padding: 100px;
       }
     }
   }
@@ -740,55 +740,14 @@ body {
   .omossmain {
     .maindiv1 {
       .medarbetar-area {
-        .medarbetare {
-          position: relative;
-          .beskrivning {
-            display: none;
-          //   width: 100%;
-          //   height: 100%;
-          //   display: flex;
-          //   flex-wrap: wrap;
-          //   justify-content: center;
-          }
-                      
-          // .text {
-          //   display: flex;
-          //   flex-wrap: wrap;
-          //   align-self: center;
-          //   //position: relative;
-          //   color: white;
-          // }
-        }
-        .medarbetare:hover { 
+        .medarbetare:hover {
           background-color: black;
-          transition: .5s ease;
 
           .bilddiv {
             visibility: hidden;
           }
-          .line {
+          div {
             background: black;
-          }
-          .beskrivning {
-            background-color: red;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            //flex-wrap: wrap;
-            flex-direction: column ;
-            align-items: center;
-            
-            .text {
-              background-color: purple;
-              width: 100%;
-              //height: 100%;
-              //text-align: center;
-              //display: flex;
-              //flex-wrap: wrap;
-              //align-self: center;
-              color: white;
-            }
           }
         }
       }
