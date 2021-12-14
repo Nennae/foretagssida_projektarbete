@@ -8,7 +8,7 @@
   padding: 0;
 }
 
-//Linjer under h2 taggar
+//Linjer under h2 och h1 taggar
 .line {
   width: 140px;
   height: 4px;
@@ -49,15 +49,20 @@
     @include flexCenter;
     justify-content: center;
     width: 100%;
-    min-height: 100px;
     margin-bottom: 30px;
 
     .banner {
-      padding: 10px;
+      padding: 20px;
       p {
         font-size: 1.35rem;
       }
     }
+  }
+
+  h1 {
+    background: linear-gradient(to right, #03d7fcdc, #e84393);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .news-box {
@@ -168,6 +173,9 @@
       .product-name {
         font-size: 2rem;
       }
+      // .line {
+      //   width: 300px;
+      // }
       .news-container {
         .product-name {
           margin-bottom: 50px;
@@ -217,12 +225,21 @@
 }
 // main-startpage slutar här
 
+
+
 // Gemensam styling för alla sidor ( header + footer )
 body {
   font-family: $main-font; 
   h1 {
     @include headingStyle;
-    background: redx;
+    background: linear-gradient(to right, #03d7fcdc, #e84393);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+  }
+ 
+  .para {
+    font-size: 1.3rem;
   }
   .red-text {
       color: rgb(182, 6, 6);
@@ -231,7 +248,7 @@ body {
       }
       span {
         &:hover {
-          margin-left: 5px;
+          margin-left: 5px; // Ändra styling
         }
       
     }
@@ -245,7 +262,9 @@ body {
   .bottom-nav {
     a {
       @include topBottom-nav-style;
+      
     }
+    
   }
 
   header,
@@ -329,7 +348,7 @@ body {
       color: black;
     }
   }
-  // Tillfällig height
+
   .main {
     
     //* Referenser filens styling (Kevs styling)
@@ -351,8 +370,9 @@ body {
         flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
+        margin-top: 50px;
         .line {
-          width: 220px;
+          width: 400px;
         }
         
         
@@ -362,9 +382,7 @@ body {
           width: 100%;
           margin: 10px 0px;
           
-          // a{
-          //   display: inline-block;
-          // }
+          
           nav {
             width: 100%;
             display: flex;
@@ -383,7 +401,7 @@ body {
         }
 
         .review-wrap {
-          background-color: hsl(0, 0%, 100%); //#E9CCCC
+          background-color: hsl(0, 0%, 100%);
           border-radius: 15px;
           font-family: $main-font;
           & > h2 {
@@ -401,9 +419,6 @@ body {
               &:focus {
                 box-shadow: rgb(66, 66, 66) 5px 5px 5px;
               }
-              // margin-bottom: 20px;  Kan tas bort, finns i review-zone
-              // padding: 5px;
-              // border-radius: 15px;
             }
           }
 
@@ -413,9 +428,6 @@ body {
               &:focus {
                 box-shadow: rgb(66, 66, 66) 5px 5px 5px;
               }
-              // margin-bottom: 20px; Kan tas bort, finns i review-zone
-              // padding: 5px;
-              // border-radius: 15px;
             }
           }
 
@@ -532,6 +544,7 @@ body {
     width: 100%;
     min-height: 150px;
     padding: 20px;
+    // background-color: grey;
 
     .bottom-bar {
       li {
@@ -555,6 +568,12 @@ body {
   body {
     .header {
       height: 170px;
+      .fa-shopping-cart {
+          color: black;
+          margin-left: 200px;
+          margin-top: 5px;
+          font-size: 20px;  
+      }
       img {
         margin-left: 50px;
       }
@@ -649,9 +668,9 @@ body {
     flex-direction: row;
     justify-content: center;
     height: auto;
-    margin-bottom: 20px;
     padding: 30px 0;
-    border-top: solid black 1px;
+    background-color: $background-gray;
+
 
     h2 {
       margin-bottom: 15px;
@@ -663,22 +682,28 @@ body {
       display: flex;
       align-items: center;
       flex-direction: column;
+      
     }
 
     .meddelande {
       display: flex;
       align-items: center;
-      height: 350px;
+      height: auto;
       align-items: flex-start;
+
+      .undertitel {
+        align-self: center;
+        text-align: center;
+        margin-bottom: 10px;
+      }
 
       select,
       input,
       textarea {
-        background-color: lightgray;
         width: 95%;
-        border: solid black 1px;
+        border: solid rgb(206, 202, 202) 1px;
         margin: 5px 0px 5px 0px;
-        padding: 0px 0px 0px 5px;
+        padding: 5px;
       }
 
       label {
@@ -715,7 +740,7 @@ body {
     align-items: center;
     height: 150px;
     width: 175px;
-    margin: 30px 0px;
+    margin: 50px 0px;
 
     img {
       margin: 20px 0px 0px 10px;
@@ -738,12 +763,13 @@ body {
     margin-bottom: 50px;
     padding: 20px;
 
+    .line {
+  width: 200px;
+    }
     .historiatext {
       width: 100%;
       margin-top: 20px;
-      p {
-        font-size: 1.3rem;
-      }
+      
     }
   }
 
@@ -824,9 +850,9 @@ body {
     }
 
     .maindiv2 {
-      height: 475px;
       width: 100%;
       display: flex;
+      
 
       .kontaktaoss {
         display: flex;
@@ -876,7 +902,7 @@ body {
   button {
     @include readMore-style;
     padding: 8px 15px;
-    margin-top: 10px;
+    margin-top: 40px;
     background: #03d7fcdc;
     border-radius: 50px;
     &:hover {
@@ -892,17 +918,15 @@ body {
   justify-content: flex-end;
 }
 
-
 .produktsida-header {
   display: flex;
-  min-height: 80vh;
   align-items: center;
 }
 .bigBox {
   flex: 1;
   width: 100%;
   height: auto;
-  margin: 150px;
+  margin: 70px 100px 70px 150px;
 }
 .bigBox-text {
   h1 {
@@ -912,7 +936,7 @@ body {
     -webkit-text-fill-color: transparent;
   }
   p {
-    margin-top: 5px;
+    margin-top: 15px;
     font-size: 22px;
     color: #585772;
   }
@@ -954,6 +978,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-bottom: 60px;
 }
 .box {
   position: relative;
@@ -1016,7 +1041,6 @@ body {
   margin: 20px;
   line-height: 10px;
   p {
-    font-size: 15px;
     font-weight: 400;
     line-height: 30px;
   }
