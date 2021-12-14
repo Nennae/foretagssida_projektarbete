@@ -104,12 +104,14 @@
     justify-content: center;
     margin-bottom: 90px;
 
-    button {
-      @include buttonStyle;
+    .buy-button {
+      @include buyButtonStyle;
     }
 
-    a {
+    .read-button {
       margin-left: 10px;
+      @include buyButtonStyle;
+      background: #03d7fcdc;
     }
   }
   .news {
@@ -681,7 +683,12 @@ body {
         }
       }
 
-      .kontaktbutton{
+      .button {
+        margin: 10px 11px 0px 0px;
+        background-color: lightgray;
+        border: solid black 1px;
+        height: 25px;
+        width: 50px;
         align-self: flex-end;
       }
 
@@ -855,7 +862,7 @@ body {
 /// Produkt sida
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Indie+Flower&family=Mulish:wght@200&family=Raleway:wght@200&family=Rampart+One&display=swap");
 
-.hanna {
+body {
   font-family: "Dosis", sans-serif;
   background-color: rgb(245, 245, 245);
 }
