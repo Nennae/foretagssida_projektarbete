@@ -427,6 +427,16 @@ body .main.referenser {
   padding: 20px;
 }
 
+body .main.referenser .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 body .main.referenser .reviews {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -640,30 +650,27 @@ body .main.referenser .reviews .review-wrap .write-review .btn-wrap {
 }
 
 body .main.referenser .reviews .review-wrap .write-review .btn-wrap .submit-btn {
-  display: block;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  width: 100px;
-  height: 40px;
-  background-color: #93ddfd;
-  color: black;
+  background: #03d7fcdc;
   border: none;
-  border-radius: 20px;
-  padding: 5px 8px;
-  font-size: 1rem;
-  -webkit-box-shadow: #424242 5px 5px 5px;
-          box-shadow: #424242 5px 5px 5px;
+  padding: 8px 15px;
+  margin-top: 10px;
+  background: #03d7fcdc;
+  border-radius: 50px;
 }
 
-body .main.referenser .reviews .review-wrap .write-review .btn-wrap .submit-btn:active {
-  -webkit-box-shadow: #12fa45 5px 5px 5px;
-          box-shadow: #12fa45 5px 5px 5px;
+body .main.referenser .reviews .review-wrap .write-review .btn-wrap .submit-btn:hover {
+  color: white;
+  background: #07b0eedc;
+}
+
+body .main.referenser .reviews .review-wrap .write-review .btn-wrap .submit-btn:hover {
+  color: white;
+  background: #07b0eedc;
 }
 
 body .main.referenser .reviews .review-wrap .write-review .rate {
   display: inline-block;
   height: 46px;
-  padding: 0 10px;
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
@@ -671,8 +678,7 @@ body .main.referenser .reviews .review-wrap .write-review .rate {
 }
 
 body .main.referenser .reviews .review-wrap .write-review .rate label {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  margin: 3px;
 }
 
 body .main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > input {
@@ -794,6 +800,12 @@ body .footer .footertider i {
   display: flex;
 }
 
+.kontaktmain h1,
+.omossmedarbetare h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
 .kontaktmain .maindiv1,
 .omossmedarbetare .maindiv1 {
   display: -webkit-box;
@@ -803,7 +815,6 @@ body .footer .footertider i {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 1100px;
-  background-color: white;
 }
 
 .kontaktmain .maindiv1 .medarbetar-area,
@@ -841,7 +852,7 @@ body .footer .footertider i {
           align-items: center;
   width: 100%;
   height: 300px;
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: #f0eeee;
   -webkit-box-shadow: 2px 2px #acafb3;
           box-shadow: 2px 2px #acafb3;
@@ -876,12 +887,13 @@ body .footer .footertider i {
           justify-content: center;
   height: auto;
   margin-bottom: 20px;
+  padding: 30px 0;
   border-top: solid black 1px;
 }
 
 .kontaktmain .maindiv2 h2,
 .omossmedarbetare .maindiv2 h2 {
-  font-size: 23px;
+  margin-bottom: 15px;
 }
 
 .kontaktmain .maindiv2 .kontaktaoss,
@@ -939,13 +951,27 @@ body .footer .footertider i {
 
 .kontaktmain .maindiv2 .meddelande .button,
 .omossmedarbetare .maindiv2 .meddelande .button {
+  background: #03d7fcdc;
+  border: none;
   margin: 10px 11px 0px 0px;
-  background-color: lightgray;
-  border: solid black 1px;
-  height: 25px;
-  width: 50px;
+  padding: 8px 15px;
+  margin-top: 10px;
+  background: #03d7fcdc;
+  border-radius: 50px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.kontaktmain .maindiv2 .meddelande .button:hover,
+.omossmedarbetare .maindiv2 .meddelande .button:hover {
+  color: white;
+  background: #07b0eedc;
+}
+
+.kontaktmain .maindiv2 .meddelande .button:hover,
+.omossmedarbetare .maindiv2 .meddelande .button:hover {
+  color: white;
+  background: #07b0eedc;
 }
 
 .kontaktmain .maindiv2 .meddelande #meddelande,
