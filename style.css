@@ -437,7 +437,7 @@ body .products-nav a {
   color: black;
 }
 
-body .main.referenser {
+.main.referenser {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,7 +450,7 @@ body .main.referenser {
   padding: 20px;
 }
 
-body .main.referenser .flex {
+.main.referenser .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,7 +460,7 @@ body .main.referenser .flex {
           flex-direction: column;
 }
 
-body .main.referenser .reviews {
+.main.referenser .reviews {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,18 +475,18 @@ body .main.referenser .reviews {
       flex-wrap: wrap;
 }
 
-body .main.referenser .reviews .line {
+.main.referenser .reviews .line {
   width: 220px;
 }
 
-body .main.referenser .reviews .review-nav {
+.main.referenser .reviews .review-nav {
   padding: 15px;
   border-radius: 5px;
   width: 100%;
   margin: 10px 0px;
 }
 
-body .main.referenser .reviews .review-nav nav {
+.main.referenser .reviews .review-nav nav {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -499,26 +499,26 @@ body .main.referenser .reviews .review-nav nav {
   font-family: "Dosis", "sans-serif";
 }
 
-body .main.referenser .reviews .review-nav nav a,
-body .main.referenser .reviews .review-nav nav p {
+.main.referenser .reviews .review-nav nav a,
+.main.referenser .reviews .review-nav nav p {
   text-decoration: none;
   list-style-type: none;
   color: black;
   font-size: 1.5rem;
 }
 
-body .main.referenser .reviews .review-nav nav a:hover {
+.main.referenser .reviews .review-nav nav a:hover {
   color: #d869a0;
 }
 
-body .main.referenser .reviews .review-wrap {
+.main.referenser .reviews .review-wrap {
   width: 100%;
   background-color: white;
   border-radius: 15px;
   font-family: "Dosis", "sans-serif";
 }
 
-body .main.referenser .reviews .review-wrap > h2 {
+.main.referenser .reviews .review-wrap > h2 {
   font-style: oblique;
   border-radius: 15px;
   background-color: white;
@@ -526,15 +526,15 @@ body .main.referenser .reviews .review-wrap > h2 {
           box-shadow: #424242 5px 5px 5px;
 }
 
-body .main.referenser .reviews .review-wrap h2 {
+.main.referenser .reviews .review-wrap h2 {
   margin: 15px;
 }
 
-body .main.referenser .reviews .review-wrap .customer {
+.main.referenser .reviews .review-wrap .customer {
   padding: 15px;
 }
 
-body .main.referenser .reviews .review-wrap .customer .private-rev {
+.main.referenser .reviews .review-wrap .customer .private-rev {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,40 +552,40 @@ body .main.referenser .reviews .review-wrap .customer .private-rev {
           box-shadow: #9e9e9e 5px 5px 5px;
 }
 
-body .main.referenser .reviews .review-wrap .customer .private-rev h2, body .main.referenser .reviews .review-wrap .customer .private-rev h3, body .main.referenser .reviews .review-wrap .customer .private-rev p {
+.main.referenser .reviews .review-wrap .customer .private-rev h2, .main.referenser .reviews .review-wrap .customer .private-rev h3, .main.referenser .reviews .review-wrap .customer .private-rev p {
   width: 100%;
   margin-bottom: 10px;
 }
 
-body .main.referenser .reviews .review-wrap .customer .private-rev h3, body .main.referenser .reviews .review-wrap .customer .private-rev p {
+.main.referenser .reviews .review-wrap .customer .private-rev h3, .main.referenser .reviews .review-wrap .customer .private-rev p {
   text-align: start;
 }
 
-body .main.referenser .reviews .review-wrap .customer .private-rev h3 {
+.main.referenser .reviews .review-wrap .customer .private-rev h3 {
   font-style: italic;
   text-decoration: underline;
 }
 
-body .main.referenser .reviews .review-wrap .customer .private-rev p {
+.main.referenser .reviews .review-wrap .customer .private-rev p {
   font-style: oblique;
 }
 
-body .main.referenser .reviews .review-wrap .customer .private-rev .stars {
+.main.referenser .reviews .review-wrap .customer .private-rev .stars {
   color: #d869a0;
 }
 
-body .main.referenser .reviews .review-wrap .customer .private-rev:focus {
+.main.referenser .reviews .review-wrap .customer .private-rev:focus {
   -webkit-box-shadow: #424242 5px 5px 5px;
           box-shadow: #424242 5px 5px 5px;
 }
 
-body .main.referenser .reviews .review-wrap .customer .private-rev p {
+.main.referenser .reviews .review-wrap .customer .private-rev p {
   font-size: 1.2rem;
   word-spacing: 5px;
   white-space: pre-line;
 }
 
-body .main.referenser .reviews .review-wrap .customer .private-rev .qualities {
+.main.referenser .reviews .review-wrap .customer .private-rev .qualities {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -596,29 +596,29 @@ body .main.referenser .reviews .review-wrap .customer .private-rev .qualities {
   margin: 10px 0px 40px 0px;
 }
 
-body .main.referenser .reviews .review-wrap .customer .private-rev .qualities p {
+.main.referenser .reviews .review-wrap .customer .private-rev .qualities p {
   margin-right: 30px;
   font-weight: bold;
   padding: 5px;
 }
 
-body .main.referenser .reviews .review-wrap .customer .private-rev .qualities .pos::before {
+.main.referenser .reviews .review-wrap .customer .private-rev .qualities .pos::before {
   color: #396;
   content: "+";
   margin-right: 10px;
 }
 
-body .main.referenser .reviews .review-wrap .customer .private-rev .qualities .neg::before {
+.main.referenser .reviews .review-wrap .customer .private-rev .qualities .neg::before {
   color: #f33;
   content: "‒";
   margin-right: 10px;
 }
 
-body .main.referenser .reviews .review-wrap .company {
+.main.referenser .reviews .review-wrap .company {
   padding: 15px;
 }
 
-body .main.referenser .reviews .review-wrap .company .company-rev {
+.main.referenser .reviews .review-wrap .company .company-rev {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -636,40 +636,40 @@ body .main.referenser .reviews .review-wrap .company .company-rev {
           box-shadow: #9e9e9e 5px 5px 5px;
 }
 
-body .main.referenser .reviews .review-wrap .company .company-rev h2, body .main.referenser .reviews .review-wrap .company .company-rev h3, body .main.referenser .reviews .review-wrap .company .company-rev p {
+.main.referenser .reviews .review-wrap .company .company-rev h2, .main.referenser .reviews .review-wrap .company .company-rev h3, .main.referenser .reviews .review-wrap .company .company-rev p {
   width: 100%;
   margin-bottom: 10px;
 }
 
-body .main.referenser .reviews .review-wrap .company .company-rev h3, body .main.referenser .reviews .review-wrap .company .company-rev p {
+.main.referenser .reviews .review-wrap .company .company-rev h3, .main.referenser .reviews .review-wrap .company .company-rev p {
   text-align: start;
 }
 
-body .main.referenser .reviews .review-wrap .company .company-rev h3 {
+.main.referenser .reviews .review-wrap .company .company-rev h3 {
   font-style: italic;
   text-decoration: underline;
 }
 
-body .main.referenser .reviews .review-wrap .company .company-rev p {
+.main.referenser .reviews .review-wrap .company .company-rev p {
   font-style: oblique;
 }
 
-body .main.referenser .reviews .review-wrap .company .company-rev .stars {
+.main.referenser .reviews .review-wrap .company .company-rev .stars {
   color: #d869a0;
 }
 
-body .main.referenser .reviews .review-wrap .company .company-rev:focus {
+.main.referenser .reviews .review-wrap .company .company-rev:focus {
   -webkit-box-shadow: #424242 5px 5px 5px;
           box-shadow: #424242 5px 5px 5px;
 }
 
-body .main.referenser .reviews .review-wrap .company .company-rev p {
+.main.referenser .reviews .review-wrap .company .company-rev p {
   font-size: 1.2rem;
   word-spacing: 5px;
   white-space: pre-line;
 }
 
-body .main.referenser .reviews .review-wrap .company .company-rev .qualities {
+.main.referenser .reviews .review-wrap .company .company-rev .qualities {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -680,25 +680,25 @@ body .main.referenser .reviews .review-wrap .company .company-rev .qualities {
   margin: 10px 0px 40px 0px;
 }
 
-body .main.referenser .reviews .review-wrap .company .company-rev .qualities p {
+.main.referenser .reviews .review-wrap .company .company-rev .qualities p {
   margin-right: 30px;
   font-weight: bold;
   padding: 5px;
 }
 
-body .main.referenser .reviews .review-wrap .company .company-rev .qualities .pos::before {
+.main.referenser .reviews .review-wrap .company .company-rev .qualities .pos::before {
   color: #396;
   content: "+";
   margin-right: 10px;
 }
 
-body .main.referenser .reviews .review-wrap .company .company-rev .qualities .neg::before {
+.main.referenser .reviews .review-wrap .company .company-rev .qualities .neg::before {
   color: #f33;
   content: "‒";
   margin-right: 10px;
 }
 
-body .main.referenser .reviews .review-wrap .write-review {
+.main.referenser .reviews .review-wrap .write-review {
   padding: 35px;
   width: 100%;
   display: -webkit-box;
@@ -715,7 +715,7 @@ body .main.referenser .reviews .review-wrap .write-review {
   background-color: white;
 }
 
-body .main.referenser .reviews .review-wrap .write-review > label {
+.main.referenser .reviews .review-wrap .write-review > label {
   display: block;
   width: 100%;
   text-align: start;
@@ -725,7 +725,7 @@ body .main.referenser .reviews .review-wrap .write-review > label {
   margin-bottom: 15px;
 }
 
-body .main.referenser .reviews .review-wrap .write-review .selections {
+.main.referenser .reviews .review-wrap .write-review .selections {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -736,17 +736,17 @@ body .main.referenser .reviews .review-wrap .write-review .selections {
   margin-bottom: 15px;
 }
 
-body .main.referenser .reviews .review-wrap .write-review .selections select {
+.main.referenser .reviews .review-wrap .write-review .selections select {
   margin-right: 5px;
   height: 30px;
 }
 
-body .main.referenser .reviews .review-wrap .write-review textarea {
+.main.referenser .reviews .review-wrap .write-review textarea {
   margin-top: 10px;
   font-family: "Dosis", "sans-serif";
 }
 
-body .main.referenser .reviews .review-wrap .write-review .btn-wrap {
+.main.referenser .reviews .review-wrap .write-review .btn-wrap {
   height: 60px;
   width: 100%;
   display: -webkit-box;
@@ -760,7 +760,7 @@ body .main.referenser .reviews .review-wrap .write-review .btn-wrap {
           align-items: center;
 }
 
-body .main.referenser .reviews .review-wrap .write-review .btn-wrap .submit-btn {
+.main.referenser .reviews .review-wrap .write-review .btn-wrap .submit-btn {
   background: #03d7fcdc;
   border: none;
   padding: 8px 15px;
@@ -769,22 +769,22 @@ body .main.referenser .reviews .review-wrap .write-review .btn-wrap .submit-btn 
   border-radius: 50px;
 }
 
-body .main.referenser .reviews .review-wrap .write-review .btn-wrap .submit-btn:hover {
+.main.referenser .reviews .review-wrap .write-review .btn-wrap .submit-btn:hover {
   color: white;
   background: #07b0eedc;
 }
 
-body .main.referenser .reviews .review-wrap .write-review .btn-wrap .submit-btn:hover {
+.main.referenser .reviews .review-wrap .write-review .btn-wrap .submit-btn:hover {
   color: white;
   background: #07b0eedc;
 }
 
-body .main.referenser .reviews .review-wrap .write-review .btn-wrap .submit-btn:active {
+.main.referenser .reviews .review-wrap .write-review .btn-wrap .submit-btn:active {
   -webkit-box-shadow: #12fa45 5px 5px 5px;
           box-shadow: #12fa45 5px 5px 5px;
 }
 
-body .main.referenser .reviews .review-wrap .write-review .rate {
+.main.referenser .reviews .review-wrap .write-review .rate {
   display: inline-block;
   height: 46px;
   -ms-flex-item-align: start;
@@ -793,16 +793,16 @@ body .main.referenser .reviews .review-wrap .write-review .rate {
   top: 0px;
 }
 
-body .main.referenser .reviews .review-wrap .write-review .rate label {
+.main.referenser .reviews .review-wrap .write-review .rate label {
   margin: 3px;
 }
 
-body .main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > input {
+.main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > input {
   position: absolute;
   top: -9999px;
 }
 
-body .main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > label {
+.main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > label {
   float: right;
   width: 0.8em;
   overflow: hidden;
@@ -812,33 +812,41 @@ body .main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > 
   color: #ccc;
 }
 
-body .main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > label:before {
+.main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > label:before {
   content: "★";
 }
 
-body .main.referenser .reviews .review-wrap .write-review .rate > input:checked ~ label {
+.main.referenser .reviews .review-wrap .write-review .rate > input:checked ~ label {
   color: #d869a0;
 }
 
-body .main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > label:hover,
-body .main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > label:hover ~ label {
+.main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > label:hover,
+.main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > label:hover ~ label {
   color: #d869a0;
 }
 
-body .main.referenser .reviews .review-wrap .write-review .rate > input:checked + label:hover,
-body .main.referenser .reviews .review-wrap .write-review .rate > input:checked + label:hover ~ label,
-body .main.referenser .reviews .review-wrap .write-review .rate > input:checked ~ label:hover,
-body .main.referenser .reviews .review-wrap .write-review .rate > input:checked ~ label:hover ~ label,
-body .main.referenser .reviews .review-wrap .write-review .rate > label:hover ~ input:checked ~ label {
+.main.referenser .reviews .review-wrap .write-review .rate > input:checked + label:hover,
+.main.referenser .reviews .review-wrap .write-review .rate > input:checked + label:hover ~ label,
+.main.referenser .reviews .review-wrap .write-review .rate > input:checked ~ label:hover,
+.main.referenser .reviews .review-wrap .write-review .rate > input:checked ~ label:hover ~ label,
+.main.referenser .reviews .review-wrap .write-review .rate > label:hover ~ input:checked ~ label {
   color: #d869a0;
 }
 
-body .fa-youtube {
+.fa-youtube {
   color: red;
 }
 
-body .fa-facebook {
+.fa-facebook {
   color: #1877f2;
+}
+
+.fa-instagram {
+  font-size: 30px;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer {
@@ -856,56 +864,56 @@ body .fa-facebook {
   padding: 20px;
 }
 
-body .footer .bottom-bar li {
+.footer .bottom-bar li {
   margin: 15px;
 }
 
-body .footer .footertider {
+.footer .footertider {
   text-align: center;
 }
 
-body .footer .footertider i {
+.footer .footertider i {
   margin: 10px;
   margin-bottom: 20px;
   color: black;
 }
 
 @media screen and (min-width: 760px) {
-  body body .header {
+  body .header {
     height: 170px;
   }
-  body body .header .fa-shopping-cart {
+  body .header .fa-shopping-cart {
     color: black;
     margin-left: 200px;
     margin-top: 5px;
     font-size: 20px;
   }
-  body body .header img {
+  body .header img {
     margin-left: 50px;
   }
-  body body .header .top-nav i {
+  body .header .top-nav i {
     display: none;
   }
-  body body .header .top-nav .nav-bar {
+  body .header .top-nav .nav-bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  body body .header .top-nav .nav-bar .active, body body .header .top-nav .nav-bar .nav-links:hover {
+  body .header .top-nav .nav-bar .active, body .header .top-nav .nav-bar .nav-links:hover {
     color: #09abe6;
   }
-  body body .header .top-nav .nav-bar a {
+  body .header .top-nav .nav-bar a {
     margin-right: 40px;
     font-size: 1.4rem;
     white-space: nowrap;
   }
-  body body .footer {
+  body .footer {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  body body .footer .bottom-bar {
+  body .footer .bottom-bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -917,8 +925,8 @@ body .footer .footertider i {
   }
 }
 
-body .kontaktmain,
-body .omossmedarbetare {
+.kontaktmain,
+.omossmedarbetare {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -933,14 +941,14 @@ body .omossmedarbetare {
   display: flex;
 }
 
-body .kontaktmain h1,
-body .omossmedarbetare h1 {
+.kontaktmain h1,
+.omossmedarbetare h1 {
   text-align: center;
   margin-top: 30px;
 }
 
-body .kontaktmain .maindiv1,
-body .omossmedarbetare .maindiv1 {
+.kontaktmain .maindiv1,
+.omossmedarbetare .maindiv1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -950,8 +958,8 @@ body .omossmedarbetare .maindiv1 {
   height: 1100px;
 }
 
-body .kontaktmain .maindiv1 .medarbetar-area,
-body .omossmedarbetare .maindiv1 .medarbetar-area {
+.kontaktmain .maindiv1 .medarbetar-area,
+.omossmedarbetare .maindiv1 .medarbetar-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -968,8 +976,8 @@ body .omossmedarbetare .maindiv1 .medarbetar-area {
   height: auto;
 }
 
-body .kontaktmain .maindiv1 .medarbetar-area .medarbetare,
-body .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare {
+.kontaktmain .maindiv1 .medarbetar-area .medarbetare,
+.omossmedarbetare .maindiv1 .medarbetar-area .medarbetare {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -991,8 +999,8 @@ body .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare {
           box-shadow: 2px 2px #acafb3;
 }
 
-body .kontaktmain .maindiv1 .medarbetar-area .medarbetare .bilddiv,
-body .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare .bilddiv {
+.kontaktmain .maindiv1 .medarbetar-area .medarbetare .bilddiv,
+.omossmedarbetare .maindiv1 .medarbetar-area .medarbetare .bilddiv {
   background-color: black;
   width: 125px;
   height: 175px;
@@ -1000,14 +1008,14 @@ body .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare .bilddiv {
   border-radius: 2px;
 }
 
-body .kontaktmain .maindiv1 .medarbetar-area .medarbetare .bilddiv img,
-body .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare .bilddiv img {
+.kontaktmain .maindiv1 .medarbetar-area .medarbetare .bilddiv img,
+.omossmedarbetare .maindiv1 .medarbetar-area .medarbetare .bilddiv img {
   height: 100%;
   width: 100%;
 }
 
-body .kontaktmain .maindiv2,
-body .omossmedarbetare .maindiv2 {
+.kontaktmain .maindiv2,
+.omossmedarbetare .maindiv2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1023,13 +1031,13 @@ body .omossmedarbetare .maindiv2 {
   background-color: #f0eeee;
 }
 
-body .kontaktmain .maindiv2 h2,
-body .omossmedarbetare .maindiv2 h2 {
+.kontaktmain .maindiv2 h2,
+.omossmedarbetare .maindiv2 h2 {
   margin-bottom: 15px;
 }
 
-body .kontaktmain .maindiv2 .kontaktaoss,
-body .omossmedarbetare .maindiv2 .kontaktaoss {
+.kontaktmain .maindiv2 .kontaktaoss,
+.omossmedarbetare .maindiv2 .kontaktaoss {
   height: 175px;
   width: 48%;
   display: -webkit-box;
@@ -1044,8 +1052,8 @@ body .omossmedarbetare .maindiv2 .kontaktaoss {
           flex-direction: column;
 }
 
-body .kontaktmain .maindiv2 .meddelande,
-body .omossmedarbetare .maindiv2 .meddelande {
+.kontaktmain .maindiv2 .meddelande,
+.omossmedarbetare .maindiv2 .meddelande {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1058,8 +1066,8 @@ body .omossmedarbetare .maindiv2 .meddelande {
           align-items: flex-start;
 }
 
-body .kontaktmain .maindiv2 .meddelande .undertitel,
-body .omossmedarbetare .maindiv2 .meddelande .undertitel {
+.kontaktmain .maindiv2 .meddelande .undertitel,
+.omossmedarbetare .maindiv2 .meddelande .undertitel {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1067,30 +1075,30 @@ body .omossmedarbetare .maindiv2 .meddelande .undertitel {
   margin-bottom: 10px;
 }
 
-body .kontaktmain .maindiv2 .meddelande select,
-body .kontaktmain .maindiv2 .meddelande input,
-body .kontaktmain .maindiv2 .meddelande textarea,
-body .omossmedarbetare .maindiv2 .meddelande select,
-body .omossmedarbetare .maindiv2 .meddelande input,
-body .omossmedarbetare .maindiv2 .meddelande textarea {
+.kontaktmain .maindiv2 .meddelande select,
+.kontaktmain .maindiv2 .meddelande input,
+.kontaktmain .maindiv2 .meddelande textarea,
+.omossmedarbetare .maindiv2 .meddelande select,
+.omossmedarbetare .maindiv2 .meddelande input,
+.omossmedarbetare .maindiv2 .meddelande textarea {
   width: 95%;
   border: solid #cecaca 1px;
   margin: 5px 0px 5px 0px;
   padding: 5px;
 }
 
-body .kontaktmain .maindiv2 .meddelande label,
-body .omossmedarbetare .maindiv2 .meddelande label {
+.kontaktmain .maindiv2 .meddelande label,
+.omossmedarbetare .maindiv2 .meddelande label {
   margin-top: 5px;
 }
 
-body .kontaktmain .maindiv2 .meddelande label#labelmeddelande,
-body .omossmedarbetare .maindiv2 .meddelande label#labelmeddelande {
+.kontaktmain .maindiv2 .meddelande label#labelmeddelande,
+.omossmedarbetare .maindiv2 .meddelande label#labelmeddelande {
   margin-top: 20px;
 }
 
-body .kontaktmain .maindiv2 .meddelande .button,
-body .omossmedarbetare .maindiv2 .meddelande .button {
+.kontaktmain .maindiv2 .meddelande .button,
+.omossmedarbetare .maindiv2 .meddelande .button {
   background: #03d7fcdc;
   border: none;
   margin: 10px 11px 0px 0px;
@@ -1102,25 +1110,25 @@ body .omossmedarbetare .maindiv2 .meddelande .button {
       align-self: flex-end;
 }
 
-body .kontaktmain .maindiv2 .meddelande .button:hover,
-body .omossmedarbetare .maindiv2 .meddelande .button:hover {
+.kontaktmain .maindiv2 .meddelande .button:hover,
+.omossmedarbetare .maindiv2 .meddelande .button:hover {
   color: white;
   background: #07b0eedc;
 }
 
-body .kontaktmain .maindiv2 .meddelande .button:hover,
-body .omossmedarbetare .maindiv2 .meddelande .button:hover {
+.kontaktmain .maindiv2 .meddelande .button:hover,
+.omossmedarbetare .maindiv2 .meddelande .button:hover {
   color: white;
   background: #07b0eedc;
 }
 
-body .kontaktmain .maindiv2 .meddelande #meddelande,
-body .omossmedarbetare .maindiv2 .meddelande #meddelande {
+.kontaktmain .maindiv2 .meddelande #meddelande,
+.omossmedarbetare .maindiv2 .meddelande #meddelande {
   height: 100px;
 }
 
-body .kontaktmain .bildhus,
-body .omossmedarbetare .bildhus {
+.kontaktmain .bildhus,
+.omossmedarbetare .bildhus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1135,15 +1143,15 @@ body .omossmedarbetare .bildhus {
   margin: 50px 0px;
 }
 
-body .kontaktmain .bildhus img,
-body .omossmedarbetare .bildhus img {
+.kontaktmain .bildhus img,
+.omossmedarbetare .bildhus img {
   margin: 20px 0px 0px 10px;
   width: 100%;
   height: 100%;
   margin: 50px 0px;
 }
 
-body .mainomoss .omosshistoria {
+.mainomoss .omosshistoria {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1159,46 +1167,46 @@ body .mainomoss .omosshistoria {
   padding: 20px;
 }
 
-body .mainomoss .omosshistoria .line {
+.mainomoss .omosshistoria .line {
   width: 200px;
 }
 
-body .mainomoss .omosshistoria .historiatext {
+.mainomoss .omosshistoria .historiatext {
   width: 100%;
   margin-top: 20px;
 }
 
-body .mainomoss .omossmedarbetare h2 {
+.mainomoss .omossmedarbetare h2 {
   text-align: center;
 }
 
-body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare {
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare {
   position: relative;
 }
 
-body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare .beskrivning {
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare .beskrivning {
   display: none;
 }
 
-body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover {
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover {
   background-color: #2c2b2b;
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
 
-body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .bilddiv {
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .bilddiv {
   visibility: hidden;
 }
 
-body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .line {
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .line {
   visibility: hidden;
 }
 
-body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover p {
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover p {
   visibility: hidden;
 }
 
-body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .beskrivning {
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .beskrivning {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1210,14 +1218,14 @@ body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover 
           align-items: center;
 }
 
-body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .beskrivning .text {
+.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .beskrivning .text {
   color: white;
   text-align: center;
 }
 
 @media screen and (min-width: 600px) {
-  body .kontaktmain,
-  body .omossmedarbetare {
+  .kontaktmain,
+  .omossmedarbetare {
     height: auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1226,8 +1234,8 @@ body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover 
         -ms-flex-align: center;
             align-items: center;
   }
-  body .kontaktmain .maindiv1,
-  body .omossmedarbetare .maindiv1 {
+  .kontaktmain .maindiv1,
+  .omossmedarbetare .maindiv1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1240,8 +1248,8 @@ body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover 
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  body .kontaktmain .maindiv1 .medarbetar-area,
-  body .omossmedarbetare .maindiv1 .medarbetar-area {
+  .kontaktmain .maindiv1 .medarbetar-area,
+  .omossmedarbetare .maindiv1 .medarbetar-area {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1251,23 +1259,23 @@ body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover 
             justify-content: center;
     width: 100%;
   }
-  body .kontaktmain .maindiv1 .medarbetar-area .medarbetare,
-  body .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare {
+  .kontaktmain .maindiv1 .medarbetar-area .medarbetare,
+  .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare {
     width: 200px;
     height: 325px;
     padding-bottom: 10px;
     margin-left: 4%;
     margin-right: 4%;
   }
-  body .kontaktmain .maindiv2,
-  body .omossmedarbetare .maindiv2 {
+  .kontaktmain .maindiv2,
+  .omossmedarbetare .maindiv2 {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  body .kontaktmain .maindiv2 .kontaktaoss,
-  body .omossmedarbetare .maindiv2 .kontaktaoss {
+  .kontaktmain .maindiv2 .kontaktaoss,
+  .omossmedarbetare .maindiv2 .kontaktaoss {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1276,18 +1284,18 @@ body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover 
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body .kontaktmain .maindiv2 .kontaktaoss .button,
-  body .omossmedarbetare .maindiv2 .kontaktaoss .button {
+  .kontaktmain .maindiv2 .kontaktaoss .button,
+  .omossmedarbetare .maindiv2 .kontaktaoss .button {
     margin: 10px 37px 0px 0px;
   }
-  body .kontaktmain .maindiv2 .kontaktaoss input,
-  body .kontaktmain .maindiv2 .kontaktaoss select,
-  body .omossmedarbetare .maindiv2 .kontaktaoss input,
-  body .omossmedarbetare .maindiv2 .kontaktaoss select {
+  .kontaktmain .maindiv2 .kontaktaoss input,
+  .kontaktmain .maindiv2 .kontaktaoss select,
+  .omossmedarbetare .maindiv2 .kontaktaoss input,
+  .omossmedarbetare .maindiv2 .kontaktaoss select {
     height: 25px;
   }
-  body .kontaktmain .maindiv2 .kontaktaoss .bildhus,
-  body .omossmedarbetare .maindiv2 .kontaktaoss .bildhus {
+  .kontaktmain .maindiv2 .kontaktaoss .bildhus,
+  .omossmedarbetare .maindiv2 .kontaktaoss .bildhus {
     width: 50%;
     height: 237px;
     display: -webkit-box;
@@ -1298,22 +1306,22 @@ body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover 
             justify-content: center;
     margin: 10px 0px 20px 0px;
   }
-  body .kontaktmain .maindiv2 .kontaktaoss img,
-  body .omossmedarbetare .maindiv2 .kontaktaoss img {
+  .kontaktmain .maindiv2 .kontaktaoss img,
+  .omossmedarbetare .maindiv2 .kontaktaoss img {
     width: 100%;
     height: 237px;
   }
-  body .mainomoss .omosshistoria .historiatext {
+  .mainomoss .omosshistoria .historiatext {
     width: 60%;
   }
 }
 
-body .hanna {
+.hanna {
   font-family: "Dosis", sans-serif;
   background-color: whitesmoke;
 }
 
-body .hanna button {
+.hanna button {
   background: #03d7fcdc;
   border: none;
   padding: 8px 15px;
@@ -1322,17 +1330,17 @@ body .hanna button {
   border-radius: 50px;
 }
 
-body .hanna button:hover {
+.hanna button:hover {
   color: white;
   background: #07b0eedc;
 }
 
-body .hanna button:hover {
+.hanna button:hover {
   color: white;
   background: #07b0eedc;
 }
 
-body .produktsida {
+.produktsida {
   width: 100%;
   height: 30px;
   display: -webkit-box;
@@ -1343,7 +1351,7 @@ body .produktsida {
           justify-content: flex-end;
 }
 
-body .produktsida-header {
+.produktsida-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1352,7 +1360,7 @@ body .produktsida-header {
           align-items: center;
 }
 
-body .bigBox {
+.bigBox {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1361,7 +1369,7 @@ body .bigBox {
   margin: 70px 100px 70px 150px;
 }
 
-body .bigBox-text h1 {
+.bigBox-text h1 {
   font-size: 4rem;
   background: -webkit-gradient(linear, left top, right top, from(#03d7fcdc), to(#e84393));
   background: linear-gradient(to right, #03d7fcdc, #e84393);
@@ -1369,13 +1377,13 @@ body .bigBox-text h1 {
   -webkit-text-fill-color: transparent;
 }
 
-body .bigBox-text p {
+.bigBox-text p {
   margin-top: 15px;
   font-size: 22px;
   color: #585772;
 }
 
-body .läs-mer {
+.läs-mer {
   border: 2px solid #03d7fcdc;
   background: transparent;
   color: #03d7fcdc;
@@ -1385,7 +1393,7 @@ body .läs-mer {
   font-size: 16px;
 }
 
-body .köp {
+.köp {
   background: #03d7fcdc;
   width: 150px;
   height: 50px;
@@ -1396,7 +1404,7 @@ body .köp {
   margin: 30px 0px 0px 30px;
 }
 
-body .cover {
+.cover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1409,7 +1417,7 @@ body .cover {
   height: 60vh;
 }
 
-body .cover img {
+.cover img {
   height: 100%;
   -webkit-filter: drop-shadow(0px 5px 3px black);
           filter: drop-shadow(0px 5px 3px black);
@@ -1417,7 +1425,7 @@ body .cover img {
           animation: drop 1.5s ease;
 }
 
-body .box-area {
+.box-area {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1437,7 +1445,7 @@ body .box-area {
   padding-bottom: 60px;
 }
 
-body .box {
+.box {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1459,30 +1467,30 @@ body .box {
   margin: 10px;
 }
 
-body .box:nth-child(1) .img {
+.box:nth-child(1) .img {
   background-image: url(Bilder/iphone.jpg);
 }
 
-body .box:nth-child(2) .img {
+.box:nth-child(2) .img {
   background-image: url(Bilder/data.jpg);
 }
 
-body .box:nth-child(3) .img {
+.box:nth-child(3) .img {
   background-image: url(Bilder/ipad.jpg);
 }
 
-body .box:nth-child(4) .img {
+.box:nth-child(4) .img {
   background-image: url(Bilder/laptop.jpg);
 }
 
-body .box:hover {
+.box:hover {
   background: #e84393;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: #fff;
 }
 
-body .img {
+.img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1502,34 +1510,34 @@ body .img {
   background-position: center center;
 }
 
-body .header-text {
+.header-text {
   font-size: 25px;
   line-height: 10px;
   text-transform: uppercase;
 }
 
-body .img-text {
+.img-text {
   margin: 20px;
   line-height: 10px;
 }
 
-body .img-text p {
+.img-text p {
   font-weight: 400;
   line-height: 30px;
 }
 
 @media only screen and (max-width: 768px) {
-  body .box-area {
+  .box-area {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body .box {
+  .box {
     width: 100%;
     margin-bottom: 10px;
   }
-  body .bigBox {
+  .bigBox {
     margin: 30px;
   }
 }

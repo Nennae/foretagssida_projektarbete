@@ -566,8 +566,19 @@ body {
   color:#1877f2;
 
 }
-.fa-instagram{
-  
+.fa-instagram {
+  font-size: 30px;
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 // Footer style
 .footer {
@@ -1020,6 +1031,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-bottom: 60px;
+  // padding: 20px 20px 60px 20px;
 }
 .box {
   position: relative;
@@ -1032,7 +1044,7 @@ body {
   background-color: #fff;
   text-align: center;
   transition: 0.3s;
-  margin: 10px;
+  margin: 10px; //tar man bort denna funkar mobile view också
   &:nth-child(1) {
     .img {
       background-image: url(Bilder/iphone.jpg);
