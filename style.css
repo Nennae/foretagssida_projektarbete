@@ -741,6 +741,10 @@ body .products-nav a {
   height: 30px;
 }
 
+.main.referenser .reviews .review-wrap .write-review .selections select:nth-of-type(3) {
+  width: 40%;
+}
+
 .main.referenser .reviews .review-wrap .write-review textarea {
   margin-top: 10px;
   font-family: "Dosis", "sans-serif";
@@ -1442,7 +1446,7 @@ body .products-nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 60px;
+  padding: 20px 20px 60px 20px;
 }
 
 .box {
@@ -1464,7 +1468,6 @@ body .products-nav a {
   text-align: center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  margin: 10px;
 }
 
 .box:nth-child(1) .img {
