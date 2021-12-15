@@ -362,7 +362,7 @@ body {
       color: black;
     }
   }
-
+}
 .main {
     
   //Referenser filens styling (Kevs styling)
@@ -557,35 +557,46 @@ body {
 
 
 }
+
+
+.fa-youtube{
+  color:red;
+}
+.fa-facebook{
+  color:#1877f2;
+
+}
+.fa-instagram{
   
-  // Footer style
-  .footer {
-    border-top: solid grey 1px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    min-height: 150px;
-    padding: 20px;
-    // background-color: grey;
+}
+// Footer style
+.footer {
+  border-top: solid grey 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 150px;
+  padding: 20px;
+  // background-color: grey;
 
-    .bottom-bar {
-      li {
-        margin: 15px;
-      }
-    }
-
-    .footertider {
-      text-align: center;
-      i {
-        margin: 10px;
-        margin-bottom: 20px;
-        color: black;
-      }
+  .bottom-bar {
+    li {
+       margin: 15px;
     }
   }
 
+  .footertider {
+    text-align: center;
+    i {
+      margin: 10px;
+      margin-bottom: 20px;
+       color: black;
+    }
+  }
+  
 
+}
 // Gemensamma Media queries
 @media screen and (min-width: 760px) {
   body {
@@ -1086,5 +1097,4 @@ body {
   .bigBox {
     margin: 30px;
   }
-}
 }

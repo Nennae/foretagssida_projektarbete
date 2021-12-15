@@ -833,7 +833,15 @@ body .main.referenser .reviews .review-wrap .write-review .rate > label:hover ~ 
   color: #d869a0;
 }
 
-body .footer {
+body .fa-youtube {
+  color: red;
+}
+
+body .fa-facebook {
+  color: #1877f2;
+}
+
+.footer {
   border-top: solid grey 1px;
   display: -webkit-box;
   display: -ms-flexbox;
