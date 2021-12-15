@@ -447,7 +447,7 @@ body .main.referenser {
   height: auto;
   display: flex;
   text-align: center;
-  padding: 50px;
+  padding: 20px;
 }
 
 body .main.referenser .flex {
@@ -473,11 +473,10 @@ body .main.referenser .reviews {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 50px;
 }
 
 body .main.referenser .reviews .line {
-  width: 400px;
+  width: 220px;
 }
 
 body .main.referenser .reviews .review-nav {
@@ -513,6 +512,7 @@ body .main.referenser .reviews .review-nav nav a:hover {
 }
 
 body .main.referenser .reviews .review-wrap {
+  width: 100%;
   background-color: white;
   border-radius: 15px;
   font-family: "Dosis", "sans-serif";
@@ -528,6 +528,10 @@ body .main.referenser .reviews .review-wrap > h2 {
 
 body .main.referenser .reviews .review-wrap h2 {
   margin: 15px;
+}
+
+body .main.referenser .reviews .review-wrap .customer {
+  padding: 15px;
 }
 
 body .main.referenser .reviews .review-wrap .customer .private-rev {
@@ -608,6 +612,10 @@ body .main.referenser .reviews .review-wrap .customer .private-rev .qualities .n
   color: #f33;
   content: "‒";
   margin-right: 10px;
+}
+
+body .main.referenser .reviews .review-wrap .company {
+  padding: 15px;
 }
 
 body .main.referenser .reviews .review-wrap .company .company-rev {
@@ -691,6 +699,7 @@ body .main.referenser .reviews .review-wrap .company .company-rev .qualities .ne
 }
 
 body .main.referenser .reviews .review-wrap .write-review {
+  padding: 35px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -728,7 +737,7 @@ body .main.referenser .reviews .review-wrap .write-review .selections {
 }
 
 body .main.referenser .reviews .review-wrap .write-review .selections select {
-  margin-right: 10px;
+  margin-right: 5px;
   height: 30px;
 }
 
@@ -854,41 +863,41 @@ body .footer .footertider i {
 }
 
 @media screen and (min-width: 760px) {
-  body .header {
+  body body .header {
     height: 170px;
   }
-  body .header .fa-shopping-cart {
+  body body .header .fa-shopping-cart {
     color: black;
     margin-left: 200px;
     margin-top: 5px;
     font-size: 20px;
   }
-  body .header img {
+  body body .header img {
     margin-left: 50px;
   }
-  body .header .top-nav i {
+  body body .header .top-nav i {
     display: none;
   }
-  body .header .top-nav .nav-bar {
+  body body .header .top-nav .nav-bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  body .header .top-nav .nav-bar .active, body .header .top-nav .nav-bar .nav-links:hover {
+  body body .header .top-nav .nav-bar .active, body body .header .top-nav .nav-bar .nav-links:hover {
     color: #09abe6;
   }
-  body .header .top-nav .nav-bar a {
+  body body .header .top-nav .nav-bar a {
     margin-right: 40px;
     font-size: 1.4rem;
     white-space: nowrap;
   }
-  body .footer {
+  body body .footer {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  body .footer .bottom-bar {
+  body body .footer .bottom-bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -900,8 +909,8 @@ body .footer .footertider i {
   }
 }
 
-.kontaktmain,
-.omossmedarbetare {
+body .kontaktmain,
+body .omossmedarbetare {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -916,14 +925,14 @@ body .footer .footertider i {
   display: flex;
 }
 
-.kontaktmain h1,
-.omossmedarbetare h1 {
+body .kontaktmain h1,
+body .omossmedarbetare h1 {
   text-align: center;
   margin-top: 30px;
 }
 
-.kontaktmain .maindiv1,
-.omossmedarbetare .maindiv1 {
+body .kontaktmain .maindiv1,
+body .omossmedarbetare .maindiv1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -933,8 +942,8 @@ body .footer .footertider i {
   height: 1100px;
 }
 
-.kontaktmain .maindiv1 .medarbetar-area,
-.omossmedarbetare .maindiv1 .medarbetar-area {
+body .kontaktmain .maindiv1 .medarbetar-area,
+body .omossmedarbetare .maindiv1 .medarbetar-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -951,8 +960,8 @@ body .footer .footertider i {
   height: auto;
 }
 
-.kontaktmain .maindiv1 .medarbetar-area .medarbetare,
-.omossmedarbetare .maindiv1 .medarbetar-area .medarbetare {
+body .kontaktmain .maindiv1 .medarbetar-area .medarbetare,
+body .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -974,8 +983,8 @@ body .footer .footertider i {
           box-shadow: 2px 2px #acafb3;
 }
 
-.kontaktmain .maindiv1 .medarbetar-area .medarbetare .bilddiv,
-.omossmedarbetare .maindiv1 .medarbetar-area .medarbetare .bilddiv {
+body .kontaktmain .maindiv1 .medarbetar-area .medarbetare .bilddiv,
+body .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare .bilddiv {
   background-color: black;
   width: 125px;
   height: 175px;
@@ -983,14 +992,14 @@ body .footer .footertider i {
   border-radius: 2px;
 }
 
-.kontaktmain .maindiv1 .medarbetar-area .medarbetare .bilddiv img,
-.omossmedarbetare .maindiv1 .medarbetar-area .medarbetare .bilddiv img {
+body .kontaktmain .maindiv1 .medarbetar-area .medarbetare .bilddiv img,
+body .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare .bilddiv img {
   height: 100%;
   width: 100%;
 }
 
-.kontaktmain .maindiv2,
-.omossmedarbetare .maindiv2 {
+body .kontaktmain .maindiv2,
+body .omossmedarbetare .maindiv2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1006,13 +1015,13 @@ body .footer .footertider i {
   background-color: #f0eeee;
 }
 
-.kontaktmain .maindiv2 h2,
-.omossmedarbetare .maindiv2 h2 {
+body .kontaktmain .maindiv2 h2,
+body .omossmedarbetare .maindiv2 h2 {
   margin-bottom: 15px;
 }
 
-.kontaktmain .maindiv2 .kontaktaoss,
-.omossmedarbetare .maindiv2 .kontaktaoss {
+body .kontaktmain .maindiv2 .kontaktaoss,
+body .omossmedarbetare .maindiv2 .kontaktaoss {
   height: 175px;
   width: 48%;
   display: -webkit-box;
@@ -1027,8 +1036,8 @@ body .footer .footertider i {
           flex-direction: column;
 }
 
-.kontaktmain .maindiv2 .meddelande,
-.omossmedarbetare .maindiv2 .meddelande {
+body .kontaktmain .maindiv2 .meddelande,
+body .omossmedarbetare .maindiv2 .meddelande {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1041,8 +1050,8 @@ body .footer .footertider i {
           align-items: flex-start;
 }
 
-.kontaktmain .maindiv2 .meddelande .undertitel,
-.omossmedarbetare .maindiv2 .meddelande .undertitel {
+body .kontaktmain .maindiv2 .meddelande .undertitel,
+body .omossmedarbetare .maindiv2 .meddelande .undertitel {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1050,30 +1059,30 @@ body .footer .footertider i {
   margin-bottom: 10px;
 }
 
-.kontaktmain .maindiv2 .meddelande select,
-.kontaktmain .maindiv2 .meddelande input,
-.kontaktmain .maindiv2 .meddelande textarea,
-.omossmedarbetare .maindiv2 .meddelande select,
-.omossmedarbetare .maindiv2 .meddelande input,
-.omossmedarbetare .maindiv2 .meddelande textarea {
+body .kontaktmain .maindiv2 .meddelande select,
+body .kontaktmain .maindiv2 .meddelande input,
+body .kontaktmain .maindiv2 .meddelande textarea,
+body .omossmedarbetare .maindiv2 .meddelande select,
+body .omossmedarbetare .maindiv2 .meddelande input,
+body .omossmedarbetare .maindiv2 .meddelande textarea {
   width: 95%;
   border: solid #cecaca 1px;
   margin: 5px 0px 5px 0px;
   padding: 5px;
 }
 
-.kontaktmain .maindiv2 .meddelande label,
-.omossmedarbetare .maindiv2 .meddelande label {
+body .kontaktmain .maindiv2 .meddelande label,
+body .omossmedarbetare .maindiv2 .meddelande label {
   margin-top: 5px;
 }
 
-.kontaktmain .maindiv2 .meddelande label#labelmeddelande,
-.omossmedarbetare .maindiv2 .meddelande label#labelmeddelande {
+body .kontaktmain .maindiv2 .meddelande label#labelmeddelande,
+body .omossmedarbetare .maindiv2 .meddelande label#labelmeddelande {
   margin-top: 20px;
 }
 
-.kontaktmain .maindiv2 .meddelande .button,
-.omossmedarbetare .maindiv2 .meddelande .button {
+body .kontaktmain .maindiv2 .meddelande .button,
+body .omossmedarbetare .maindiv2 .meddelande .button {
   background: #03d7fcdc;
   border: none;
   margin: 10px 11px 0px 0px;
@@ -1085,25 +1094,25 @@ body .footer .footertider i {
       align-self: flex-end;
 }
 
-.kontaktmain .maindiv2 .meddelande .button:hover,
-.omossmedarbetare .maindiv2 .meddelande .button:hover {
+body .kontaktmain .maindiv2 .meddelande .button:hover,
+body .omossmedarbetare .maindiv2 .meddelande .button:hover {
   color: white;
   background: #07b0eedc;
 }
 
-.kontaktmain .maindiv2 .meddelande .button:hover,
-.omossmedarbetare .maindiv2 .meddelande .button:hover {
+body .kontaktmain .maindiv2 .meddelande .button:hover,
+body .omossmedarbetare .maindiv2 .meddelande .button:hover {
   color: white;
   background: #07b0eedc;
 }
 
-.kontaktmain .maindiv2 .meddelande #meddelande,
-.omossmedarbetare .maindiv2 .meddelande #meddelande {
+body .kontaktmain .maindiv2 .meddelande #meddelande,
+body .omossmedarbetare .maindiv2 .meddelande #meddelande {
   height: 100px;
 }
 
-.kontaktmain .bildhus,
-.omossmedarbetare .bildhus {
+body .kontaktmain .bildhus,
+body .omossmedarbetare .bildhus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1118,15 +1127,15 @@ body .footer .footertider i {
   margin: 50px 0px;
 }
 
-.kontaktmain .bildhus img,
-.omossmedarbetare .bildhus img {
+body .kontaktmain .bildhus img,
+body .omossmedarbetare .bildhus img {
   margin: 20px 0px 0px 10px;
   width: 100%;
   height: 100%;
   margin: 50px 0px;
 }
 
-.mainomoss .omosshistoria {
+body .mainomoss .omosshistoria {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1142,46 +1151,46 @@ body .footer .footertider i {
   padding: 20px;
 }
 
-.mainomoss .omosshistoria .line {
+body .mainomoss .omosshistoria .line {
   width: 200px;
 }
 
-.mainomoss .omosshistoria .historiatext {
+body .mainomoss .omosshistoria .historiatext {
   width: 100%;
   margin-top: 20px;
 }
 
-.mainomoss .omossmedarbetare h2 {
+body .mainomoss .omossmedarbetare h2 {
   text-align: center;
 }
 
-.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare {
+body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare {
   position: relative;
 }
 
-.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare .beskrivning {
+body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare .beskrivning {
   display: none;
 }
 
-.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover {
+body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover {
   background-color: #2c2b2b;
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
 
-.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .bilddiv {
+body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .bilddiv {
   visibility: hidden;
 }
 
-.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .line {
+body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .line {
   visibility: hidden;
 }
 
-.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover p {
+body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover p {
   visibility: hidden;
 }
 
-.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .beskrivning {
+body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .beskrivning {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1193,14 +1202,14 @@ body .footer .footertider i {
           align-items: center;
 }
 
-.mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .beskrivning .text {
+body .mainomoss .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare:hover .beskrivning .text {
   color: white;
   text-align: center;
 }
 
 @media screen and (min-width: 600px) {
-  .kontaktmain,
-  .omossmedarbetare {
+  body .kontaktmain,
+  body .omossmedarbetare {
     height: auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1209,8 +1218,8 @@ body .footer .footertider i {
         -ms-flex-align: center;
             align-items: center;
   }
-  .kontaktmain .maindiv1,
-  .omossmedarbetare .maindiv1 {
+  body .kontaktmain .maindiv1,
+  body .omossmedarbetare .maindiv1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1223,8 +1232,8 @@ body .footer .footertider i {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .kontaktmain .maindiv1 .medarbetar-area,
-  .omossmedarbetare .maindiv1 .medarbetar-area {
+  body .kontaktmain .maindiv1 .medarbetar-area,
+  body .omossmedarbetare .maindiv1 .medarbetar-area {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1234,23 +1243,23 @@ body .footer .footertider i {
             justify-content: center;
     width: 100%;
   }
-  .kontaktmain .maindiv1 .medarbetar-area .medarbetare,
-  .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare {
+  body .kontaktmain .maindiv1 .medarbetar-area .medarbetare,
+  body .omossmedarbetare .maindiv1 .medarbetar-area .medarbetare {
     width: 200px;
     height: 325px;
     padding-bottom: 10px;
     margin-left: 4%;
     margin-right: 4%;
   }
-  .kontaktmain .maindiv2,
-  .omossmedarbetare .maindiv2 {
+  body .kontaktmain .maindiv2,
+  body .omossmedarbetare .maindiv2 {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .kontaktmain .maindiv2 .kontaktaoss,
-  .omossmedarbetare .maindiv2 .kontaktaoss {
+  body .kontaktmain .maindiv2 .kontaktaoss,
+  body .omossmedarbetare .maindiv2 .kontaktaoss {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1259,18 +1268,18 @@ body .footer .footertider i {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .kontaktmain .maindiv2 .kontaktaoss .button,
-  .omossmedarbetare .maindiv2 .kontaktaoss .button {
+  body .kontaktmain .maindiv2 .kontaktaoss .button,
+  body .omossmedarbetare .maindiv2 .kontaktaoss .button {
     margin: 10px 37px 0px 0px;
   }
-  .kontaktmain .maindiv2 .kontaktaoss input,
-  .kontaktmain .maindiv2 .kontaktaoss select,
-  .omossmedarbetare .maindiv2 .kontaktaoss input,
-  .omossmedarbetare .maindiv2 .kontaktaoss select {
+  body .kontaktmain .maindiv2 .kontaktaoss input,
+  body .kontaktmain .maindiv2 .kontaktaoss select,
+  body .omossmedarbetare .maindiv2 .kontaktaoss input,
+  body .omossmedarbetare .maindiv2 .kontaktaoss select {
     height: 25px;
   }
-  .kontaktmain .maindiv2 .kontaktaoss .bildhus,
-  .omossmedarbetare .maindiv2 .kontaktaoss .bildhus {
+  body .kontaktmain .maindiv2 .kontaktaoss .bildhus,
+  body .omossmedarbetare .maindiv2 .kontaktaoss .bildhus {
     width: 50%;
     height: 237px;
     display: -webkit-box;
@@ -1281,22 +1290,22 @@ body .footer .footertider i {
             justify-content: center;
     margin: 10px 0px 20px 0px;
   }
-  .kontaktmain .maindiv2 .kontaktaoss img,
-  .omossmedarbetare .maindiv2 .kontaktaoss img {
+  body .kontaktmain .maindiv2 .kontaktaoss img,
+  body .omossmedarbetare .maindiv2 .kontaktaoss img {
     width: 100%;
     height: 237px;
   }
-  .mainomoss .omosshistoria .historiatext {
+  body .mainomoss .omosshistoria .historiatext {
     width: 60%;
   }
 }
 
-.hanna {
+body .hanna {
   font-family: "Dosis", sans-serif;
   background-color: whitesmoke;
 }
 
-.hanna button {
+body .hanna button {
   background: #03d7fcdc;
   border: none;
   padding: 8px 15px;
@@ -1305,17 +1314,17 @@ body .footer .footertider i {
   border-radius: 50px;
 }
 
-.hanna button:hover {
+body .hanna button:hover {
   color: white;
   background: #07b0eedc;
 }
 
-.hanna button:hover {
+body .hanna button:hover {
   color: white;
   background: #07b0eedc;
 }
 
-.produktsida {
+body .produktsida {
   width: 100%;
   height: 30px;
   display: -webkit-box;
@@ -1326,7 +1335,7 @@ body .footer .footertider i {
           justify-content: flex-end;
 }
 
-.produktsida-header {
+body .produktsida-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1335,7 +1344,7 @@ body .footer .footertider i {
           align-items: center;
 }
 
-.bigBox {
+body .bigBox {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1344,7 +1353,7 @@ body .footer .footertider i {
   margin: 70px 100px 70px 150px;
 }
 
-.bigBox-text h1 {
+body .bigBox-text h1 {
   font-size: 4rem;
   background: -webkit-gradient(linear, left top, right top, from(#03d7fcdc), to(#e84393));
   background: linear-gradient(to right, #03d7fcdc, #e84393);
@@ -1352,13 +1361,13 @@ body .footer .footertider i {
   -webkit-text-fill-color: transparent;
 }
 
-.bigBox-text p {
+body .bigBox-text p {
   margin-top: 15px;
   font-size: 22px;
   color: #585772;
 }
 
-.läs-mer {
+body .läs-mer {
   border: 2px solid #03d7fcdc;
   background: transparent;
   color: #03d7fcdc;
@@ -1368,7 +1377,7 @@ body .footer .footertider i {
   font-size: 16px;
 }
 
-.köp {
+body .köp {
   background: #03d7fcdc;
   width: 150px;
   height: 50px;
@@ -1379,7 +1388,7 @@ body .footer .footertider i {
   margin: 30px 0px 0px 30px;
 }
 
-.cover {
+body .cover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1392,7 +1401,7 @@ body .footer .footertider i {
   height: 60vh;
 }
 
-.cover img {
+body .cover img {
   height: 100%;
   -webkit-filter: drop-shadow(0px 5px 3px black);
           filter: drop-shadow(0px 5px 3px black);
@@ -1400,7 +1409,7 @@ body .footer .footertider i {
           animation: drop 1.5s ease;
 }
 
-.box-area {
+body .box-area {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1420,7 +1429,7 @@ body .footer .footertider i {
   padding-bottom: 60px;
 }
 
-.box {
+body .box {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1442,30 +1451,30 @@ body .footer .footertider i {
   margin: 10px;
 }
 
-.box:nth-child(1) .img {
+body .box:nth-child(1) .img {
   background-image: url(Bilder/iphone.jpg);
 }
 
-.box:nth-child(2) .img {
+body .box:nth-child(2) .img {
   background-image: url(Bilder/data.jpg);
 }
 
-.box:nth-child(3) .img {
+body .box:nth-child(3) .img {
   background-image: url(Bilder/ipad.jpg);
 }
 
-.box:nth-child(4) .img {
+body .box:nth-child(4) .img {
   background-image: url(Bilder/laptop.jpg);
 }
 
-.box:hover {
+body .box:hover {
   background: #e84393;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: #fff;
 }
 
-.img {
+body .img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1485,34 +1494,34 @@ body .footer .footertider i {
   background-position: center center;
 }
 
-.header-text {
+body .header-text {
   font-size: 25px;
   line-height: 10px;
   text-transform: uppercase;
 }
 
-.img-text {
+body .img-text {
   margin: 20px;
   line-height: 10px;
 }
 
-.img-text p {
+body .img-text p {
   font-weight: 400;
   line-height: 30px;
 }
 
 @media only screen and (max-width: 768px) {
-  .box-area {
+  body .box-area {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .box {
+  body .box {
     width: 100%;
     margin-bottom: 10px;
   }
-  .bigBox {
+  body .bigBox {
     margin: 30px;
   }
 }
