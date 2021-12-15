@@ -19,9 +19,16 @@
   margin: 30px;
 }
 
+a {
+      color: black;
+      text-decoration: none;
+}
+
 h2 {
+
   text-align: center;
   font-size: 2rem;
+  
 }
 
 .line {
@@ -95,54 +102,54 @@ h2 {
   background-position: center center;
 }
 .shop:nth-child(1) .shop-img {
-  background-image: url(shopBilder/Iphone13pro.jpg);
+  background-image: url(Bilder/Iphone13pro.jpg);
 }
 
 .shop:nth-child(2) .shop-img {
-  background-image: url(shopBilder/iphone13.jpg);
+  background-image: url(Bilder/Iphone13.jpg);
 }
 .shop:nth-child(3) .shop-img {
-  background-image: url(shopBilder/iphone12.jpg);
+  background-image: url(Bilder/iphone12.jpg);
 }
 .shop:nth-child(4) .shop-img {
-  background-image: url(shopBilder/samsungflip.jpg);
+  background-image: url(Bilder/samsungflip.jpg);
 }
 .shop:nth-child(5) .shop-img {
-  background-image: url(shopBilder/samsungfold.jpg);
+  background-image: url(Bilder/samsungfold.jpg);
 }
 .shop:nth-child(6) .shop-img {
-  background-image: url(shopBilder/Samsungnote.jpg);
+  background-image: url(Bilder/samsungNote.png);
 }
 
 .shop:nth-child(7) .shop-img {
-  background-image: url(shopBilder/Ipadmini.jpg);
+  background-image: url(Bilder/Ipadmini.jpg);
 }
 .shop:nth-child(8) .shop-img {
-  background-image: url(shopBilder/Ipadpro.jpg);
+  background-image: url(Bilder/Ipadpro.jpg);
 }
 
 .shop:nth-child(9) .shop-img {
-  background-image: url(shopBilder/samsungTab.jpg);
+  background-image: url(Bilder/samsungTab.jpg);
 }
 .shop:nth-child(10) .shop-img {
-  background-image: url(shopBilder/MacbookPro.jpg);
+  background-image: url(Bilder/MacbookPro.jpg);
 }
 
 .shop:nth-child(11) .shop-img {
-  background-image: url(shopBilder/macbookAir.jpg);
+  background-image: url(Bilder/macbookAir.jpg);
 }
 .shop:nth-child(12) .shop-img {
-  background-image: url(shopBilder/MacbookPro.jpg);
+  background-image: url(Bilder/MacbookPro.jpg);
 }
 
 .shop:nth-child(13) .shop-img {
-  background-image: url(shopBilder/imac.png);
+  background-image: url(Bilder/imac.png);
 }
 .shop:nth-child(14) .shop-img {
-  background-image: url(shopBilder/iMac27tum.jpg);
+  background-image: url(Bilder/iMac27tum.jpg);
 }
 .shop:nth-child(15) .shop-img {
-  background-image: url(shopBilder/ImacPRO.jpg);
+  background-image: url(Bilder/ImacPRO.jpg);
 }
 
 .header-text {
