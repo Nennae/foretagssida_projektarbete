@@ -434,7 +434,6 @@ body .main.referenser {
   height: auto;
   display: flex;
   text-align: center;
-  padding: 20px;
 }
 
 body .main.referenser .flex {
@@ -460,11 +459,11 @@ body .main.referenser .reviews {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 body .main.referenser .reviews .line {
-  width: 400px;
+  width: 350px;
 }
 
 body .main.referenser .reviews .review-nav {
@@ -527,9 +526,9 @@ body .main.referenser .reviews .review-wrap .customer .private-rev {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #f0eeee;
-  margin: 0px 10px 20px 10px;
+  margin: 50px auto;
   padding: 20px;
-  max-width: 1000px;
+  width: 1000px;
   border-radius: 15px;
   -webkit-box-shadow: #9e9e9e 5px 5px 5px;
           box-shadow: #9e9e9e 5px 5px 5px;
@@ -553,9 +552,48 @@ body .main.referenser .reviews .review-wrap .customer .private-rev p {
   font-style: oblique;
 }
 
+body .main.referenser .reviews .review-wrap .customer .private-rev .stars {
+  color: #d869a0;
+}
+
 body .main.referenser .reviews .review-wrap .customer .private-rev:focus {
   -webkit-box-shadow: #424242 5px 5px 5px;
           box-shadow: #424242 5px 5px 5px;
+}
+
+body .main.referenser .reviews .review-wrap .customer .private-rev p {
+  font-size: 1.2rem;
+  word-spacing: 5px;
+  white-space: pre-line;
+}
+
+body .main.referenser .reviews .review-wrap .customer .private-rev .qualities {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 10px 0px 40px 0px;
+}
+
+body .main.referenser .reviews .review-wrap .customer .private-rev .qualities p {
+  margin-right: 30px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+body .main.referenser .reviews .review-wrap .customer .private-rev .qualities .pos::before {
+  color: #396;
+  content: "+";
+  margin-right: 10px;
+}
+
+body .main.referenser .reviews .review-wrap .customer .private-rev .qualities .neg::before {
+  color: #f33;
+  content: "‒";
+  margin-right: 10px;
 }
 
 body .main.referenser .reviews .review-wrap .company .company-rev {
@@ -568,9 +606,9 @@ body .main.referenser .reviews .review-wrap .company .company-rev {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #f0eeee;
-  margin: 0px 10px 20px 10px;
+  margin: 50px auto;
   padding: 20px;
-  max-width: 1000px;
+  width: 1000px;
   border-radius: 15px;
   -webkit-box-shadow: #9e9e9e 5px 5px 5px;
           box-shadow: #9e9e9e 5px 5px 5px;
@@ -594,9 +632,48 @@ body .main.referenser .reviews .review-wrap .company .company-rev p {
   font-style: oblique;
 }
 
+body .main.referenser .reviews .review-wrap .company .company-rev .stars {
+  color: #d869a0;
+}
+
 body .main.referenser .reviews .review-wrap .company .company-rev:focus {
   -webkit-box-shadow: #424242 5px 5px 5px;
           box-shadow: #424242 5px 5px 5px;
+}
+
+body .main.referenser .reviews .review-wrap .company .company-rev p {
+  font-size: 1.2rem;
+  word-spacing: 5px;
+  white-space: pre-line;
+}
+
+body .main.referenser .reviews .review-wrap .company .company-rev .qualities {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 10px 0px 40px 0px;
+}
+
+body .main.referenser .reviews .review-wrap .company .company-rev .qualities p {
+  margin-right: 30px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+body .main.referenser .reviews .review-wrap .company .company-rev .qualities .pos::before {
+  color: #396;
+  content: "+";
+  margin-right: 10px;
+}
+
+body .main.referenser .reviews .review-wrap .company .company-rev .qualities .neg::before {
+  color: #f33;
+  content: "‒";
+  margin-right: 10px;
 }
 
 body .main.referenser .reviews .review-wrap .write-review {
@@ -614,6 +691,7 @@ body .main.referenser .reviews .review-wrap .write-review {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: white;
+  margin-left: 100px;
 }
 
 body .main.referenser .reviews .review-wrap .write-review > label {
@@ -643,7 +721,8 @@ body .main.referenser .reviews .review-wrap .write-review .selections select {
 }
 
 body .main.referenser .reviews .review-wrap .write-review textarea {
-  width: 50%;
+  margin-top: 10px;
+  font-family: "Dosis", "sans-serif";
 }
 
 body .main.referenser .reviews .review-wrap .write-review .btn-wrap {
@@ -679,6 +758,11 @@ body .main.referenser .reviews .review-wrap .write-review .btn-wrap .submit-btn:
   background: #07b0eedc;
 }
 
+body .main.referenser .reviews .review-wrap .write-review .btn-wrap .submit-btn:active {
+  -webkit-box-shadow: #12fa45 5px 5px 5px;
+          box-shadow: #12fa45 5px 5px 5px;
+}
+
 body .main.referenser .reviews .review-wrap .write-review .rate {
   display: inline-block;
   height: 46px;
@@ -712,12 +796,12 @@ body .main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > 
 }
 
 body .main.referenser .reviews .review-wrap .write-review .rate > input:checked ~ label {
-  color: #ffc700;
+  color: #d869a0;
 }
 
 body .main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > label:hover,
 body .main.referenser .reviews .review-wrap .write-review .rate:not(:checked) > label:hover ~ label {
-  color: #deb217;
+  color: #d869a0;
 }
 
 body .main.referenser .reviews .review-wrap .write-review .rate > input:checked + label:hover,
@@ -725,10 +809,10 @@ body .main.referenser .reviews .review-wrap .write-review .rate > input:checked 
 body .main.referenser .reviews .review-wrap .write-review .rate > input:checked ~ label:hover,
 body .main.referenser .reviews .review-wrap .write-review .rate > input:checked ~ label:hover ~ label,
 body .main.referenser .reviews .review-wrap .write-review .rate > label:hover ~ input:checked ~ label {
-  color: #c59b08;
+  color: #d869a0;
 }
 
-body .footer {
+.footer {
   border-top: solid grey 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -743,15 +827,15 @@ body .footer {
   padding: 20px;
 }
 
-body .footer .bottom-bar li {
+.footer .bottom-bar li {
   margin: 15px;
 }
 
-body .footer .footertider {
+.footer .footertider {
   text-align: center;
 }
 
-body .footer .footertider i {
+.footer .footertider i {
   margin: 10px;
   margin-bottom: 20px;
   color: black;
