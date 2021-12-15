@@ -12,13 +12,13 @@ $background-gray: rgb(240, 238, 238);
 
 @mixin headingStyle {
   font-size: 2rem;
-  .line {
-    width: 140px;
-    height: 4px;
-    background: #03d7fcdc;
-    margin: 10px auto;
-    border-radius: 5px;
-  }
+  // .line {
+  //   width: 140px;
+  //   height: 4px;
+  //   background: #03d7fcdc;
+  //   margin: 10px auto;
+  //   border-radius: 5px;
+  // }
 }
 
 @mixin flexCenter {

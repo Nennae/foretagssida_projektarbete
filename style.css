@@ -57,12 +57,11 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  min-height: 100px;
   margin-bottom: 30px;
 }
 
 .main-startpage .christmas-banner .banner {
-  padding: 10px;
+  padding: 20px;
 }
 
 .main-startpage .christmas-banner .banner p {
@@ -79,6 +78,13 @@
 
 .main-startpage .christmas-banner .banner p a span:hover {
   margin-left: 5px;
+}
+
+.main-startpage h1 {
+  background: -webkit-gradient(linear, left top, right top, from(#03d7fcdc), to(#e84393));
+  background: linear-gradient(to right, #03d7fcdc, #e84393);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .main-startpage .news-box {
@@ -167,6 +173,10 @@
 
 .main-startpage .more-news {
   text-align: center;
+}
+
+.main-startpage .more-news .line {
+  width: 160px;
 }
 
 .main-startpage .more-news .more-news-container {
@@ -278,28 +288,29 @@
 }
 
 body {
+  width: 100%;
   font-family: "Dosis", "sans-serif";
 }
 
 body h1 {
   font-size: 2rem;
-  background: redx;
+  background: -webkit-gradient(linear, left top, right top, from(#03d7fcdc), to(#e84393));
+  background: linear-gradient(to right, #03d7fcdc, #e84393);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
 }
 
-body h1 .line {
-  width: 140px;
-  height: 4px;
-  background: #03d7fcdc;
-  margin: 10px auto;
-  border-radius: 5px;
+body .para {
+  font-size: 1.3rem;
 }
 
 body .red-text {
   color: #b60606;
 }
 
-body .red-text:active {
-  color: #0a33b9;
+body .red-text:hover {
+  color: black;
 }
 
 body .red-text span:hover {
@@ -436,7 +447,7 @@ body .main.referenser {
   height: auto;
   display: flex;
   text-align: center;
-  padding: 20px;
+  padding: 50px;
 }
 
 body .main.referenser .flex {
@@ -462,10 +473,11 @@ body .main.referenser .reviews {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 body .main.referenser .reviews .line {
-  width: 220px;
+  width: 400px;
 }
 
 body .main.referenser .reviews .review-nav {
@@ -679,7 +691,6 @@ body .main.referenser .reviews .review-wrap .company .company-rev .qualities .ne
 }
 
 body .main.referenser .reviews .review-wrap .write-review {
-  padding: 15px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -846,6 +857,12 @@ body .footer .footertider i {
   body .header {
     height: 170px;
   }
+  body .header .fa-shopping-cart {
+    color: black;
+    margin-left: 200px;
+    margin-top: 5px;
+    font-size: 20px;
+  }
   body .header img {
     margin-left: 50px;
   }
@@ -858,6 +875,9 @@ body .footer .footertider i {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  body .header .top-nav .nav-bar .active, body .header .top-nav .nav-bar .nav-links:hover {
+    color: #09abe6;
   }
   body .header .top-nav .nav-bar a {
     margin-right: 40px;
@@ -982,9 +1002,8 @@ body .footer .footertider i {
       -ms-flex-pack: center;
           justify-content: center;
   height: auto;
-  margin-bottom: 20px;
   padding: 30px 0;
-  border-top: solid black 1px;
+  background-color: #f0eeee;
 }
 
 .kontaktmain .maindiv2 h2,
@@ -1016,10 +1035,19 @@ body .footer .footertider i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 350px;
+  height: auto;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.kontaktmain .maindiv2 .meddelande .undertitel,
+.omossmedarbetare .maindiv2 .meddelande .undertitel {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .kontaktmain .maindiv2 .meddelande select,
@@ -1028,11 +1056,10 @@ body .footer .footertider i {
 .omossmedarbetare .maindiv2 .meddelande select,
 .omossmedarbetare .maindiv2 .meddelande input,
 .omossmedarbetare .maindiv2 .meddelande textarea {
-  background-color: lightgray;
   width: 95%;
-  border: solid black 1px;
+  border: solid #cecaca 1px;
   margin: 5px 0px 5px 0px;
-  padding: 0px 0px 0px 5px;
+  padding: 5px;
 }
 
 .kontaktmain .maindiv2 .meddelande label,
@@ -1088,7 +1115,7 @@ body .footer .footertider i {
           align-items: center;
   height: 150px;
   width: 175px;
-  margin: 30px 0px;
+  margin: 50px 0px;
 }
 
 .kontaktmain .bildhus img,
@@ -1115,11 +1142,8 @@ body .footer .footertider i {
   padding: 20px;
 }
 
-.mainomoss .omosshistoria .linje {
-  width: 70%;
-  height: 1px;
-  background: black;
-  margin-bottom: 10px;
+.mainomoss .omosshistoria .line {
+  width: 200px;
 }
 
 .mainomoss .omosshistoria .historiatext {
@@ -1220,7 +1244,6 @@ body .footer .footertider i {
   }
   .kontaktmain .maindiv2,
   .omossmedarbetare .maindiv2 {
-    height: 475px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1277,7 +1300,7 @@ body .footer .footertider i {
   background: #03d7fcdc;
   border: none;
   padding: 8px 15px;
-  margin-top: 10px;
+  margin-top: 40px;
   background: #03d7fcdc;
   border-radius: 50px;
 }
@@ -1307,7 +1330,6 @@ body .footer .footertider i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 80vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1319,7 +1341,7 @@ body .footer .footertider i {
           flex: 1;
   width: 100%;
   height: auto;
-  margin: 150px;
+  margin: 70px 100px 70px 150px;
 }
 
 .bigBox-text h1 {
@@ -1331,7 +1353,7 @@ body .footer .footertider i {
 }
 
 .bigBox-text p {
-  margin-top: 5px;
+  margin-top: 15px;
   font-size: 22px;
   color: #585772;
 }
@@ -1395,6 +1417,7 @@ body .footer .footertider i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 60px;
 }
 
 .box {
@@ -1474,7 +1497,6 @@ body .footer .footertider i {
 }
 
 .img-text p {
-  font-size: 15px;
   font-weight: 400;
   line-height: 30px;
 }
