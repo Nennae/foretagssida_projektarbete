@@ -352,189 +352,193 @@ body {
 
   .main {
     
-    //* Referenser filens styling (Kevs styling)
-    &.referenser {
-      display: flex;
-      justify-content: center;
-      height: auto;
-      display: flex;
-      text-align: center;
-      padding: 20px;
+//* Referenser filens styling (Kevs styling)
+&.referenser {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  display: flex;
+  text-align: center;
 
-      .flex {
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    .line {
+      width: 350px;
+    }
+    
+    .review-nav {
+      padding: 15px;
+      border-radius: 5px;
+      width: 100%;
+      margin: 10px 0px;
+      
+      nav {
+        width: 100%;
         display: flex;
-        flex-direction: column;
-      }
-
-      .reviews {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 50px;
-        .line {
-          width: 400px;
+        justify-content: space-around;
+        align-items: center;
+        font-family: $main-font;
+        a,
+        p {
+          @include li-style;
+          font-size: 1.5rem;
         }
-        
-        
-        .review-nav {
-          padding: 15px;
-          border-radius: 5px;
-          width: 100%;
-          margin: 10px 0px;
-          
-          
-          nav {
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            font-family: $main-font;
-            a,
-            p {
-              @include li-style;
-              font-size: 1.5rem;
-            }
-            a:hover {
-              color: $underline-style;
-            }
-          }
-        }
-
-        .review-wrap {
-          background-color: hsl(0, 0%, 100%);
-          border-radius: 15px;
-          font-family: $main-font;
-          & > h2 {
-            font-style: oblique;
-            border-radius: 15px;
-            background-color: rgb(255, 255, 255);
-            box-shadow: rgb(66, 66, 66) 5px 5px 5px;
-          }
-          h2 {
-            margin: 15px;
-          }
-          .customer {
-            .private-rev {
-              @include review-zone;
-              &:focus {
-                box-shadow: rgb(66, 66, 66) 5px 5px 5px;
-              }
-            }
-          }
-
-          .company {
-            .company-rev {
-              @include review-zone;
-              &:focus {
-                box-shadow: rgb(66, 66, 66) 5px 5px 5px;
-              }
-            }
-          }
-
-          .write-review {
-            padding: 15px;
-            @include flex-stat-100;
-            // width: 100%;
-            // display: flex;
-            // justify-content: flex-start;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            background-color: rgb(255, 255, 255);
-
-            & > label {
-              display: block;
-              width: 100%;
-              text-align: start;
-              font-family: $main-font;
-              font-style: italic;
-              font-weight: bold;
-              margin-bottom: 15px;
-            }
-
-            .selections {
-              // width: 100%;
-              // display: flex;
-              // justify-content: flex-start;
-              @include flex-stat-100;
-              margin-bottom: 15px;
-
-              select {
-                margin-right: 10px;
-                height: 30px;
-              }
-            }
-
-            textarea {
-              width: 50%;
-            }
-
-            .btn-wrap {
-              height: 60px;
-              @include flex-stat-100;
-              // width: 100%;
-              // display: flex;
-              // justify-content: flex-start;
-              align-items: center;
-              .submit-btn {
-                @include readMore-style;
-                padding: 8px 15px;
-                margin-top: 10px;
-                background: #03d7fcdc;
-                border-radius: 50px;
-                &:hover {
-                  color: white;
-                  background:  #07b0eedc;
-                }
-              }
-            }
-
-            .rate {
-              // float: bottom;
-              display: inline-block;
-              height: 46px;
-              align-self: start;
-              top: 0px;
-              label {
-                margin: 3px;
-              }
-            }
-
-            .rate:not(:checked) > input {
-              position: absolute;
-              top: -9999px;
-            }
-            .rate:not(:checked) > label {
-              float: right;
-              width: 0.8em;
-              overflow: hidden;
-              white-space: nowrap;
-              cursor: pointer;
-              font-size: 30px;
-              color: #ccc;
-            }
-            .rate:not(:checked) > label:before {
-              content: "★";
-            }
-            .rate > input:checked ~ label {
-              color: #ffc700;
-            }
-            .rate:not(:checked) > label:hover,
-            .rate:not(:checked) > label:hover ~ label {
-              color: #deb217;
-            }
-            .rate > input:checked + label:hover,
-            .rate > input:checked + label:hover ~ label,
-            .rate > input:checked ~ label:hover,
-            .rate > input:checked ~ label:hover ~ label,
-            .rate > label:hover ~ input:checked ~ label {
-              color: #c59b08;
-            }
-          }
+        a:hover {
+          color: $underline-style;
         }
       }
     }
-    //* slut på Kevs styling
+
+    .review-wrap {
+      background-color: hsl(0, 0%, 100%); //#E9CCCC
+      border-radius: 15px;
+      font-family: $main-font;
+      & > h2 {
+        font-style: oblique;
+        border-radius: 15px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgb(66, 66, 66) 5px 5px 5px;
+      }
+      h2 {
+        margin: 15px;
+      }
+      .customer {
+        .private-rev {
+          @include review-zone;
+          .stars{
+            color:$underline-style;
+          }
+          &:focus {
+            box-shadow: rgb(66, 66, 66) 5px 5px 5px;
+          }
+
+          @include recension-style; // ny mixin skapad
+        }
+      }
+
+      .company {
+        .company-rev {
+          @include review-zone;
+          .stars{
+            color:$underline-style;
+          }
+          &:focus {
+            box-shadow: rgb(66, 66, 66) 5px 5px 5px;
+          }
+          @include recension-style; // ny mixin skapad
+        }
+      }
+
+      .write-review {
+        padding: 15px;
+        @include flex-stat-100;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        background-color: rgb(255, 255, 255);
+        margin-left: 100px;
+
+        & > label {
+          display: block;
+          width: 100%;
+          text-align: start;
+          font-family: $main-font;
+          font-style: italic;
+          font-weight: bold;
+          margin-bottom: 15px;
+        }
+
+        .selections {
+          @include flex-stat-100;
+          margin-bottom: 15px;
+
+          select {
+            margin-right: 10px;
+            height: 30px;
+          }
+        }
+
+        textarea {
+          
+          margin-top: 10px;
+          font-family: $main-font;
+        }
+
+        .btn-wrap {
+          height: 60px;
+          @include flex-stat-100;
+          align-items: center;
+          .submit-btn {
+            @include readMore-style;
+            padding: 8px 15px;
+            margin-top: 10px;
+            background: #03d7fcdc;
+            border-radius: 50px;
+            &:hover {
+              color: white;
+              background:  #07b0eedc;
+            }
+            &:active {
+              box-shadow: rgb(18, 250, 69) 5px 5px 5px;
+            }
+          }
+        }
+
+        .rate {
+          
+          display: inline-block;
+          height: 46px;
+          align-self: start;
+          top: 0px;
+          label {
+            margin: 3px;
+          }
+        }
+
+        .rate:not(:checked) > input {
+          position: absolute;
+          top: -9999px;
+        }
+        .rate:not(:checked) > label {
+          float: right;
+          width: 0.8em;
+          overflow: hidden;
+          white-space: nowrap;
+          cursor: pointer;
+          font-size: 30px;
+          color: #ccc;
+        }
+        .rate:not(:checked) > label:before {
+          content: "★";
+        }
+        .rate > input:checked ~ label {
+          color: $underline-style;
+        }
+        .rate:not(:checked) > label:hover,
+        .rate:not(:checked) > label:hover ~ label {
+          color: $underline-style;
+        }
+        .rate > input:checked + label:hover,
+        .rate > input:checked + label:hover ~ label,
+        .rate > input:checked ~ label:hover,
+        .rate > input:checked ~ label:hover ~ label,
+        .rate > label:hover ~ input:checked ~ label {
+          color: $underline-style;
+        }
+      }
+    }
+  }
+}
+//* slut på Kevs styling
+}
   }
   // Footer style
   .footer {
@@ -562,7 +566,7 @@ body {
       }
     }
   }
-}
+
 
 // Gemensamma Media queries
 @media screen and (min-width: 760px) {
