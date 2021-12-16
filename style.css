@@ -38,6 +38,11 @@
   padding: 5px;
 }
 
+.ham-meny nav .meny-del a span {
+  color: #09abe6;
+  font-weight: bold;
+}
+
 .main-startpage {
   font-family: "Dosis", "sans-serif";
 }
@@ -302,6 +307,7 @@ body h1 {
 }
 
 body .para {
+  margin-bottom: 50px;
   font-size: 1.3rem;
 }
 
@@ -739,10 +745,6 @@ body .products-nav a {
 .main.referenser .reviews .review-wrap .write-review .selections select {
   margin-right: 5px;
   height: 30px;
-}
-
-.main.referenser .reviews .review-wrap .write-review .selections select:nth-of-type(3) {
-  width: 40%;
 }
 
 .main.referenser .reviews .review-wrap .write-review textarea {
@@ -1325,7 +1327,7 @@ body .products-nav a {
   background-color: whitesmoke;
 }
 
-.hanna button {
+.hanna button, .hanna .button {
   background: #03d7fcdc;
   border: none;
   padding: 8px 15px;
@@ -1334,12 +1336,12 @@ body .products-nav a {
   border-radius: 50px;
 }
 
-.hanna button:hover {
+.hanna button:hover, .hanna .button:hover {
   color: white;
   background: #07b0eedc;
 }
 
-.hanna button:hover {
+.hanna button:hover, .hanna .button:hover {
   color: white;
   background: #07b0eedc;
 }
@@ -1464,6 +1466,7 @@ body .products-nav a {
   width: 40%;
   height: auto;
   border-radius: 4px;
+  margin: 20px;
   background-color: #fff;
   text-align: center;
   -webkit-transition: 0.3s;
@@ -1538,7 +1541,7 @@ body .products-nav a {
   }
   .box {
     width: 100%;
-    margin-bottom: 10px;
+    margin: 20px auto;
   }
   .bigBox {
     margin: 30px;
