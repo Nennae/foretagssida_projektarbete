@@ -63,15 +63,81 @@ $background-gray: rgb(240, 238, 238);
   color: black;
 }
 
+// //Kevs styling
+// @mixin review-zone{
+//   display:flex;
+//   justify-content: flex-start;
+//   flex-wrap: wrap;
+//   background-color: $background-gray;
+//   margin: 15px;
+//   padding: 20px;
+//   width: 1000px;
+//   border-radius: 15px;
+//   box-shadow: rgb(158, 158, 158) 5px 5px 5px;
+//   h2, h3, p{
+//     width: 100%;
+//     margin-bottom: 10px;
+//   }
+//   h3,p{
+//     text-align: start;
+//   }
+//   h3{
+//     font-style: italic;
+//     text-decoration: underline;
+//   }
+//   p{
+//     font-style: oblique;
+//   }
+// }
+
+// // Kevs styling
+// @mixin flex-stat-100{
+//   width: 100%;
+//   display: flex;
+//   justify-content: flex-start;
+// }
+
+// @mixin recension-style{
+//   p{
+//     font-size: 1.2rem;
+//     word-spacing: 5px;
+//     white-space:pre-line;
+
+//   }
+
+//   .qualities{
+//     width: 100%;
+//     display: flex;
+//     justify-content: flex-start;
+//     margin:10px 0px 40px 0px;
+//     p{
+//       margin-right:30px;
+//       font-weight: bold;
+//       padding:5px;
+//     }
+//     .pos::before{
+//       color: #396;
+//       content: "+";
+//       margin-right: 10px;
+//     }
+
+//     .neg::before{
+//       color: #f33;
+//       content: "‒";
+//       margin-right: 10px;
+//     }
+//   }
+// }
+
 //Kevs styling
 @mixin review-zone{
   display:flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   background-color: $background-gray;
-  margin: 50px auto;
+  margin: 0px 10px 20px 10px;
   padding: 20px;
-  width: 1000px;
+  max-width: 1000px;
   border-radius: 15px;
   box-shadow: rgb(158, 158, 158) 5px 5px 5px;
   h2, h3, p{
@@ -128,5 +194,6 @@ $background-gray: rgb(240, 238, 238);
     }
   }
 }
+
 
 
